@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.3.31) (preloaded format=xelatex 2024.4.20)  20 APR 2024 17:59
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.3.31) (preloaded format=xelatex 2024.4.20)  20 APR 2024 18:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -571,7 +571,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[1] (soc_honors_thesis.toc)
+[1] (soc_honors_thesis.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
+)
 \tf@toc=\write4
 \openout4 = `soc_honors_thesis.toc'.
 
@@ -611,7 +618,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[3] (soc_honors_thesis.aux)
+[3]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[4]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[5] (soc_honors_thesis.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -630,12 +655,12 @@ Package logreq Info: Writing requests to 'soc_honors_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11864 strings out of 409554
- 266690 string characters out of 5776239
- 1926148 words of memory out of 5000000
- 33951 multiletter control sequences out of 15000+600000
- 558213 words of font info for 54 fonts, out of 8000000 for 9000
+ 11888 strings out of 409554
+ 267072 string characters out of 5776239
+ 1928148 words of memory out of 5000000
+ 33965 multiletter control sequences out of 15000+600000
+ 560965 words of font info for 65 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,11n,93p,1518b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,12n,93p,1518b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on soc_honors_thesis.pdf (6 pages).
+Output written on soc_honors_thesis.pdf (8 pages).

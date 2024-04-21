@@ -1,2 +1,2 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{}%
-\contentsline {subsection}{\numberline {1.1}Craft Unionism vs. Industrial Unionism}{1}{}%
+\contentsline {subsection}{\numberline {1.1}Craft Unionism vs. Industrial Unionism}{2}{}%
