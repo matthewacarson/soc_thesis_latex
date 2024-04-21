@@ -21,6 +21,7 @@
 \usepackage{graphicx} % for including graphics
 \usepackage{dot2texi}
 \usepackage{tikz}
+\usepackage{caption} % for customizing captions
 %\usepackage{sectsty} % for modifying section headings
 
 % Line spacing
@@ -138,7 +139,8 @@ This distinction between 9(a) and 8(f) agreements is useful because it underscor
 \begin{figure}
   \centering
   \includegraphics[width=0.75\textwidth]{images/organizing_paths}
-  \caption{\centering{Shows both the industrial mode of organizing (left) and the construction mode of organizing (right). Construction unions may follow either path, but other unions may not voluntarily negotiate the way that construction unions can.}}
+  \captionsetup{justification=centering, singlelinecheck=false, margin=2cm} % Adjust the margin as needed
+  \caption{Shows both the industrial mode of organizing (left) and the construction mode of organizing (right). Construction unions may follow either path, but other unions may not voluntarily negotiate the way that construction unions can.}
   \label{fig:organizing_paths}
 \end{figure}
 
