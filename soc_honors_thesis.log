@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.3.31) (preloaded format=xelatex 2024.4.20)  20 APR 2024 21:59
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.3.31) (preloaded format=xelatex 2024.4.20)  20 APR 2024 22:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -432,7 +432,7 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 \verbatim@out=\write4
-runsystem(echo 'write18-test-20244201319'>"soc_honors_thesis.w18")...disabled (
+runsystem(echo 'write18-test-20244201328'>"soc_honors_thesis.w18")...disabled (
 restricted).
 
 
@@ -1018,6 +1018,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8]
+File: images/hiring_hall.pdf Graphic file (type pdf)
+<use images/hiring_hall.pdf>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1054,10 +1057,10 @@ Package logreq Info: Writing requests to 'soc_honors_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24555 strings out of 409554
- 527008 string characters out of 5776239
+ 24567 strings out of 409554
+ 527328 string characters out of 5776239
  1931148 words of memory out of 5000000
- 46397 multiletter control sequences out of 15000+600000
+ 46408 multiletter control sequences out of 15000+600000
  560957 words of font info for 64 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  84i,13n,117p,1720b,852s stack positions out of 10000i,1000n,20000p,200000b,200000s
