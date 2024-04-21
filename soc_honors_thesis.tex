@@ -1,0 +1,124 @@
+
+% Stashing things up here for later
+
+%\begin{quote}
+%Quote goes here
+%\end{quote}
+
+
+
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage{setspace} % for adjusting line spacing
+\usepackage{parskip} % for controlling paragraph spacing
+\usepackage{fontspec} % for setting fonts
+\usepackage{fancyhdr} % for custom headers and footers
+\usepackage{biblatex} % for bibliography management
+\usepackage[margin=1in]{geometry} % for setting margins
+\usepackage{titlesec} % for customizing section headings
+\usepackage{etoolbox} % for adjusting environment parameters
+
+% Line spacing
+\setstretch{2}
+
+% Paragraph spacing
+\setlength{\parskip}{0pt}
+
+% Define indentation length
+\newlength{\myindent}
+\setlength{\myindent}{3em}
+
+% Set global text alignment to ragged-right
+\raggedright
+
+% Paragraph indentation
+\setlength{\parindent}{\myindent}
+
+% Font
+\setmainfont{Times New Roman}
+
+% Page style
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyhead[R]{\thepage} % page number on the right side
+\renewcommand{\headrulewidth}{0pt} % remove header rule
+
+% Disable hyphenation
+%\pretolerance=10000
+%\tolerance=2000 
+%\emergencystretch=10pt
+%\hyphenpenalty=10000
+%\exhyphenpenalty=10000
+
+% Bibliography setup
+% \addbibresource{My Library.bib}
+% \ExecuteBibliographyOptions{sorting=none} % unsorted bibliography
+
+% Define custom section headings
+\titleformat{\section}[block]{\normalfont\fontsize{12}{14}\selectfont}{\thesection.}{0.5em}{}
+\titleformat{\subsection}[block]{\itshape}{\thesubsection.}{0.5em}{}
+\titleformat{\subsubsection}[runin]{\normalfont\itshape}{\hspace{\myindent}\thesubsubsection.}{0.5em}{}[.]
+
+% Redefine the quote environment
+\renewenvironment{quote}
+  {\list{}{\leftmargin=\parindent\rightmargin=0pt}%
+   \item\relax}
+  {\endlist}
+
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{1.95in}
+  {\LARGE Construction Union Agreements:\par Union Organizing in Historical-Comparative Perspective\par}
+  \vspace{1.2in}
+  {Matthew A. Carson\par}
+  \vspace{0in}
+  {University of California, Los Angeles\par}
+  \vspace{0.5in}
+  {\today\par}
+\end{titlepage}
+
+% Set page numbering to roman for preliminary pages
+\pagenumbering{roman}
+
+% Add abstract page
+\begin{abstract}
+\noindent
+US Building Trade unions organize their workers differently. Most labor unions compel employers to negotiate, but the Building Trades engage in voluntary negotiations, relying on workers' skill levels rather than strike leverage. This approach correlates with their frequent political deviations from the broader US labor movement, particularly in opposing progressive environmental policies and aligning more closely with the petrochemical industry on environmental issues, and not supporting single-payer healthcare. One view is that unions pursue their members’ interests narrowly, sacrificing broader working-class interests if they feel it is necessary to secure work for their members, and some suggest that the conservative stance of the Building Trades stems from their craft union tradition, in which workers are organized by craft and skill instead of by industry. However, using historical-comparative methods, I show that these arguments do not hold. Petrochemical unions have supported progressive policies, and other craft-based unions have endorsed single-payer healthcare. However, unlike the Building Trades, those unions have never used voluntary agreements. Consequently, they have experienced more conflicts with employers. These findings challenge traditional views and suggest that the Building Trades' conservative negotiation strategies significantly shape their political and policy positions, reinforcing an employer-union dynamic that limits challenging management.
+\end{abstract}
+\newpage
+
+% Add table of contents
+\tableofcontents
+\newpage
+
+% Set page numbering to arabic for main content
+\pagenumbering{arabic}
+
+\section{Introduction} \
+
+Construction unions in the US have a distinct approach to organizing their workers vis-a-vis other labor unions. While most labor unions typically compel employers to negotiate either through secret ballot elections or work stoppages, the Building Trades take a different route by engaging in voluntary negotiations. Their strategy hinges more on the skill levels of their workers than the leverage of strikes or official National Labor Relations Board elections, which use the state to compel the employer to negotiate. This unique approach often leads them to deviate politically from the broader US labor movement. Notably, they often oppose progressive environmental policies and tend to align more closely with the petrochemical industry on environmental issues. Additionally, they are not supportive of single-payer healthcare.
+
+Some argue that this conservative stance of the Building Trades originates from their tradition of craft unionism, where workers are organized based on craft and skill rather than industry. However, historical-comparative analyses challenge this view. For instance, other unions with many members working in the petrochemical industry have backed progressive policies, including environmental policies, and other craft-based unions have endorsed single-payer healthcare despite organizing along craft lines instead of industry. The key distinction between these unions and their disparate political stances lies in the Building Trades' use of voluntary agreements, which minimizes conflicts with employers and constrains their ability to challenge management.
+
+\subsection{Craft Unionism vs. Industrial Unionism} \
+
+% \subsubsection{Methods}
+
+\newpage
+\begin{center}
+{\bfseries Notes}
+\end{center}
+
+\noindent
+.
+\newpage
+\begin{center}
+{\bfseries Bibliography}
+\end{center}
+
+% \printbibliography
+
+\end{document}
