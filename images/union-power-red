@@ -1,0 +1,17 @@
+digraph {
+	size="50,35.99290780141844!" splines=ortho
+	skilled_q [label="Is highly skilled
+labor necessary?" pos="0,0!" shape=oval]
+	union [label="Union Hiring Hall:
+Increased Labor Costs" pos="3.5,-1.5!" shape=note]
+	non_union [label="Non-Union Labor:
+Lower Labor Costs" pos="-0,-3!" shape=note]
+	large_workforce_q [label="Is a large workforce
+needed?" pos="-0,-1.5!" shape=oval]
+	skilled_q -> union [label="Yes*" color=red]
+	large_workforce_q -> union [label="Yes*" color=red]
+	skilled_q -> large_workforce_q [label=No]
+	large_workforce_q -> non_union [label=No]
+	fontsize=12 label="
+*Red \"Yes\" responses indicate points of leverage favorable to the union" labelloc=b
+}
