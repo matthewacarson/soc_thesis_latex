@@ -1,2 +1,4 @@
-# soc_thesis_latex
+# Sociology Honors Thesis
+
+Writing using LaTeX
  
