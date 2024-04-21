@@ -7,5 +7,8 @@
 \contentsline {subsection}{\numberline {3.1}The United Association of Plumbers and Pipe Fitters (UA) Local 189}{11}{}%
 \contentsline {subsubsection}{\numberline {3.1.1}A contemporary view}{16}{}%
 \contentsline {subsection}{\numberline {3.2}The Oil Chemical and Atomic Workers (OCAW) / United Steelworkers (USW)}{18}{}%
-\contentsline {subsection}{\numberline {3.3}The International Association of Machinists (IAM)}{19}{}%
-\contentsline {subsection}{\numberline {3.4}Intra-Building Trades Cases}{21}{}%
+\contentsline {subsection}{\numberline {3.3}OCAW and Tony Mazzochi}{19}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}The Oil Workers International Union}{20}{}%
+\contentsline {subsubsection}{\numberline {3.3.2}Gas, Coke, and Chemical Workers}{21}{}%
+\contentsline {subsection}{\numberline {3.4}The International Association of Machinists (IAM)}{24}{}%
+\contentsline {subsection}{\numberline {3.5}Intra-Building Trades Cases}{27}{}%
