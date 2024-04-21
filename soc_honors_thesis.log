@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.3.31) (preloaded format=xelatex 2024.4.20)  21 APR 2024 12:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.21)  21 APR 2024 16:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -11,14 +11,14 @@ Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (C:\Program Files\MiKTeX\tex/latex/base\size12.clo
 File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count184
-\c@section=\count185
-\c@subsection=\count186
-\c@subsubsection=\count187
-\c@paragraph=\count188
-\c@subparagraph=\count189
-\c@figure=\count190
-\c@table=\count191
+\c@part=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
@@ -44,16 +44,16 @@ Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ))
 (C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count192
+\etb@tempcnta=\count196
 ))
 (C:\Users\madou\AppData\Roaming\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
-\csq@reset=\count193
-\csq@gtype=\count194
-\csq@glevel=\count195
-\csq@qlevel=\count196
-\csq@maxlvl=\count197
-\csq@tshold=\count198
+\csq@reset=\count197
+\csq@gtype=\count198
+\csq@glevel=\count199
+\csq@qlevel=\count266
+\csq@maxlvl=\count267
+\csq@tshold=\count268
 \csq@ltx@everypar=\toks18
 
 (C:\Users\madou\AppData\Roaming\MiKTeX\tex/latex/csquotes\csquotes.def
@@ -98,11 +98,11 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode not found.
+Package pdftexcmds Info: \pdfdraftmode found.
 )
 (C:\Users\madou\AppData\Roaming\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count199
+\lrq@indent=\count269
 
 (C:\Users\madou\AppData\Roaming\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -114,49 +114,49 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count266
-\c@listtotal=\count267
-\c@listcount=\count268
-\c@liststart=\count269
-\c@liststop=\count270
-\c@citecount=\count271
-\c@citetotal=\count272
-\c@multicitecount=\count273
-\c@multicitetotal=\count274
-\c@instcount=\count275
-\c@maxnames=\count276
-\c@minnames=\count277
-\c@maxitems=\count278
-\c@minitems=\count279
-\c@citecounter=\count280
-\c@maxcitecounter=\count281
-\c@savedcitecounter=\count282
-\c@uniquelist=\count283
-\c@uniquename=\count284
-\c@refsection=\count285
-\c@refsegment=\count286
-\c@maxextratitle=\count287
-\c@maxextratitleyear=\count288
-\c@maxextraname=\count289
-\c@maxextradate=\count290
-\c@maxextraalpha=\count291
-\c@abbrvpenalty=\count292
-\c@highnamepenalty=\count293
-\c@lownamepenalty=\count294
-\c@maxparens=\count295
-\c@parenlevel=\count296
-\blx@tempcnta=\count297
-\blx@tempcntb=\count298
-\blx@tempcntc=\count299
-\c@blx@maxsection=\count300
-\blx@maxsegment@0=\count301
-\blx@notetype=\count302
-\blx@parenlevel@text=\count303
-\blx@parenlevel@foot=\count304
-\blx@sectionciteorder@0=\count305
-\blx@sectionciteorderinternal@0=\count306
-\blx@entrysetcounter=\count307
-\blx@biblioinstance=\count308
+\c@tabx@nest=\count270
+\c@listtotal=\count271
+\c@listcount=\count272
+\c@liststart=\count273
+\c@liststop=\count274
+\c@citecount=\count275
+\c@citetotal=\count276
+\c@multicitecount=\count277
+\c@multicitetotal=\count278
+\c@instcount=\count279
+\c@maxnames=\count280
+\c@minnames=\count281
+\c@maxitems=\count282
+\c@minitems=\count283
+\c@citecounter=\count284
+\c@maxcitecounter=\count285
+\c@savedcitecounter=\count286
+\c@uniquelist=\count287
+\c@uniquename=\count288
+\c@refsection=\count289
+\c@refsegment=\count290
+\c@maxextratitle=\count291
+\c@maxextratitleyear=\count292
+\c@maxextraname=\count293
+\c@maxextradate=\count294
+\c@maxextraalpha=\count295
+\c@abbrvpenalty=\count296
+\c@highnamepenalty=\count297
+\c@lownamepenalty=\count298
+\c@maxparens=\count299
+\c@parenlevel=\count300
+\blx@tempcnta=\count301
+\blx@tempcntb=\count302
+\blx@tempcntc=\count303
+\c@blx@maxsection=\count304
+\blx@maxsegment@0=\count305
+\blx@notetype=\count306
+\blx@parenlevel@text=\count307
+\blx@parenlevel@foot=\count308
+\blx@sectionciteorder@0=\count309
+\blx@sectionciteorderinternal@0=\count310
+\blx@entrysetcounter=\count311
+\blx@biblioinstance=\count312
 \labelnumberwidth=\skip59
 \labelalphawidth=\skip60
 \biblabelsep=\skip61
@@ -168,9 +168,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@bcfin=\read2
 \blx@bcfout=\write3
 \blx@langwohyphens=\language79
-\c@mincomprange=\count309
-\c@maxcomprange=\count310
-\c@mincompwidth=\count311
+\c@mincomprange=\count313
+\c@maxcomprange=\count314
+\c@mincompwidth=\count315
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -179,74 +179,74 @@ File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count312
-\c@savedafterword=\count313
-\c@annotator=\count314
-\c@savedannotator=\count315
-\c@author=\count316
-\c@savedauthor=\count317
-\c@bookauthor=\count318
-\c@savedbookauthor=\count319
-\c@commentator=\count320
-\c@savedcommentator=\count321
-\c@editor=\count322
-\c@savededitor=\count323
-\c@editora=\count324
-\c@savededitora=\count325
-\c@editorb=\count326
-\c@savededitorb=\count327
-\c@editorc=\count328
-\c@savededitorc=\count329
-\c@foreword=\count330
-\c@savedforeword=\count331
-\c@holder=\count332
-\c@savedholder=\count333
-\c@introduction=\count334
-\c@savedintroduction=\count335
-\c@namea=\count336
-\c@savednamea=\count337
-\c@nameb=\count338
-\c@savednameb=\count339
-\c@namec=\count340
-\c@savednamec=\count341
-\c@translator=\count342
-\c@savedtranslator=\count343
-\c@shortauthor=\count344
-\c@savedshortauthor=\count345
-\c@shorteditor=\count346
-\c@savedshorteditor=\count347
-\c@labelname=\count348
-\c@savedlabelname=\count349
-\c@institution=\count350
-\c@savedinstitution=\count351
-\c@lista=\count352
-\c@savedlista=\count353
-\c@listb=\count354
-\c@savedlistb=\count355
-\c@listc=\count356
-\c@savedlistc=\count357
-\c@listd=\count358
-\c@savedlistd=\count359
-\c@liste=\count360
-\c@savedliste=\count361
-\c@listf=\count362
-\c@savedlistf=\count363
-\c@location=\count364
-\c@savedlocation=\count365
-\c@organization=\count366
-\c@savedorganization=\count367
-\c@origlocation=\count368
-\c@savedoriglocation=\count369
-\c@origpublisher=\count370
-\c@savedorigpublisher=\count371
-\c@publisher=\count372
-\c@savedpublisher=\count373
-\c@language=\count374
-\c@savedlanguage=\count375
-\c@origlanguage=\count376
-\c@savedoriglanguage=\count377
-\c@pageref=\count378
-\c@savedpageref=\count379
+\c@afterword=\count316
+\c@savedafterword=\count317
+\c@annotator=\count318
+\c@savedannotator=\count319
+\c@author=\count320
+\c@savedauthor=\count321
+\c@bookauthor=\count322
+\c@savedbookauthor=\count323
+\c@commentator=\count324
+\c@savedcommentator=\count325
+\c@editor=\count326
+\c@savededitor=\count327
+\c@editora=\count328
+\c@savededitora=\count329
+\c@editorb=\count330
+\c@savededitorb=\count331
+\c@editorc=\count332
+\c@savededitorc=\count333
+\c@foreword=\count334
+\c@savedforeword=\count335
+\c@holder=\count336
+\c@savedholder=\count337
+\c@introduction=\count338
+\c@savedintroduction=\count339
+\c@namea=\count340
+\c@savednamea=\count341
+\c@nameb=\count342
+\c@savednameb=\count343
+\c@namec=\count344
+\c@savednamec=\count345
+\c@translator=\count346
+\c@savedtranslator=\count347
+\c@shortauthor=\count348
+\c@savedshortauthor=\count349
+\c@shorteditor=\count350
+\c@savedshorteditor=\count351
+\c@labelname=\count352
+\c@savedlabelname=\count353
+\c@institution=\count354
+\c@savedinstitution=\count355
+\c@lista=\count356
+\c@savedlista=\count357
+\c@listb=\count358
+\c@savedlistb=\count359
+\c@listc=\count360
+\c@savedlistc=\count361
+\c@listd=\count362
+\c@savedlistd=\count363
+\c@liste=\count364
+\c@savedliste=\count365
+\c@listf=\count366
+\c@savedlistf=\count367
+\c@location=\count368
+\c@savedlocation=\count369
+\c@organization=\count370
+\c@savedorganization=\count371
+\c@origlocation=\count372
+\c@savedoriglocation=\count373
+\c@origpublisher=\count374
+\c@savedorigpublisher=\count375
+\c@publisher=\count376
+\c@savedpublisher=\count377
+\c@language=\count378
+\c@savedlanguage=\count379
+\c@origlanguage=\count380
+\c@savedoriglanguage=\count381
+\c@pageref=\count382
+\c@savedpageref=\count383
 \shorthandwidth=\skip67
 \shortjournalwidth=\skip68
 \shortserieswidth=\skip69
@@ -261,10 +261,6 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorttitlewidth=\skip78
 \localshortauthorwidth=\skip79
 \localshorteditorwidth=\skip80
-Package biblatex Info: Trying to load enhanced support for Unicode engines...
-Package biblatex Info: ... file 'blx-unicode.def' found.
-
-(C:\Program Files\MiKTeX\tex/latex/biblatex\blx-unicode.def)
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -276,19 +272,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
-\c@textcitecount=\count380
-\c@textcitetotal=\count381
-\c@textcitemaxnames=\count382
-\c@biburlbigbreakpenalty=\count383
-\c@biburlbreakpenalty=\count384
-\c@biburlnumpenalty=\count385
-\c@biburlucpenalty=\count386
-\c@biburllcpenalty=\count387
+\c@textcitecount=\count384
+\c@textcitetotal=\count385
+\c@textcitemaxnames=\count386
+\c@biburlbigbreakpenalty=\count387
+\c@biburlbreakpenalty=\count388
+\c@biburlnumpenalty=\count389
+\c@biburlucpenalty=\count390
+\c@biburllcpenalty=\count391
 \biburlbigskip=\muskip17
 \biburlnumskip=\muskip18
 \biburlucskip=\muskip19
 \biburllcskip=\muskip20
-\c@smartand=\count388
+\c@smartand=\count392
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -300,8 +296,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
 File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count389
-\c@bbx:relatedtotal=\count390
+\c@bbx:relatedcount=\count393
+\c@bbx:relatedtotal=\count394
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -326,20 +322,16 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 (C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.cfg
 File: biblatex.cfg 
 )
-Package biblatex Info: XeTeX detected.
-(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
 
 (C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty
 Package: expl3 2024-03-14 L3 programming layer (loader) 
 
-(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-xetex.def
-File: l3backend-xetex.def 2024-03-14 L3 backend support: XeTeX
-\g__graphics_track_int=\count391
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count395
 \l__pdf_internal_box=\box51
-\g__pdf_backend_object_int=\count392
-\g__pdf_backend_annotation_int=\count393
-\g__pdf_backend_link_int=\count394
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2024-03-14 L3 programming layer (loader) 
@@ -358,9 +350,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count395
-\Gm@cntv=\count396
-\c@Gm@tempcnt=\count397
+\Gm@cnth=\count396
+\Gm@cntv=\count397
+\c@Gm@tempcnt=\count398
 \Gm@bindingoffset=\dimen141
 \Gm@wd@mp=\dimen142
 \Gm@odd@mp=\dimen143
@@ -396,10 +388,10 @@ Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: xetex.def on input line 107.
+Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(C:\Program Files\MiKTeX\tex/latex/graphics-def\xetex.def
-File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen154
 \Gin@req@width=\dimen155
@@ -416,9 +408,9 @@ Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks22
 \verbatim@in@stream=\read3
 )
-\tab@position=\count398
-\tab@size=\count399
-\listing@line=\count400
+\tab@position=\count399
+\tab@size=\count400
+\listing@line=\count401
 )
 (C:\Program Files\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
@@ -428,11 +420,11 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 \XKV@toks=\toks23
 \XKV@tempa@toks=\toks24
 )
-\XKV@depth=\count401
+\XKV@depth=\count402
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 \verbatim@out=\write4
-runsystem(echo 'write18-test-2024421732'>"soc_honors_thesis.w18")...disabled (r
+runsystem(echo 'write18-test-2024421969'>"soc_honors_thesis.w18")...disabled (r
 estricted).
 
 
@@ -440,7 +432,7 @@ estricted).
 Package dot2texi Warning: Shell escape not enabled.
 (dot2texi)                You'll need to convert the graphs yourself..
 
-\c@dtt@fignum=\count402
+\c@dtt@fignum=\count403
 ) (C:\Program Files\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty
 (C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
 (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty
@@ -483,29 +475,24 @@ tex
 \pgf@yd=\dimen167
 \w@pgf@writea=\write5
 \r@pgf@reada=\read4
-\c@pgf@counta=\count403
-\c@pgf@countb=\count404
-\c@pgf@countc=\count405
-\c@pgf@countd=\count406
+\c@pgf@counta=\count404
+\c@pgf@countb=\count405
+\c@pgf@countc=\count406
+\c@pgf@countd=\count407
 \t@pgf@toka=\toks29
 \t@pgf@tokb=\toks30
 \t@pgf@tokc=\toks31
-\pgf@sys@id@count=\count407
+\pgf@sys@id@count=\count408
  (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
-Driver file for pgf: pgfsys-xetex.def
+Driver file for pgf: pgfsys-pdftex.def
 
-(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-xetex.def
-File: pgfsys-xetex.def 2023-01-15 v3.1.10 (3.1.10)
-
-(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-dvipdfmx.def
-File: pgfsys-dvipdfmx.def 2023-01-15 v3.1.10 (3.1.10)
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
-)
-\pgfsys@objnum=\count408
 )))
 (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
@@ -521,10 +508,11 @@ Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
 (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: xetex.def on input line 274.
+Package xcolor Info: Driver file: pdftex.def on input line 274.
 
 (C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
 Package xcolor Info: Model `RGB' extended on input line 1366.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
@@ -731,7 +719,7 @@ Package: babel 2024/03/29 v24.3 The Babel package
 \U@D=\dimen270
 \l@unhyphenated=\language80
 
-(C:\Program Files\MiKTeX\tex/generic/babel\xebabel.def)
+(C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read5
 \bbl@dirlevel=\count428
 
@@ -771,13 +759,6 @@ LaTeX Font Info:    ... okay on input line 89.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
 LaTeX Font Info:    ... okay on input line 89.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 8
-9.
- (C:\Program Files\MiKTeX\tex/latex/base\ts1cmr.fd
-File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 89.
 LaTeX Font Info:    ... okay on input line 89.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
 LaTeX Font Info:    ... okay on input line 89.
@@ -790,8 +771,7 @@ Package biblatex Info: ... file 'english.lbx' found.
 (C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\english.lbx
 File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
 )
-Package biblatex Info: XeTeX detected.
-(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
 \openout3 = `soc_honors_thesis.bcf'.
@@ -803,9 +783,9 @@ No file soc_honors_thesis.bbl.
 Package biblatex Info: Reference section=0 on input line 89.
 Package biblatex Info: Reference segment=0 on input line 89.
 *geometry* driver: auto-detecting
-*geometry* detected driver: xetex
+*geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
-* driver: xetex
+* driver: pdftex
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -836,8 +816,41 @@ Package biblatex Info: Reference segment=0 on input line 89.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count429
+\scratchdimen=\dimen271
+\scratchbox=\box64
+\nofMPsegments=\count430
+\nofMParguments=\count431
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count432
+\MPscratchDim=\dimen272
+\MPnumerator=\count433
+\makeMPintoPDFobject=\count434
+\everyMPtoPDFconversion=\toks38
+) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(C:\Users\madou\AppData\Roaming\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(C:\Users\madou\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.st
+y
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+ (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -846,7 +859,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[1
+[1{C:/Users/madou/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 ]
 
@@ -914,9 +927,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4]
-File: images/organizing_paths.pdf Graphic file (type pdf)
-<use images/organizing_paths.pdf>
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -926,6 +936,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5]
+<images/organizing_paths.pdf, id=35, 3661.68pt x 3488.03125pt>
+File: images/organizing_paths.pdf Graphic file (type pdf)
+<use images/organizing_paths.pdf>
+Package pdftex.def Info: images/organizing_paths.pdf  used on input line 156.
+(pdftex.def)             Requested size: 375.80544pt x 357.97792pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -935,8 +951,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6]
+<images/union_power_red.pdf, id=39, 3640.60126pt x 2672.98625pt>
 File: images/union_power_red.pdf Graphic file (type pdf)
 <use images/union_power_red.pdf>
+Package pdftex.def Info: images/union_power_red.pdf  used on input line 166.
+(pdftex.def)             Requested size: 375.80544pt x 275.92023pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -946,7 +965,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7]
+[7 <./images/organizing_paths.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -955,7 +974,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8]
+[8 <./images/union_power_red.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -965,9 +984,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [9]
-File: images/hiring_hall.pdf Graphic file (type pdf)
-<use images/hiring_hall.pdf>
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -977,6 +993,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [10]
+<images/hiring_hall.pdf, id=69, 3685.77pt x 2056.68375pt>
+File: images/hiring_hall.pdf Graphic file (type pdf)
+<use images/hiring_hall.pdf>
+Package pdftex.def Info: images/hiring_hall.pdf  used on input line 212.
+(pdftex.def)             Requested size: 375.80544pt x 209.69737pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -994,7 +1016,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12]
+[12 <./images/hiring_hall.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1067,9 +1089,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [20]
-File: images/slave_labor_bill.jpg Graphic file (type bmp)
-<images/slave_labor_bill.jpg>
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1079,6 +1098,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [21]
+<images/slave_labor_bill.jpg, id=112, 699.5736pt x 560.3334pt>
+File: images/slave_labor_bill.jpg Graphic file (type jpg)
+<use images/slave_labor_bill.jpg>
+Package pdftex.def Info: images/slave_labor_bill.jpg  used on input line 272.
+(pdftex.def)             Requested size: 328.82707pt x 263.37383pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1087,7 +1112,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[22]
+[22 <./images/slave_labor_bill.jpg>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1200,21 +1225,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package logreq Info: Writing requests to 'soc_honors_thesis.run.xml'.
 \openout1 = `soc_honors_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23853 strings out of 409554
- 470948 string characters out of 5776239
- 1932148 words of memory out of 5000000
- 45699 multiletter control sequences out of 15000+600000
- 560845 words of font info for 50 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 84i,12n,117p,1979b,3848s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 24262 strings out of 474423
+ 484021 string characters out of 5751533
+ 1934496 words of memory out of 5000000
+ 46262 multiletter control sequences out of 15000+600000
+ 562395 words of font info for 50 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 84i,12n,117p,1981b,1805s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\madou\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
+Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmti12.pfb>
+Output written on soc_honors_thesis.pdf (37 pages, 811781 bytes).
+PDF statistics:
+ 184 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on soc_honors_thesis.pdf (37 pages).
