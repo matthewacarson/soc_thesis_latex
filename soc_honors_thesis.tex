@@ -12,7 +12,7 @@
 % Packages
 \usepackage{setspace} % for adjusting line spacing
 \usepackage{parskip} % for controlling paragraph spacing
-\usepackage{fontspec} % for setting fonts
+% \usepackage{fontspec} % for setting fonts
 \usepackage{fancyhdr} % for custom headers and footers
 \usepackage{biblatex} % for bibliography management
 \usepackage[margin=1in]{geometry} % for setting margins
@@ -22,6 +22,7 @@
 \usepackage{dot2texi}
 \usepackage{tikz}
 \usepackage{caption} % for customizing captions
+\usepackage{etoolbox}
 %\usepackage{sectsty} % for modifying section headings
 
 % Line spacing
@@ -41,7 +42,7 @@
 \setlength{\parindent}{\myindent}
 
 % Font
-\setmainfont{Times New Roman}
+% \setmainfont{Times New Roman}
 
 % Define a variable for the title
 \newcommand{\myTitle}{CONSTRUCTION UNIONS HISTORICAL-COMPARATIVE}
@@ -63,21 +64,27 @@
 \titleformat{\subsection}[block]{\itshape}{\thesubsection.}{0.5em}{}
 \titleformat{\subsubsection}[runin]{\normalfont\itshape}{\hspace{\myindent}\thesubsubsection.}{0.5em}{}[.]
 
+\renewenvironment{abstract}
+  {\par\noindent\centering\textbf{Abstract}\par\noindent\raggedright}
+  {\par}
+
+
 % Redefine the quote environment
 \renewenvironment{quote}
   {\list{}{\leftmargin=\parindent\rightmargin=0pt}%
    \item\relax}
   {\endlist}
-
-\renewenvironment{abstract}
-  {\par\noindent\centering\textbf{Abstract}\par\noindent\raggedright}
-  {\par}
-
+  
 % Redefine the quote environment to make it single-spaced
-\renewenvironment{quote}
-  {\begin{singlespace}\list{}{\leftmargin=\parindent\rightmargin=0pt}%
-   \item\relax}
-  {\endlist\end{singlespace}}
+%\renewenvironment{quote}
+%  {\begin{singlespace}\list{}{\leftmargin=\parindent\rightmargin=0pt}%
+%   \item\relax}
+%  {\endlist\end{singlespace}}
+
+% Redefine the quote environment to make it single-spaced and remove vertical space before and add one at the end
+\AtBeginEnvironment{quote}{\singlespacing\setlength{\topsep}{0pt}\setlength{\partopsep}{0pt}}
+\AtEndEnvironment{quote}{\vspace{0.5\baselineskip}}
+
 
 \begin{document}
 
@@ -154,7 +161,7 @@ Because of this threat, building trades unions have to be employer friendly. For
 The temporary nature of construction work gave rise to a different mode of organizing. Because of the temporary nature of construction work, construction unions (of the American Federation of Labor, AFL) organized a much different set of arrangements than the industrial unions (mostly in the Congress of Industrial Organizations, CIO) that came along later to organize around industry-wide lines. Rather than organize the workers on the shop floor to demand concessions and better working conditions from their employer, construction unions use their leverage as a particularly skilled workforce that employers needed to complete their projects. Because of this employer need for a particular skill set, the union workers could demand wages, working-conditions, fringe benefits, etc. In exchange for their labor. If employers are not willing to cede these demands, the skilled workers can withhold their labor, and employers will not be able to complete their projects. If employers are able to reach an agreement with the union, then a contract is crafted and a hiring hall established (or the employer is incorporated into an extant hiring hall). The hiring hall is a central component of the prehire contract arrangement. They go hand-in-hand. Its development is largely due to the particularly contingent nature of construction work:
 
 \begin{quote}
-	Many construction industry employers hire employees, as the need arises, to work on a particular project and to be laid off when their services are no longer required. Most construction workers are organized into union hiring halls. A hiring hall, or work referral system, is an arrangement under which a union that "has control of or access to a particular labor pool agrees to supply workers to an employer upon request." When an employer in the construction industry needs skilled workers for a project, he often seeks such workers from the union hiring hall. Historically, the practice in the construction industry was for the employer to sign an agreement with the hiring hall union which set the terms and conditions of employment for workers \textit{not yet hired}. These contracts, known as pre-hire agreements, often contemplated a tenure of years, spanning several projects. Rather than having to renegotiate the terms and conditions of employment on each new project, the employer was assured a ready supply of skilled workers and predictable labor costs upon which to base his bids on projects subcontracted by a general contractor. Furthermore, the construction worker had the benefit of a central clearinghouse for employment opportunities. (emphasis added; Murphy 1982 pp. 1014–1015)
+Many construction industry employers hire employees, as the need arises, to work on a particular project and to be laid off when their services are no longer required. Most construction workers are organized into union hiring halls. A hiring hall, or work referral system, is an arrangement under which a union that "has control of or access to a particular labor pool agrees to supply workers to an employer upon request." When an employer in the construction industry needs skilled workers for a project, he often seeks such workers from the union hiring hall. Historically, the practice in the construction industry was for the employer to sign an agreement with the hiring hall union which set the terms and conditions of employment for workers \textit{not yet hired}. These contracts, known as pre-hire agreements, often contemplated a tenure of years, spanning several projects. Rather than having to renegotiate the terms and conditions of employment on each new project, the employer was assured a ready supply of skilled workers and predictable labor costs upon which to base his bids on projects subcontracted by a general contractor. Furthermore, the construction worker had the benefit of a central clearinghouse for employment opportunities. (emphasis added; Murphy 1982 pp. 1014–1015)
 \end{quote}
 
 Construction unions had been operating in this way for many years prior to the exemption to majority status requirements that were carved out for construction unions in Section 8(f) as part of the Landrum-Griffin Labor-Management Reporting and Disclosure Act (LMRDA) of 1959. In fact, before its enactment, the prehire agreement constituted a violation of the law which had, up until that point, required the union to show that the majority of employees wanted representation from that particular union. Murphy (1982) explains how the particularities of the construction industry made other modes of union organizing and operation difficult:
@@ -178,7 +185,7 @@ In Senate debate, many senators acknowledged that this way of organizing in the 
 Nor was this a regulation "imposed from above" to stifle trade unionism the way that Taft-Hartley was a dozen years earlier. Senator Dirksen acknowledged that labor wanted this amendment and had even approached senators about it in the years before LMRDA’s passage:
 
 \begin{quote}
-	I remember that 2 years ago, when Mr. Richard Gray, the head of the Carpenters Union, came to the reception room with the General Counsel of the Department of Labor, they presented to us a proposal on the so-called prehiring agreements in the construction industry. They said, "This is what we want." (105 Congressional Record, 86th Congress, 1st Session (1959), p. 6414)
+I remember that 2 years ago, when Mr. Richard Gray, the head of the Carpenters Union, came to the reception room with the General Counsel of the Department of Labor, they presented to us a proposal on the so-called prehiring agreements in the construction industry. They said, "This is what we want." (105 Congressional Record, 86th Congress, 1st Session (1959), p. 6414)
 \end{quote}
 
 A few years earlier in 1956, the United Brotherhood of Carpenters’ magazine, the Carpenter, the official publication of the union spoke favorably of the bill because it would allow contractors and building trades unions [to] carry on contractual relationships in the way they have for over 50 years" (https://archive.org/details/carpenter76unit/page/n5/mode/2up?view=theater pp. 7-8)
@@ -221,7 +228,9 @@ But the plumbers and pipe fitters union had not entirely abandoned broader solid
 
 However, the radicalism of the nascent pipe trades union was fraught with contradictions. In the early 1890s, the union had moved to exclusive agreements. These agreements offered lucrative benefits to entice the master plumbers into a contract. It not only limited the smaller firms’ ability to compete with the master plumbers by requiring union plumbers and fitters to work exclusively for the master plumbers, but it also precluded workers from “handl[ing] any materials not purchased by their immediate employers” (p. 54). In exchange the master plumbers agreed to allow “the union to set standard rates for the trade,” and “offered local unions benefits that they had great difficulty winning otherwise: a closed shop, the eight-hour day, and stable or increased wages” (p. 54). At the same time, these agreements undercut the union’s bargaining power and leverage and, in many ways, the interests of union members. In particular, it limited employment opportunities for union members because non-signatory contractors could not employ union members even when paying union wages and adhering to union rules; this also hindered “the freedom of action of the unions” (p. 54). Eventually, the contractors’ demands undercut the union’s power so much that the union abandoned the practice of exclusive agreements in 1899 (p. 54-55).
 
-Ironically, the abandonment of these exclusive agreements did not trigger union militancy or radicalism, and by the early 1900s, the union had all but entirely abandoned any commitment to improving working conditions; significantly, they also abandoned the broader labor solidarities that had defined the earlier period. If one word were to characterize this period, it would be “stability.” Many unions in the late 1800s were temporary organizations. Indeed, as Schneirov observed, the telephone book and the UA’s official journal suddenly ceased to list Columbus UA Local 57 in 1898; it had completely disappeared without any historical record of what precipitated its collapse (p. 51). To achieve stability, American craft unions, following in the tradition spearheaded by the British craft unions, rose their union dues and implemented a quasi-welfare state. At the time, there was no “social safety net” provided by government; no unemployment benefits; no workers compensation; no social security benefits; and no Medicare or Medicaid. With increased dues, unions were able to finance these benefits and, consequently, keep construction workers in the union much longer than they had previously (p.59). The Columbus plumbers and pipe fitters union could also afford to hire professional staff and leadership for the first time. The union hired full-time business agents, who served as “walking delegates,” policing the job sites for contract violations and craft jurisdictional violations by the employers (p. 60). He also was an organizer, enrolling new members, and “pulling a job” if he could not resolve a workplace dispute through negotiation (p. 60). And though most employers did not utilize it, in November 1907, the union established a hiring hall as an institution that would later become a staple of construction unionism; the hiring hall required laid-off members to provide the business agent their names so that he could register them on the list of unemployed members and dispatch them, beginning with the first member laid off to the member most recently laid off, at the employers request (pp. 60-61). And finally, this era ushered in intra-craft solidarity: plumbers and fitters for the first time began to see themselves not as individuals trying to “better themselves in the marketplace, hoping to ultimately become independent masters, but as workers with shared interests with other plumbers and fitters (p. 61). These developments made the union into a more durable institution.
+Ironically, the abandonment of these exclusive agreements did not trigger union militancy or radicalism, and by the early 1900s, the union had all but entirely abandoned any commitment to improving working conditions; significantly, they also abandoned the broader labor solidarities that had defined the earlier period. If one word were to characterize this period, it would be “stability.” Many unions in the late 1800s were temporary organizations. Indeed, as Schneirov observed, the telephone book and the UA’s official journal suddenly ceased to list Columbus UA Local 57 in 1898; it had completely disappeared without any historical record of what precipitated its collapse (p. 51). To achieve stability, American craft unions, following in the tradition spearheaded by the British craft unions, rose their union dues and implemented a quasi-welfare state. At the time, there was no “social safety net” provided by government; no unemployment benefits; no workers compensation; no social security benefits; and no Medicare or Medicaid. 
+
+With increased dues, unions were able to finance these benefits and, consequently, keep construction workers in the union much longer than they had previously (p.59). The Columbus plumbers and pipe fitters union could also afford to hire professional staff and leadership for the first time. The union hired full-time business agents, who served as “walking delegates,” policing the job sites for contract violations and craft jurisdictional violations by the employers (p. 60). He also was an organizer, enrolling new members, and “pulling a job” if he could not resolve a workplace dispute through negotiation (p. 60). And though most employers did not utilize it, in November 1907, the union established a hiring hall as an institution that would later become a staple of construction unionism; the hiring hall required laid-off members to provide the business agent their names so that he could register them on the list of unemployed members and dispatch them, beginning with the first member laid off to the member most recently laid off, at the employers request (pp. 60-61). And finally, this era ushered in intra-craft solidarity: plumbers and fitters for the first time began to see themselves not as individuals trying to “better themselves in the marketplace, hoping to ultimately become independent masters, but as workers with shared interests with other plumbers and fitters (p. 61). These developments made the union into a more durable institution.
 
 \subsubsection{A contemporary view} \
 
