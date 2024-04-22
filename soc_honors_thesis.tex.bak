@@ -22,9 +22,14 @@
 \usepackage{etoolbox}
 % \usepackage{pxfonts}
 \usepackage [english]{babel}
-\usepackage[citestyle=authoryear,bibstyle=numeric,backend=biber]{biblatex}
-\bibliography{1_SOC_Honors.bib}
-%\addbibresource{1_SOC_Honors.bib}
+\usepackage[citestyle=authoryear, bibstyle=authoryear, sorting=nyt]{biblatex}
+%\usepackage[style=chicago-authordate, backend=biber]{biblatex}
+\addbibresource{1_SOC_Honors.bib} % Replace with your .bib file
+%\addbibresource{american-sociological-association.csl}
+%\DeclareLanguageMapping{english}{american-sociological-association} % Use the ASA style
+%\bibliography{1_SOC_Honors.bib}
+
+
 % \ExecuteBibliographyOptions{sorting=none} % unsorted bibliography
 % \usepackage{texcount}
 % \usepackage{sectsty} % for modifying section headings
@@ -57,6 +62,12 @@
 \fancyhead[R]{\thepage} % page number on the right side
 \fancyhead[L]{\small \myTitle}
 \renewcommand{\headrulewidth}{0pt} % remove header rule
+
+% Redefine the bibliography heading format to center the title
+\defbibheading{bibliography}{%
+  \section*{\centering\Large\MakeUppercase{\bibname}} % Centered title
+  \markboth{\MakeUppercase{\bibname}}{\MakeUppercase{\bibname}} % Ensure correct header
+}
 
 % Define custom section headings
 %\titleformat{\section}[block]{\MakeUppercase\normalfont\fontsize{12}{14}\selectfont}{\thesection.}{0.5em}{}
@@ -122,7 +133,7 @@ US Building Trade unions organize their workers differently. Most labor unions c
 
 \section{INTRODUCTION} \
 
-Construction is one of the largest unionized sectors in the United States. In spite of this, labor research has largely not focused on construction unions (or what are often referred to as the Building Trades) but has largely focused on the ways in which workers in other industries organize. In some sense this is understandable. One of the largest periods of union growth in the US was in the 1930s, a period in which multiple violent strikes occurred, sometimes lasting for a month or longer. These events contributed to the rise of the Congress of Industrial Unionism (CIO), which was a federation of trade unions committed to industrial unionism, rather than craft unionism. Congress and President Franklin D. Roosevelt responded to these violent battles by enacting the Wager Act, which guaranteed the right for workers to organize and provided a framework for workers to petition for union representation in the workplace \cite{grossMakingNationalLabor1974}. This framework was largely adapted to the way that industrial unions were organizing at the time. Most unionization efforts, especially large-scale and prominent efforts, have used the industrial union model of organizing.
+Construction is one of the largest unionized sectors in the United States. In spite of this, labor research has largely not focused on construction unions (or what are often referred to as the Building Trades) but has largely focused on the ways in which workers in other industries organize. In some sense this is understandable. One of the largest periods of union growth in the US was in the 1930s, a period in which multiple violent strikes occurred, sometimes lasting for a month or longer. These events contributed to the rise of the Congress of Industrial Unionism (CIO), which was a federation of trade unions committed to industrial unionism, rather than craft unionism. Congress and President Franklin D. Roosevelt responded to these violent battles by enacting the Wager Act, which guaranteed the right for workers to organize and provided a framework for workers to petition for union representation in the workplace (\cite{grossMakingNationalLabor1974}). This framework was largely adapted to the way that industrial unions were organizing at the time. Most unionization efforts, especially large-scale and prominent efforts, have used the industrial union model of organizing.
 
 % Add a citation for month-long strikes and how it led to the Wagner Act.
 % Gross, James A. 1974. The Making of the National Labor Relations Board: A Study in Economics, Politics, and the Law. Albany: State University of New York Press.
@@ -131,19 +142,27 @@ Construction unions in the US have a distinct approach to organizing their worke
 
 One potential explanation is that unions with many workers in the petrochemical industry will align with the employer on environmental policy if they feel that environmental policies might be "job killers." That is, the Building Trades' opposition to environmental policy meant to attenuate global warming might simply be a function of the union's interest in keeping their members working. They have many memebers working on projects in the petrochemical industry, and this is what one would expect from workers and their unions in that industry. After all, why would they support something that might cause unemployment?
 
-And some argue that the conservative stance of the Building Trades originates from their tradition of craft unionism, where workers are organized based on craft and skill rather than industry. Craft unions were some of the earliest labor organizations in the US. And their focus on organizing narrowly based on craft distinctions (e.g., plumber) rather than by industry (e.g., construction worker), often corresponded with nativist and racist policies and positions and more conservative positions (e.g., anti-communism and redbaiting) than many industrial unions. The Building Trades unions continue to operate as craft unions. (You can find a union for almost every construction craft --- electricians, plumbers, bricklayers, and so on --- but good luck finding a union called the "Construction Workers Union.") From this perspective, the Building Trades' conservativism stems from their narrow craft-based unionism.
+And some argue that the conservative stance of the Building Trades originates from their tradition of craft unionism, where workers are organized based on craft and skill rather than industry. Craft unions were some of the earliest labor organizations in the US. And their focus on organizing narrowly based on craft distinctions (e.g., plumber) rather than by industry (e.g., construction worker), often corresponded with nativist and racist policies and positions and more conservative positions (e.g., anti-communism and redbaiting) than many industrial unions (\cite{foner1994}). In short, they have tended to look out for "their own" more so than workers more broadly. The Building Trades unions continue to operate as craft unions today. (You can find a union for almost every construction craft --- electricians, plumbers, bricklayers, and so on --- but good luck finding a union called the "Construction Workers Union.") From this perspective, the Building Trades' conservativism stems from their narrow craft-based unionism.
 
 However, these views are mistaken. For instance, other unions with many members working in the petrochemical industry, such as the United Steelworkers, have backed progressive policies, including environmental policies, and other craft-based unions, such as the International Association of Machinists, have endorsed single-payer healthcare despite organizing along craft lines instead of industry. The key distinction between these unions and their disparate political stances lies in the Building Trades' use of voluntary agreements, which minimizes conflicts with employers and constrains their ability to challenge management.
 
 % Foner, Phillip S. History of the Labor Movement in the United States: Volume 2: From the Founding of the AFL to the Emergence of American Imperialism. New York: International Publishers, 1955; pp. 132–133.
 
-\subsection{Craft Unionism vs. Industrial Unionism} \
+\section{METHODS} \
+
+I primarily use historical and comparative methods to analyze the inter-union (Building Trades vs. non-Building Trades) cases. Following Lange \citeyear{lange2013}, I employ both within-case and between case (comparative) methods. In this paper, within-case analyses are of the individual unions and their historical tarjectory over time. This is the ideographic or historical element of the analysis. I trace each union's history and how institutions formed within the unions (e.g., the apprenticeship and hiring hall). This offers a thick account of how how the unions have evolved over time, challenged management at points, fought for or against policies, and made compromises at times. It also pays close attention to each moment's context to prevent a linear, teleological account of history that suggests that the present state was inevitable because of some thing that happened in the past. I draw primarly on secondary sources for these historical accounts. Additionally, I conducted an interview with a former Oil Chemical and Atomic Workers union member and official to supplement the historical account and gather more recent data about the current state of affairs of the union.\footnote{Now part of the United Steelworkers}
+
+The comparison or between-case analysis focuses both on the differences in features of the union and on the differences in their historical trajectory. Each case either uses or does not use a voluntary/involuntary contract type, for example. In one case construction unions (craft unions) are compared against non-construction craft unions; in another, construction unions, which have a lot of members working in the petrochemical industry, are compared with a non-construction union also with a lot of members working in the petrochemical field. Together these analyses allow for comparisons across a wide range of features to determine which features correspond with what political outcomes that the unions have taken.
+
+Data for the intra-building trades analysis was collected from interviews with local union officials. These local unions were located via the National Labor Relations Board case search tool. Each of these locals was involved in an organizing campaign that used the method that non-construction unions typically use (and construction unions typically do \textit{not} use. These cases where the consntruction union departed from the norm were compared against the more general trends in the building trades unions.
+
+\section{CRAFT UNIONISM VS. INDUSTRIAL UNIONISM} \
 
 Craft unionism is when workers are organized into a union by craft (occupation) rather than industry (or employer). The earliest efforts in the US to organize workers collectively to assert the interests and preferences were generally organized around craft lines. Plumbers formed their union; machinists started one; so did the carpenters, and so on. Many of these early craft unions were successful, and eventually The American Federation of Labor (AFL) formed in 1886, bringing many of the labor unions at the time into a nationwide federation. Immediately many the constituent unions battled over craft jurisdiction. For example, who should operate the mobile concrete mixers on the job site? Both the Teamsters and Operating Engineers claimed the work to be theirs at one point, leading to a jurisdictional dispute. As a result, one of the most important functions of the newly formed federation was to quell these jurisdictional fights.
 
 % Jaffe, Louis L. 1940. “Inter-Union Disputes in Search of a Forum.” The Yale Law Journal 49(3):424–60. doi: 10.2307/792665.
 
-Industrial unionism did not emerge until some time later. Industrial unionism organizes workers by employer or industry, irrespective of their craft, occupation, or skill level. Many early craft unionists in the AFL were skeptical of industrial unionism because many workers in mass production factories were immigrants with no specific craft or formal training. AFL craft union leaders doubted the feasibility of organizing them, as these workers lacked the leverage typically associated with having a craft. Their jobs were often repetitive and required little skill. For instance, performing tasks like standing in one place and fastening bolts on a Model-T all day did not constitute a craft, unlike the specialized skills of a machinist operating a lathe or a pile driver constructing a bridge.
+Industrial unionism did not emerge until some time later. Industrial unionism organizes workers by employer or industry, irrespective of their craft, occupation, or skill level. Many early craft unionists in the AFL were skeptical of industrial unionism because many workers in mass production factories were immigrants with no specific craft or formal training. AFL craft union leaders doubted the feasibility of organizing them, as these workers lacked the leverage typically associated with having a craft. Their jobs were often repetitive and required little skill. For instance, performing tasks like standing in one place and fastening bolts on a Model T all day did not constitute a craft, unlike the specialized skills of a machinist operating a lathe or a pile driver constructing a bridge.
 
 \subsection{The Industrial Bargaining Approach}
 
@@ -222,10 +241,6 @@ A few years earlier in 1956, the United Brotherhood of Carpenters’ magazine, t
   \caption{Construction unions usually maintain a hiring hall. When employers require more workers for their projects, they contact the hiring hall to request workers to be dispatched to the job site.}
   \label{fig:hiring_hall}
 \end{figure}
-
-\section{METHODS} \
-
-I employ both historical and comparative methods.
 
 \section{THE CASES} \
 
@@ -352,16 +367,12 @@ In any event, it might be most useful for the purposes of this project to discov
 \newpage
 
 \begin{center}
-{\bfseries Notes}
+Notes
 \end{center}
 
 \noindent
 .
 \newpage
-\begin{center}
-{\bfseries Bibliography}
-\end{center}
-
-\printbibliography[heading=bibintoc]
+\printbibliography[title={Bibliography}, heading=bibintoc]
 
 \end{document}
