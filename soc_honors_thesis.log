@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.21)  21 APR 2024 16:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.21)  21 APR 2024 17:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -424,8 +424,8 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 \verbatim@out=\write4
-runsystem(echo 'write18-test-2024421969'>"soc_honors_thesis.w18")...disabled (r
-estricted).
+runsystem(echo 'write18-test-20244211058'>"soc_honors_thesis.w18")...disabled (
+restricted).
 
 
 
@@ -918,6 +918,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [3]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 148.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 148.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -936,10 +941,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5]
-<images/organizing_paths.pdf, id=35, 3661.68pt x 3488.03125pt>
+<images/organizing_paths.pdf, id=37, 3661.68pt x 3488.03125pt>
 File: images/organizing_paths.pdf Graphic file (type pdf)
 <use images/organizing_paths.pdf>
-Package pdftex.def Info: images/organizing_paths.pdf  used on input line 156.
+Package pdftex.def Info: images/organizing_paths.pdf  used on input line 160.
 (pdftex.def)             Requested size: 375.80544pt x 357.97792pt.
 
 
@@ -951,12 +956,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6]
-<images/union_power_red.pdf, id=39, 3640.60126pt x 2672.98625pt>
-File: images/union_power_red.pdf Graphic file (type pdf)
-<use images/union_power_red.pdf>
-Package pdftex.def Info: images/union_power_red.pdf  used on input line 166.
-(pdftex.def)             Requested size: 375.80544pt x 275.92023pt.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -966,6 +965,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [7 <./images/organizing_paths.pdf>]
+<images/union_power_red.pdf, id=52, 3640.60126pt x 2672.98625pt>
+File: images/union_power_red.pdf Graphic file (type pdf)
+<use images/union_power_red.pdf>
+Package pdftex.def Info: images/union_power_red.pdf  used on input line 170.
+(pdftex.def)             Requested size: 375.80544pt x 275.92023pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -993,12 +998,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [10]
-<images/hiring_hall.pdf, id=69, 3685.77pt x 2056.68375pt>
-File: images/hiring_hall.pdf Graphic file (type pdf)
-<use images/hiring_hall.pdf>
-Package pdftex.def Info: images/hiring_hall.pdf  used on input line 212.
-(pdftex.def)             Requested size: 375.80544pt x 209.69737pt.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1008,6 +1007,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [11]
+<images/hiring_hall.pdf, id=74, 3685.77pt x 2056.68375pt>
+File: images/hiring_hall.pdf Graphic file (type pdf)
+<use images/hiring_hall.pdf>
+Package pdftex.def Info: images/hiring_hall.pdf  used on input line 216.
+(pdftex.def)             Requested size: 375.80544pt x 209.69737pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1098,10 +1103,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [21]
-<images/slave_labor_bill.jpg, id=112, 699.5736pt x 560.3334pt>
+<images/slave_labor_bill.jpg, id=114, 699.5736pt x 560.3334pt>
 File: images/slave_labor_bill.jpg Graphic file (type jpg)
 <use images/slave_labor_bill.jpg>
-Package pdftex.def Info: images/slave_labor_bill.jpg  used on input line 272.
+Package pdftex.def Info: images/slave_labor_bill.jpg  used on input line 276.
 (pdftex.def)             Requested size: 328.82707pt x 263.37383pt.
 
 
@@ -1112,7 +1117,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[22 <./images/slave_labor_bill.jpg>]
+[22]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1121,7 +1126,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[23]
+[23 <./images/slave_labor_bill.jpg>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1220,32 +1225,46 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[34] (soc_honors_thesis.aux)
+[34]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[35] (soc_honors_thesis.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'soc_honors_thesis.run.xml'.
 \openout1 = `soc_honors_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24262 strings out of 474423
- 484021 string characters out of 5751533
- 1934496 words of memory out of 5000000
- 46262 multiletter control sequences out of 15000+600000
+ 24264 strings out of 474423
+ 484049 string characters out of 5751533
+ 1935496 words of memory out of 5000000
+ 46264 multiletter control sequences out of 15000+600000
  562395 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,12n,117p,1981b,1805s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,13n,117p,1995b,1805s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\madou\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
 Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmti12.pfb>
-Output written on soc_honors_thesis.pdf (37 pages, 811781 bytes).
+/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on soc_honors_thesis.pdf (38 pages, 836115 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
+ 197 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
