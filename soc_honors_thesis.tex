@@ -7,6 +7,8 @@
 
 % Packages
 \usepackage{setspace} % for adjusting line spacing
+\usepackage{hyperref}
+\usepackage{graphicx}
 \usepackage{parskip} % for controlling paragraph spacing
 % \usepackage{fontspec} % for setting fonts
 \usepackage [autostyle, english = american]{csquotes}
@@ -44,6 +46,16 @@
 \newlength{\myindent}
 \setlength{\myindent}{3em}
 
+% Set the hanging indent
+\setlength{\bibhang}{\myindent}
+
+% Redefine the citation command to use colon instead of comma and pp.
+\DeclareFieldFormat{postnote}{#1}
+\DeclareFieldFormat{multipostnote}{#1}
+
+\renewcommand*{\postnotedelim}{\addcolon}
+
+
 % Set global text alignment to ragged-right
 \raggedright
 
@@ -56,7 +68,7 @@
 % Define a variable for the title
 \newcommand{\myTitle}{CONSTRUCTION UNIONS HISTORICAL-COMPARATIVE}
 
-\newcommand{\imageWidth}{0.85\textwidth}
+\newcommand{\imageWidth}{0.8\textwidth}
 
 % Page style
 \pagestyle{fancy}
@@ -65,17 +77,9 @@
 \fancyhead[L]{\small \myTitle}
 \renewcommand{\headrulewidth}{0pt} % remove header rule
 
-% Define custom section headings
-%\titleformat{\section}[block]{\MakeUppercase\normalfont\fontsize{12}{14}\selectfont}{\thesection.}{0.5em}{}
-%\titleformat{\chapter}[block]{\normalfont\fontsize{12}{14}\selectfont}{\thesection.}{0.5em}{}
-\titleformat{\section}[block]{\normalfont\fontsize{12}{14}\selectfont}{\thesection.}{0.5em}{}
-\titleformat{\subsection}[block]{\itshape}{\thesubsection.}{0.5em}{}
-\titleformat{\subsubsection}[runin]{\normalfont\itshape}{\hspace{\myindent}\thesubsubsection.}{0.5em}{}[.]
-
 \renewenvironment{abstract}
   {\par\noindent\centering\textbf{Abstract}\par\noindent\raggedright}
   {\par}
-
 
 % Redefine the quote environment
 \renewenvironment{quote}
@@ -126,6 +130,17 @@ US Building Trade unions organize their workers differently. Most labor unions c
 \tableofcontents
 \newpage
 
+\listoffigures
+\newpage
+
+% Define custom section headings
+%\titleformat{\section}[block]{\MakeUppercase\normalfont\fontsize{12}{14}\selectfont}{\thesection.}{0.5em}{}
+%\titleformat{\chapter}[block]{\normalfont\fontsize{12}{14}\selectfont}{\thesection.}{0.5em}{}
+% Define section formatting with bold text
+\titleformat{\section}[block]{\normalfont\fontsize{12}{14}\selectfont\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}[block]{\itshape\bfseries}{\thesubsection.}{0.5em}{}
+\titleformat{\subsubsection}[runin]{\normalfont\itshape\bfseries}{\hspace{\myindent}\thesubsubsection.}{0.5em}{}[.]
+
 % Set page numbering to arabic for main content
 \pagenumbering{arabic}
 
@@ -141,7 +156,7 @@ US construction unions have a distinct approach to organizing their workers vis-
 
 One potential explanation is that unions with many workers in the petrochemical industry will align with the employer on environmental policy if they feel that environmental policies might be "job killers." That is, the Building Trades' opposition to environmental policy meant to attenuate global warming might simply be a function of the union's interest in keeping their members working. They have many members working on projects in the petrochemical industry, and this is what one would expect from workers and their unions in that industry. After all, why would they support something that might cause unemployment?
 
-Some argue that the conservative stance of the Building Trades originates from their tradition of craft unionism, where workers are organized based on craft and skill rather than industry. Craft unions were some of the earliest labor organizations in the US. And their focus on organizing narrowly based on craft distinctions (e.g., plumber) rather than by industry (e.g., construction worker) often corresponded with nativist and racist policies and positions and more conservative positions (e.g., anti-communism and redbaiting) than many industrial unions (\cite{foner1994}). In short, they have tended to look out for "their own" more so than workers more broadly. The Building Trades unions continue to operate as craft unions today. (You can find a union for almost every construction craft --- electricians, plumbers, bricklayers, and so on --- but good luck finding a union called the "Construction Workers Union.") From this perspective, the Building Trades' conservativism stems from their narrow craft-based unionism.
+Some argue that the conservative stance of the Building Trades originates from their tradition of craft unionism, where workers are organized based on craft and skill rather than industry. Craft unions were some of the earliest labor organizations in the US. And their focus on organizing narrowly based on craft distinctions (e.g., plumber) rather than by industry (e.g., construction worker) often corresponded with nativist and racist policies and positions and more conservative positions (e.g., anti-communism and redbaiting) than many industrial unions (\cite{foner1994}). In short, they have tended to look out for "their own" more so than workers more broadly. The Building Trades unions continue to operate as craft unions today.\footnote{You can find a union for almost every construction craft --- electricians, plumbers, bricklayers, and so on --- but good luck finding a union called the "Construction Workers Union."} From this perspective, the Building Trades' conservativism stems from their narrow craft-based unionism.
 
 However, these views are mistaken. For instance, other unions with many members working in the petrochemical industry, such as the United Steelworkers, have backed progressive policies, including environmental policies, and other craft-based unions, such as the International Association of Machinists, have endorsed single-payer healthcare despite organizing along craft lines instead of industry. The key distinction between these unions and their disparate political stances lies in the Building Trades' use of voluntary agreements, which minimizes conflicts with employers and constrains their ability to challenge management.
 
@@ -149,7 +164,7 @@ However, these views are mistaken. For instance, other unions with many members 
 
 \section{METHODS} \
 
-I primarily use historical and comparative methods to analyze the inter-union (Building Trades vs. non-building Trades) cases. Following Lange \citeyear{lange2013}, I employ both within-case and between-case (comparative) methods. This paper's within-case analyses are of the individual unions and their historical trajectories. This is the ideographic or historical element of the analysis. I trace each union's history and how institutions formed within the unions (e.g., the apprenticeship and hiring hall). This offers a thick account of how the unions have evolved, challenged management at points, fought for or against policies, and made compromises at times. It also pays close attention to each moment's context to prevent a linear, teleological account of history that suggests that the present state was inevitable because of something that happened in the past. I draw primarily from secondary sources for these historical accounts. Additionally, I interviewed a former Oil Chemical and Atomic Workers union member and official to supplement the historical account and gather more recent data about the current state of affairs of the union.\footnote{Now part of the United Steelworkers}
+I primarily use historical and comparative methods to analyze the inter-union (Building Trades vs. non-building Trades) cases. Following Lange (\citeyear{lange2013}), I employ both within-case and between-case (comparative) methods. This paper's within-case analyses are of the individual unions and their historical trajectories. This is the ideographic or historical element of the analysis. I trace each union's history and how institutions formed within the unions (e.g., the apprenticeship and hiring hall). This offers a thick account of how the unions have evolved, challenged management at points, fought for or against policies, and made compromises at times. It also pays close attention to each moment's context to prevent a linear, teleological account of history that suggests that the present state was inevitable because of something that happened in the past. I draw primarily from secondary sources for these historical accounts. Additionally, I interviewed a former Oil Chemical and Atomic Workers union member and official to supplement the historical account and gather more recent data about the current state of affairs of the union.\footnote{Now part of the United Steelworkers}
 
 The comparison or between-case analysis focuses both on the differences in features of the union and on the differences in their historical trajectory. Each case either uses or does not use a voluntary/involuntary contract type. In one case, construction unions (craft unions) are compared against non-construction craft unions; in another, construction unions, which have a lot of members working in the petrochemical industry, are compared with a non-construction union also with a lot of members working in the petrochemical field. 
 
@@ -157,7 +172,7 @@ The intra-building trades analysis data were collected from interviews with loca
 
 \section{CRAFT UNIONISM VS. INDUSTRIAL UNIONISM} \
 
-Craft unionism is when workers are organized into a union by craft (occupation) rather than industry (or employer). The earliest efforts in the US to organize workers collectively to assert their interests and preferences were generally organized around craft lines. Plumbers formed their union; machinists started one; so did the carpenters, and so on. Many of these early craft unions were successful. Eventually, The American Federation of Labor (AFL) formed in 1886, bringing many of these labor unions into a nationwide federation. Immediately, many constituent unions battled over craft jurisdiction. For example, who should operate the mobile concrete mixers on the job site? Both the Teamsters and Operating Engineers claimed the work to be theirs at one point, leading to a jurisdictional dispute. As a result, one of the most important functions of the newly formed federation was to quell these jurisdictional fights.
+Craft unionism is when workers are organized into a union by craft (occupation) rather than industry (or employer). The earliest efforts in the US to organize workers collectively to assert their interests and preferences were generally organized around craft lines. Plumbers formed their union; machinists started one; so did the carpenters, and so on. Many of these early craft unions were successful. Eventually, The American Federation of Labor (AFL) formed in 1886, bringing many of these labor unions into a nationwide federation. Immediately, many constituent unions battled over craft jurisdiction. For example, who should operate the mobile concrete mixers on the job site? Both the Teamsters and Operating Engineers claimed the work to be theirs at one point, leading to a jurisdictional dispute. As a result, one of the most important functions of the newly formed federation was to quell these jurisdictional fights (\cite{jaffe1940}).
 
 % Jaffe, Louis L. 1940. “Inter-Union Disputes in Search of a Forum.” The Yale Law Journal 49(3):424–60. doi: 10.2307/792665.
 
@@ -165,7 +180,15 @@ Industrial unionism did not emerge until some time later. Industrial unionism or
 
 \subsection{The Industrial Bargaining Approach}
 
-The National Labor Relations Act was originally designed to be consistent with how industrial unions are organized. The National Labor Relations Act (NLRA) sets forth the process workers must follow to unionize a workplace. The National Labor Relations Board (NLRB) administers the NLRA. The typical process begins with an effort to determine if there is a general interest in forming or joining a union among workers already hired. If there appears to be enough interest, "employee organizers typically collect union interest cards, petitions or other written statements from co-workers to show interest in union representation. Organizing efforts may be supported by an established union seeking to represent workers at a workplace. Workers may also form an independent union" (DOL n.d.:How can I form a union?). If enough cards are collected to demonstrate majority status, the workers may ask the employer to voluntarily\footnote{This is distinct from the voluntary negotiations in construction unionism. In this case, the employer may voluntarily recognize the union because they are certain that the majority of the workers want the union in the workplace, and conducting an election would be futile. In practice, this rarely happens, though.}  recognize the union. If the employer refuses to voluntarily recognize the union, workers may strike and/or file a petition with the NLRB to request an election to certify the union and the collective bargaining representative of the workers (DOL n.d.; NLRB n.d.). Once the union has demonstrated that the majority of workers want union representation (either through voluntary recognition by the employer or through an NLRB election), the union and employer will attempt to reach an initial agreement. This type of agreement is called a Section 9(a) agreement.
+The National Labor Relations Act was originally designed to be consistent with how industrial unions are organized. The National Labor Relations Act (NLRA) sets forth the process workers must follow to unionize a workplace. The National Labor Relations Board (NLRB) administers the NLRA. The typical process begins with an effort to determine if there is a general interest in forming or joining a union among workers already hired. If there appears to be enough interest, "employee organizers typically collect union interest cards, petitions or other written statements from co-workers to show interest in union representation. Organizing efforts may be supported by an established union seeking to represent workers at a workplace. Workers may also form an independent union" (\cite["How can I form a union?"]{dolWORKCenterUnions}). If enough cards are collected to demonstrate majority status, the workers may ask the employer to voluntarily\footnote{This is distinct from the voluntary negotiations in construction unionism. In this case, the employer may voluntarily recognize the union because they are certain that the majority of the workers want the union in the workplace, and conducting an election would be futile. In practice, this rarely happens, though.}  recognize the union. If the employer refuses to voluntarily recognize the union, workers may strike and/or file a petition with the NLRB to request an election to certify the union and the collective bargaining representative of the workers (DOL n.d.; NLRB n.d.). Once the union has demonstrated that the majority of workers want union representation (either through voluntary recognition by the employer or through an NLRB election), the union and employer will attempt to reach an initial agreement. This type of agreement is called a Section 9(a) agreement.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\imageWidth]{images/DOL}
+  \captionsetup{justification=centering, singlelinecheck=false, margin=2cm}
+  \caption[Forming a Union]{The steps for forming a union or joining an existing union. (Source: US Department of Labor.)}
+  \label{fig:DOL}
+\end{figure}
 
 If the employer refuses to negotiate, the union can file an "unfair labor practice." They can also strike or conduct other work stoppages until the recalcitrant employer meets their demands or agrees to negotiate. These are \textit{coercive} strategies that are meant to compel the employer to act or not act in a particular way or to exact concessions. These strategies are also \textit{more conflictual} relative to the Building Trades' approach.
 
@@ -179,7 +202,7 @@ Each contract type points to a different orientation toward the boss and approac
   \centering
   \includegraphics[width=\imageWidth]{images/organizing_paths}
   \captionsetup{justification=centering, singlelinecheck=false, margin=2cm}
-  \caption{The industrial mode of organizing (left), and the construction mode of organizing (right). Construction unions may follow either path, but other unions may not voluntarily negotiate the way that construction unions can.}
+  \caption[Union Organizing Paths]{The industrial mode of organizing (left), and the construction mode of organizing (right). Construction unions may follow either path, but other unions may not voluntarily negotiate the way that construction unions can.}
   \label{fig:organizing_paths}
 \end{figure}
 
@@ -195,16 +218,16 @@ The exception is where the employer requires highly-skilled workers because of t
   \centering
   \includegraphics[width=\imageWidth]{images/union_power_red}
   \captionsetup{justification=centering, singlelinecheck=false, margin=2cm} 
-  \caption{Since negotitations between construction unions and employers are voluntary, construction unions typically have more leverage where the employer requires a more skilled workforce or where the job is large and requires many employees.}
+  \caption[Union Leverage and Power]{Since negotitations between construction unions and employers are voluntary, construction unions typically have more leverage where the employer requires a more skilled workforce or where the job is large and requires many employees.}
   \label{fig:union_power_red}
 \end{figure}
 
-\subsubsection{The Hiring Hall} \
+\subsubsection{The Hiring Hall}
 
 The hiring hall is a central component of the prehire contract arrangement. They go hand-in-hand. Its development is largely due to the particularly contingent nature of construction work:
 
 \begin{quote}
-Many construction industry employers hire employees, as the need arises, to work on a particular project and to be laid off when their services are no longer required. Most construction workers are organized into union hiring halls. A hiring hall, or work referral system, is an arrangement under which a union that "has control of or access to a particular labor pool agrees to supply workers to an employer upon request." When an employer in the construction industry needs skilled workers for a project, he often seeks such workers from the union hiring hall. Historically, the practice in the construction industry was for the employer to sign an agreement with the hiring hall union which set the terms and conditions of employment for workers \textit{not yet hired}. These contracts, known as pre-hire agreements, often contemplated a tenure of years, spanning several projects. Rather than having to renegotiate the terms and conditions of employment on each new project, the employer was assured a ready supply of skilled workers and predictable labor costs upon which to base his bids on projects subcontracted by a general contractor. Furthermore, the construction worker had the benefit of a central clearinghouse for employment opportunities. (emphasis added; Murphy 1982 pp. 1014–1015)
+Many construction industry employers hire employees, as the need arises, to work on a particular project and to be laid off when their services are no longer required. Most construction workers are organized into union hiring halls. A hiring hall, or work referral system, is an arrangement under which a union that "has control of or access to a particular labor pool agrees to supply workers to an employer upon request." When an employer in the construction industry needs skilled workers for a project, he often seeks such workers from the union hiring hall. Historically, the practice in the construction industry was for the employer to sign an agreement with the hiring hall union which set the terms and conditions of employment for workers \textit{not yet hired}. These contracts, known as pre-hire agreements, often contemplated a tenure of years, spanning several projects. Rather than having to renegotiate the terms and conditions of employment on each new project, the employer was assured a ready supply of skilled workers and predictable labor costs upon which to base his bids on projects subcontracted by a general contractor. Furthermore, the construction worker had the benefit of a central clearinghouse for employment opportunities. (\cite[1014-1015]{murphyPreHireAgreementsSection1982}; emphasis added)
 \end{quote}
 
 Construction unions had been operating in this way for many years prior to the exemption to majority status requirements that were carved out for construction unions in Section 8(f) as part of the Landrum-Griffin Labor-Management Reporting and Disclosure Act (LMRDA) of 1959. In fact, before its enactment, the prehire agreement constituted a violation of the law which had, up until that point, required the union to show that the majority of employees wanted representation from that particular union. Murphy (1982) explains how the particularities of the construction industry made other modes of union organizing and operation difficult:
@@ -237,7 +260,7 @@ I remember that 2 years ago, when Mr. Richard Gray, the head of the Carpenters U
   \centering
   \includegraphics[width=\imageWidth]{images/hiring_hall}
   \captionsetup{justification=centering, singlelinecheck=false, margin=2cm} 
-  \caption{Construction unions usually maintain a hiring hall. When employers require more workers for their projects, they contact the hiring hall to request workers to be dispatched to the job site.}
+  \caption[Union Hiring Hall]{Construction unions usually maintain a hiring hall. When employers require more workers for their projects, they contact the hiring hall to request workers to be dispatched to the job site.}
   \label{fig:hiring_hall}
 \end{figure}
 
@@ -249,7 +272,7 @@ The United Association of Plumbers and Pipe Fitters (UA) Local 189 in Columbus, 
 
 \subsection{The United Association of Plumbers and Pipe Fitters (UA) Local 189} \
 
-In his masterful study of the United Association of Plumbers and Pipe Fitters Local 189 in Colombus, Ohio, Richard Schneirov details the uniqueness of construction unionism. The formation of the United Association of Plumbers and Pipe Fitters began in the late 1880s, Before then, plumbers and pipe fitters were largely unorganized; to the extent that they did form unions, the organizations were usually temporary, to meet a specific need at a particular time and were hyper-local and fragmented, without any international (a term that, in the context of US and Canadian unions, means a national organization) to push for the interests of plumbers and pipe fitters across the nation (p. 58). The first boon for the pipe tradesmen was not an organizing campaign undertaken by the union but the American Federation of Labor’s eight-hour-day movement (pp. 11, 43-45). Many pipe tradesmen in the late 1880s and early 1890s worked upwards of ten hours a day, sometimes up to fourteen hours per day. This movement was "of absolutely crucial importance. Hitherto, they had only been able to mobilize large groups of workers for short periods of time" (pp. 43-45). It also broadened solidarities, appealing to workers of "all natalities, races, trades, industries, skills levels, and genders" (p. 43). Indeed, though the eight-hour-day movement was largely associated with unionism, which provoked strong resistance from employers, it even appealed to non-union workers (p. 45). From that perspective, it was also able to "cement union sentiment and loyalty among large numbers of nonunion workers" (p. 45). And in contradistinction to earlier union efforts, this brought unions together across the nation, culminating in a nation-wide eight-hour-day strike on May 1, 1886. However, three days later the movement suffered a major setback when anarchists bombed the Haymarket Square in Chicago, killing seven police officers (p. 45).
+In his masterful study of the United Association of Plumbers and Pipe Fitters Local 189 in Colombus, Ohio, Richard Schneirov (\citeyear{schneirovPrideSolidarityHistory1993}) details the uniqueness of construction unionism. The formation of the United Association of Plumbers and Pipe Fitters began in the late 1880s, Before then, plumbers and pipe fitters were largely unorganized; to the extent that they did form unions, the organizations were usually temporary, to meet a specific need at a particular time and were hyper-local and fragmented, without any international (a term that, in the context of US and Canadian unions, means a national organization) to push for the interests of plumbers and pipe fitters across the nation (p. 58). The first boon for the pipe tradesmen was not an organizing campaign undertaken by the union but the American Federation of Labor’s eight-hour-day movement (\citeyear[11, 43-45]{schneirovPrideSolidarityHistory1993}). Many pipe tradesmen in the late 1880s and early 1890s worked upwards of ten hours a day, sometimes up to fourteen hours per day. This movement was "of absolutely crucial importance. Hitherto, they had only been able to mobilize large groups of workers for short periods of time" (pp. 43-45). It also broadened solidarities, appealing to workers of "all natalities, races, trades, industries, skills levels, and genders" (p. 43). Indeed, though the eight-hour-day movement was largely associated with unionism, which provoked strong resistance from employers, it even appealed to non-union workers (p. 45). From that perspective, it was also able to "cement union sentiment and loyalty among large numbers of nonunion workers" (p. 45). And in contradistinction to earlier union efforts, this brought unions together across the nation, culminating in a nation-wide eight-hour-day strike on May 1, 1886. However, three days later the movement suffered a major setback when anarchists bombed the Haymarket Square in Chicago, killing seven police officers (p. 45).
 
 However, the eight-hour movement’s efforts proved to be more durable, and on November 15, 1889, it gave rise to the formation of the first union of journeymen plumbers and pipe fitters Local 5180 in Columbus (p. 45). In 1890, Columbus streetcar workers continued to push for shorter workdays. They demanded a reduction from ten to nine work hours per day. In this context, the plumbers and pipe fitters were well positioned to exact concessions from the master plumbers because of fears that the latter could not defeat the former (pp. 45-46). The master plumbers agreed to a reduction in work hours without a loss in pay. However, the Local was inexperienced in negotiations with the master plumbers, and they were willing to make their own concessions to the employers that would allow the latter to severely restrict the time when overtime pay would start (pp. 46-47). The union sought the advice of the AFL founder Samuel Gompers, who disabused the local union from making concessions (p. 46-47). The two sides eventually reached a written agreement, the first of its kind in the trade. 
 
@@ -269,7 +292,7 @@ Ironically, the abandonment of these exclusive agreements did not trigger union 
 
 With increased dues, unions were able to finance these benefits and, consequently, keep construction workers in the union much longer than they had previously (p.59). The Columbus plumbers and pipe fitters union could also afford to hire professional staff and leadership for the first time. The union hired full-time business agents, who served as "walking delegates," policing the job sites for contract violations and craft jurisdictional violations by the employers (p. 60). He also was an organizer, enrolling new members, and "pulling a job" if he could not resolve a workplace dispute through negotiation (p. 60). And though most employers did not utilize it, in November 1907, the union established a hiring hall as an institution that would later become a staple of construction unionism; the hiring hall required laid-off members to provide the business agent their names so that he could register them on the list of unemployed members and dispatch them, beginning with the first member laid off to the member most recently laid off, at the employers request (pp. 60-61). And finally, this era ushered in intra-craft solidarity: plumbers and fitters for the first time began to see themselves not as individuals trying to "better themselves in the marketplace, hoping not to ultimately become independent masters, but as workers with shared interests with other plumbers and fitters (p. 61). These developments made the union into a more durable institution.
 
-\subsubsection{A contemporary view} \
+\subsubsection{A contemporary view}
 
 Schneirov contends that the plumbers and pipefitters have had to balance between two sometimes contradictory identities. One is that they are workers with a set of common class interests with other workers in a labor movement built around solidarity for "union brothers and sisters." But from another perspective, they are part of a craft community that values craftsmanship and that takes pride in its work, a value that they share with their employer (Schneirov 1993:3–4) . A construction journeyworker is distinct in this regard from other blue-collar workers, such as factory workers on an assembly line, who do a repetitive task that can be easily taught (Schneirov 1993:5). Before one can become a journeyworker, one must complete an apprenticeship, which requires learning how to apply general plumbing and pipe fitting installation techniques, principles, and codes to specific circumstances. This requires a rigorous training program to prepare apprentices for their career. Because of this, these workers have gained prestige and a sort-of elite status that many other blue-collar workers could only dream of.
 
@@ -297,7 +320,7 @@ Tony started his employment at Helena Rubinstein Incorporated on May 1, 1950. Un
   \centering
   \includegraphics[width=\imageWidth]{images/slave_labor_bill}
   \captionsetup{justification=centering, singlelinecheck=false, margin=2cm} 
-  \caption{David Dubinsky of the International Ladies Garment Workers Union (ILGWU) gives a speech against the Hartley-Taft bill, with Luigi Antonini in the audience, May 4, 1947.}
+  \caption[Anti-Hartley-Taft Rally]{David Dubinsky of the International Ladies Garment Workers Union (ILGWU) gives a speech against the Hartley-Taft bill, with Luigi Antonini in the audience, May 4, 1947. (Source: \href{https://www.investopedia.com/thmb/VcswppMRTl8IqMbgLRqdigfIGvs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/5278798677_0429e6aa05_k-7b6b81bdbbe44cdb929c08c7da9f8d29.jpg}{Investopedia.com})}
   \label{fig:slave_labor_bill}
 \end{figure}
 
