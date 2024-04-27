@@ -1,4 +1,4 @@
-\documentclass[12pt]{report}
+\documentclass[12pt]{article}
 
 % Stashing things up here for later
 %\begin{quote}
@@ -56,6 +56,8 @@
 % Define a variable for the title
 \newcommand{\myTitle}{CONSTRUCTION UNIONS HISTORICAL-COMPARATIVE}
 
+\newcommand{\imageWidth}{0.85\textwidth}
+
 % Page style
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -63,14 +65,9 @@
 \fancyhead[L]{\small \myTitle}
 \renewcommand{\headrulewidth}{0pt} % remove header rule
 
-% Redefine the bibliography heading format to center the title
-\defbibheading{bibliography}{%
-  \section*{\centering\Large\MakeUppercase{\bibname}} % Centered title
-  \markboth{\MakeUppercase{\bibname}}{\MakeUppercase{\bibname}} % Ensure correct header
-}
-
 % Define custom section headings
 %\titleformat{\section}[block]{\MakeUppercase\normalfont\fontsize{12}{14}\selectfont}{\thesection.}{0.5em}{}
+%\titleformat{\chapter}[block]{\normalfont\fontsize{12}{14}\selectfont}{\thesection.}{0.5em}{}
 \titleformat{\section}[block]{\normalfont\fontsize{12}{14}\selectfont}{\thesection.}{0.5em}{}
 \titleformat{\subsection}[block]{\itshape}{\thesubsection.}{0.5em}{}
 \titleformat{\subsubsection}[runin]{\normalfont\itshape}{\hspace{\myindent}\thesubsubsection.}{0.5em}{}[.]
@@ -132,7 +129,8 @@ US Building Trade unions organize their workers differently. Most labor unions c
 % Set page numbering to arabic for main content
 \pagenumbering{arabic}
 
-\chapter{Introduction} \
+%\section{INTRODUCTION} \
+\addcontentsline{toc}{section}{Introduction}
 
 Construction is one of the largest unionized sectors in the United States. In spite of this, labor research has largely not focused on construction unions (or what are often referred to as the Building Trades) but has focused mainly on how workers in other industries organize. In some sense, this is understandable. One of the most significant periods of union growth in the US was in the 1930s, when multiple violent strikes occurred, sometimes lasting for a month or longer. These events contributed to the rise of the Congress of Industrial Unionism (CIO), a federation of trade unions committed to industrial unionism rather than craft unionism. Congress and President Franklin D. Roosevelt responded to these violent battles by enacting the Wager Act, which guaranteed the right for workers to organize and provided a framework for workers to petition for union representation in the workplace (\cite{grossMakingNationalLabor1974}). This framework was adapted mainly to how industrial unions were organized at the time. Most unionization efforts, especially large-scale and prominent ones, have used the industrial union organizing model.
 
@@ -179,7 +177,7 @@ Each contract type points to a different orientation toward the boss and approac
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.8\textwidth]{images/organizing_paths}
+  \includegraphics[width=\imageWidth]{images/organizing_paths}
   \captionsetup{justification=centering, singlelinecheck=false, margin=2cm}
   \caption{The industrial mode of organizing (left), and the construction mode of organizing (right). Construction unions may follow either path, but other unions may not voluntarily negotiate the way that construction unions can.}
   \label{fig:organizing_paths}
@@ -195,7 +193,7 @@ The exception is where the employer requires highly-skilled workers because of t
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.8\textwidth]{images/union_power_red}
+  \includegraphics[width=\imageWidth]{images/union_power_red}
   \captionsetup{justification=centering, singlelinecheck=false, margin=2cm} 
   \caption{Since negotitations between construction unions and employers are voluntary, construction unions typically have more leverage where the employer requires a more skilled workforce or where the job is large and requires many employees.}
   \label{fig:union_power_red}
@@ -237,7 +235,7 @@ I remember that 2 years ago, when Mr. Richard Gray, the head of the Carpenters U
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.8\textwidth]{images/hiring_hall}
+  \includegraphics[width=\imageWidth]{images/hiring_hall}
   \captionsetup{justification=centering, singlelinecheck=false, margin=2cm} 
   \caption{Construction unions usually maintain a hiring hall. When employers require more workers for their projects, they contact the hiring hall to request workers to be dispatched to the job site.}
   \label{fig:hiring_hall}
@@ -297,7 +295,7 @@ Tony started his employment at Helena Rubinstein Incorporated on May 1, 1950. Un
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.7\textwidth]{images/slave_labor_bill}
+  \includegraphics[width=\imageWidth]{images/slave_labor_bill}
   \captionsetup{justification=centering, singlelinecheck=false, margin=2cm} 
   \caption{David Dubinsky of the International Ladies Garment Workers Union (ILGWU) gives a speech against the Hartley-Taft bill, with Luigi Antonini in the audience, May 4, 1947.}
   \label{fig:slave_labor_bill}
@@ -364,14 +362,7 @@ While the Building Trades largely "organizes the bosses"\footnote{A wonderfully 
 % This provides an interesting opportunity because building trades local unions that petition for a representation election are not following the usual organizing path. They are organizing the workers instead of the bosses. Interviewing the union organizers to understand what drove this choice of organizing over the usual building trades approach could produce interesting findings. Perhaps the union had to become creative in a difficult construction economy that threatened to reduce its membership. Possibly, workers in those shops reached out to the union because of workplace issues or low wages, and they sought unionization to improve their working conditions and pay. 
 
 \newpage
-
-\begin{center}
-Notes
-\end{center}
-
-\noindent
-.
-\newpage
+\titleformat{\section}{\fontsize{12}{14}\bfseries\centering}{\thesection}{0.5em}{}
 \printbibliography[title={Bibliography}, heading=bibintoc]
 
 \end{document}
