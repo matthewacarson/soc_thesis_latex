@@ -3,8 +3,6 @@
 % Packages
 \usepackage[english]{babel}
 \usepackage{hyperref}
-\usepackage{url}
-\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
 \usepackage[citestyle=authoryear, bibstyle=authoryear, sorting=nyt]{biblatex}
 \usepackage{breakurl}
 \usepackage{caption} % for customizing captions
@@ -21,7 +19,8 @@
 \usepackage{tikz}
 \usepackage{titlesec} % for customizing section headings
 
-
+\usepackage{url}
+\gappto{\UrlBreaks}{\UrlOrds}
 
 
 \addbibresource{1_SOC_Honors.bib} % Replace with your .bib file
