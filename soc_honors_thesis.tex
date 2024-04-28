@@ -19,7 +19,7 @@
 \usepackage{etoolbox}
 % \usepackage{pxfonts}
 \usepackage [english]{babel}
-\usepackage[citestyle=authoryear, bibstyle=authoryear, sorting=nyt]{biblatex}
+\PassOptionsToPackage{hyphens}{bibtex}\usepackage[citestyle=authoryear, bibstyle=authoryear, sorting=nyt]{biblatex}
 %\usepackage[style=chicago-authordate, backend=biber]{biblatex}
 \addbibresource{1_SOC_Honors.bib} % Replace with your .bib file
 
@@ -78,9 +78,6 @@
 % Redefine the quote environment to make it single-spaced and remove vertical space before and add one at the end
 \AtBeginEnvironment{quote}{\singlespacing\setlength{\topsep}{0pt}\setlength{\partopsep}{0pt}}
 \AtEndEnvironment{quote}{\vspace{0.5\baselineskip}}
-
-% Set options for bibliography style
-\PassOptionsToPackage{hyphens}{biblatex}\usepackage{hyperref}
 
 \begin{document}
 
