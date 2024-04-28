@@ -79,6 +79,9 @@
 \AtBeginEnvironment{quote}{\singlespacing\setlength{\topsep}{0pt}\setlength{\partopsep}{0pt}}
 \AtEndEnvironment{quote}{\vspace{0.5\baselineskip}}
 
+% Set options for bibliography style
+\PassOptionsToPackage{hyphens}{biblatex}\usepackage{hyperref}
+
 \begin{document}
 
 \begin{titlepage}
@@ -363,9 +366,6 @@ While the Building Trades largely "organizes the bosses"\footnote{A wonderfully 
 % This provides an interesting opportunity because building trades local unions that petition for a representation election are not following the usual organizing path. They are organizing the workers instead of the bosses. Interviewing the union organizers to understand what drove this choice of organizing over the usual building trades approach could produce interesting findings. Perhaps the union had to become creative in a difficult construction economy that threatened to reduce its membership. Possibly, workers in those shops reached out to the union because of workplace issues or low wages, and they sought unionization to improve their working conditions and pay. 
 
 \newpage
-
-% Set options for bibliography style
-\PassOptionsToPackage{hyphens}{biblatex}\usepackage{hyperref}
 
 \titleformat{\section}{\fontsize{12}{14}\bfseries\centering}{\thesection}{0.5em}{}
 \printbibliography[title={Bibliography}, heading=bibintoc]
