@@ -365,10 +365,7 @@ While the Building Trades largely "organizes the bosses"\footnote{A wonderfully 
 \newpage
 
 % Set options for bibliography style
-%\setcounter{biburllcpenalty}{7000} % Lowercase letters penalty
-%\setcounter{biburlucpenalty}{8000} % Uppercase letters penalty
-%\setcounter{biburlnumpenalty}{9000} % Numbers penalty
-\setcounter{biburlbigbreakpenalty}{1} % Penalty for break at a digit
+\PassOptionsToPackage{hyphens}{biblatex}\usepackage{hyperref}
 
 \titleformat{\section}{\fontsize{12}{14}\bfseries\centering}{\thesection}{0.5em}{}
 \printbibliography[title={Bibliography}, heading=bibintoc]
