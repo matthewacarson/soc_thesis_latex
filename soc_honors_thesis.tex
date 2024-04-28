@@ -64,6 +64,7 @@
 \fancyhead[L]{\small \myTitle}
 \renewcommand{\headrulewidth}{0pt} % remove header rule
 
+% Customize abstract page
 \renewenvironment{abstract}
   {\par\noindent\centering\textbf{Abstract}\par\noindent\raggedright}
   {\par}
@@ -77,6 +78,12 @@
 % Redefine the quote environment to make it single-spaced and remove vertical space before and add one at the end
 \AtBeginEnvironment{quote}{\singlespacing\setlength{\topsep}{0pt}\setlength{\partopsep}{0pt}}
 \AtEndEnvironment{quote}{\vspace{0.5\baselineskip}}
+
+% Set options for bibliography style
+\setcounter{biburllcpenalty}{7000} % Lowercase letters penalty
+\setcounter{biburlucpenalty}{8000} % Uppercase letters penalty
+\setcounter{biburlnumpenalty}{9000} % Numbers penalty
+\setcounter{biburlbigbreakpenalty}{10000} % Penalty for break at a digit
 
 
 \begin{document}
