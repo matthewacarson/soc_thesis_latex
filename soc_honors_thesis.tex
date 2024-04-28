@@ -1,10 +1,5 @@
 \documentclass[12pt]{article}
 
-% Stashing things up here for later
-%\begin{quote}
-%Quote goes here
-%\end{quote}
-
 % Packages
 \usepackage{setspace} % for adjusting line spacing
 \usepackage{hyperref}
@@ -27,14 +22,6 @@
 \usepackage[citestyle=authoryear, bibstyle=authoryear, sorting=nyt]{biblatex}
 %\usepackage[style=chicago-authordate, backend=biber]{biblatex}
 \addbibresource{1_SOC_Honors.bib} % Replace with your .bib file
-%\addbibresource{american-sociological-association.csl}
-%\DeclareLanguageMapping{english}{american-sociological-association} % Use the ASA style
-%\bibliography{1_SOC_Honors.bib}
-
-
-% \ExecuteBibliographyOptions{sorting=none} % unsorted bibliography
-% \usepackage{texcount}
-% \usepackage{sectsty} % for modifying section headings
 
 % Line spacing
 \setstretch{2}
@@ -53,8 +40,8 @@
 \DeclareFieldFormat{postnote}{#1}
 \DeclareFieldFormat{multipostnote}{#1}
 
+% Use colon (ASA Style) in-text citations (author year:page)
 \renewcommand*{\postnotedelim}{\addcolon}
-
 
 % Set global text alignment to ragged-right
 \raggedright
@@ -87,12 +74,6 @@
    \item\relax}
   {\endlist}
   
-% Redefine the quote environment to make it single-spaced
-%\renewenvironment{quote}
-%  {\begin{singlespace}\list{}{\leftmargin=\parindent\rightmargin=0pt}%
-%   \item\relax}
-%  {\endlist\end{singlespace}}
-
 % Redefine the quote environment to make it single-spaced and remove vertical space before and add one at the end
 \AtBeginEnvironment{quote}{\singlespacing\setlength{\topsep}{0pt}\setlength{\partopsep}{0pt}}
 \AtEndEnvironment{quote}{\vspace{0.5\baselineskip}}
@@ -134,9 +115,6 @@ US Building Trade unions organize their workers differently. Most labor unions c
 \newpage
 
 % Define custom section headings
-%\titleformat{\section}[block]{\MakeUppercase\normalfont\fontsize{12}{14}\selectfont}{\thesection.}{0.5em}{}
-%\titleformat{\chapter}[block]{\normalfont\fontsize{12}{14}\selectfont}{\thesection.}{0.5em}{}
-% Define section formatting with bold text
 \titleformat{\section}[block]{\normalfont\fontsize{12}{14}\selectfont\bfseries}{\thesection.}{0.5em}{}
 \titleformat{\subsection}[block]{\itshape\bfseries}{\thesubsection.}{0.5em}{}
 \titleformat{\subsubsection}[runin]{\normalfont\itshape\bfseries}{\hspace{\myindent}\thesubsubsection.}{0.5em}{}[.]
