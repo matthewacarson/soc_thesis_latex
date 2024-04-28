@@ -1,27 +1,29 @@
 \documentclass[12pt]{article}
 
 % Packages
-\usepackage{setspace} % for adjusting line spacing
-\usepackage{hyperref}
-\usepackage{graphicx}
-\usepackage{parskip} % for controlling paragraph spacing
-% \usepackage{fontspec} % for setting fonts
-\usepackage [autostyle, english = american]{csquotes}
-\MakeOuterQuote{"}
-\usepackage{fancyhdr} % for custom headers and footers
-\usepackage[margin=1in]{geometry} % for setting margins
-\usepackage{titlesec} % for customizing section headings
-\usepackage{etoolbox} % for adjusting environment parameters
-\usepackage{graphicx} % for including graphics
-\usepackage{dot2texi}
-\usepackage{tikz}
+\usepackage[english]{babel}
+\usepackage[citestyle=authoryear, bibstyle=authoryear, sorting=nyt]{biblatex}
+\usepackage{breakurl}
 \usepackage{caption} % for customizing captions
-\usepackage{etoolbox}
-% \usepackage{pxfonts}
-\usepackage [english]{babel}
-\PassOptionsToPackage{hyphens}{bibtex}\usepackage[citestyle=authoryear, bibstyle=authoryear, sorting=nyt]{biblatex}
+\usepackage[autostyle, english = american]{csquotes}
+\usepackage{dot2texi}
+\usepackage{etoolbox} % for adjusting environment parameters
+\usepackage{fancyhdr} % for custom headers and footers
+%\usepackage{fontspec} % for setting fonts
+\usepackage[margin=1in]{geometry} % for setting margins
+\usepackage{graphicx} % for including graphics
+\usepackage[breaklinks]{hyperref}
+\usepackage{parskip} % for controlling paragraph spacing
+%\usepackage{pxfonts}
+\usepackage{setspace} % for adjusting line spacing
+\usepackage{tikz}
+\usepackage{titlesec} % for customizing section headings
+\usepackage{url}
+
 %\usepackage[style=chicago-authordate, backend=biber]{biblatex}
 \addbibresource{1_SOC_Honors.bib} % Replace with your .bib file
+
+\MakeOuterQuote{"}
 
 % Line spacing
 \setstretch{2}
