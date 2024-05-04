@@ -1,30 +1,35 @@
 \documentclass{beamer}
 
-\usetheme{Hannover}
-%\usetheme{Montpellier}
-%\usetheme{Pittsburgh}
-%\usetheme{Warsaw}
+\usetheme{Madrid}
 
-\setbeamercolor{normal text}{fg=black}
-\setbeamercolor{alerted text}{fg=black}
-\setbeamercolor{structure}{fg=black}
-\setbeamercolor{title}{fg=black}
-\setbeamercolor{subtitle}{fg=black}
-\setbeamercolor{section in toc}{fg=black}
-\setbeamercolor{subsection in toc}{fg=black}
-\setbeamercolor{frametitle}{fg=black}
-\setbeamercolor{block title}{fg=black}
-\setbeamercolor{block title alerted}{fg=black}
-\setbeamercolor{block title example}{fg=black}
-\setbeamercolor{section number projected}{bg=white,fg=black}
+% Color settings
+\setbeamercolor{normal text}{bg=white, fg=black}
+\setbeamercolor{alerted text}{bg=white, fg=black}
+\setbeamercolor{structure}{bg=white, fg=cyan!70}
+\setbeamercolor{navigation symbols}{bg=white, fg=gray!50}
+\setbeamercolor{title}{bg=cyan!7, fg=black}
+\setbeamercolor{subtitle}{bg=white, fg=black}
+\setbeamercolor{section in toc}{bg=white, fg=black}
+\setbeamercolor{subsection in toc}{bg=white, fg=black}
+\setbeamercolor{frametitle}{bg=cyan!7, fg=black}
+\setbeamercolor{block title}{bg=white, fg=black}
+\setbeamercolor{block title alerted}{bg=white, fg=black}
+\setbeamercolor{block title example}{bg=white, fg=black}
+\setbeamercolor{section number projected}{bg=white, fg=black}
 
-\setbeamertemplate{frametitle}[default][center]
+% Header/Footer colors
+\setbeamercolor{author in head/foot}{bg=cyan!7,fg=black} 
+\setbeamercolor{title in head/foot}{bg=cyan!7,fg=black} 
+\setbeamercolor{date in head/foot}{bg=cyan!7,fg=black} 
+\setbeamercolor{page number in head/foot}{bg=cyan!7,fg=black}
+
+% Redefine section in toc to include section numbers
+\setbeamertemplate{section in toc}{\inserttocsectionnumber.~\inserttocsection}
+%\setbeamertemplate{frametitle}[default][center]
 
 \usepackage{graphicx} % for including graphics
 
-%\usecolortheme{default}
-
-\title[Union Organizing]{Construction Union Agreements\\
+\title[Construction Union\ldots{Historical-Comparative}]{Construction Union Agreements\\
 Union Organizing in Historical-Comparative Perspective}
 \author{Matthew Carson}
 \date[Undergraduate Research Week '24]{Undergraduate Research Week 2024}
@@ -39,68 +44,90 @@ Union Organizing in Historical-Comparative Perspective}
   \tableofcontents
 \end{frame}
 
-\section{Methods}
-\begin{frame}{Methods}
-\begin{columns}
-	\column{0.3\textwidth}
-	\newline
-		\begin{minipage}[t][0.25\textheight][t]{\linewidth}
-			Historical\\
-			Within-Case\\
-			Analyses
-		\end{minipage}
-		\vfill
-		\begin{minipage}[b][0.4\textheight][b]{\linewidth}
-			Comparative\\
-			Between-Case\\
-			Analyses
-		\end{minipage}
-	\column{0.7\textwidth}
-	\newline
-		\begin{minipage}[t][0.25\textheight][t]{\linewidth}
-			\begin{itemize}
-				\item Historical trajectory of the union.
-				\item Durability: institutional arrangements.
-				\item Structural features \& constraints.
-				\item Institutional changes (mergers, etc.).
-				\item Evolutionary or generative approach (Reed 1997).
-			\end{itemize}
-		\end{minipage}
-		\vfill
-		\begin{minipage}[b][0.4\textheight][b]{\linewidth}
-			\begin{itemize}
-				\item Differences in institutional features.
-				\item Difference in political outcomes.
-			\end{itemize}
-		\end{minipage}
-		\newline
-		\newline
-\end{columns}
+\section{Argument}
+\begin{frame}{Argument}
+	US Building Trade unions organize their workers differently. Most labor unions compel employers to negotiate, but the Building Trades engage in voluntary negotiations, relying on workers' skill levels rather than strike leverage. 
+	\newline\newline
+	\textbf{Building Trades}
+	\begin{itemize}
+		\item Are frequently political outliers.
+		\item Oppose progressive environmental policies.
+		\begin{itemize}
+			\item Alignin more closely with the petrochemical industry (e.g., pipelines).
+		\end{itemize}
+		\item Are not supportive of single-payer healthcare.
+	\end{itemize}
+	
+	%This approach correlates with their frequent political deviations from the broader US labor movement, particularly in opposing progressive environmental policies and aligning more closely with the petrochemical industry on environmental issues, and not supporting single-payer healthcare.
 \end{frame}
 
 
+\section{Methods}
+\begin{frame}{Methods}
+\setlength{\arrayrulewidth}{0.0pt} % Set the thickness of the rules to 0
+\begin{tabular}{|p{0.3\textwidth}|p{0.6\textwidth}|}
+\hline
+\begin{minipage}[t][0.2\textheight][c]{\linewidth}
+Historical\\
+Within-Case\\
+Analyses
+\end{minipage}
+&
+\begin{itemize}
+    \item Historical trajectory of the union.
+    \item Durability: institutional arrangements.
+    \item Structural features \& constraints.
+    \item Institutional changes (mergers, etc.).
+    \item Evolutionary or generative approach.\footnote{Reed 1997}
+\end{itemize}
+\\
+\hline
+\begin{minipage}[t][0.2\textheight][c]{\linewidth}
+Comparative\\
+Between-Case\\
+Analyses
+\end{minipage}
+&
+\begin{itemize}
+    \item Differences in institutional features.
+    \item Difference in political outcomes.
+\end{itemize}
+\\
+\hline
+\end{tabular}
+\end{frame}
 
-
-\subsection{Union Organizing Paths}
+\section{Union Organizing Paths}
 \begin{frame}{Union Organizing Paths}
   \begin{columns}
     \column{0.725\textwidth}
-    \includegraphics[width=\linewidth]{../images/organizing_paths}
+    \includegraphics[width=0.9\linewidth]{../images/organizing_paths}
 
-    \column{0.3\textwidth}
-    The industrial mode of organizing (left) and the construction mode of organizing (right). Construction unions may follow either path, but other unions may not voluntarily negotiate the way that construction unions can.
+    \column{0.275\textwidth}
+    The industrial mode of organizing (left) and the construction mode of organizing (right).\newline\newline
+    Construction unions may follow either path, but other unions may not voluntarily negotiate the way that construction unions can.
     \end{columns}
 \end{frame}
 
 \section{Union Leverage}
-\begin{frame} % {Union Leverage}
+\begin{frame}{Union Leverage}
   \begin{columns}
     \column{0.725\textwidth}
     \includegraphics[width=\linewidth]{../images/union_power_red}
 
-    \column{0.3\textwidth}
-    Since negotiations between construction unions and employers are voluntary, construction unions typically have more leverage where the employer requires a more skilled workforce or where the job is large and requires many employees.
+    \column{0.275\textwidth}
+    Construction unions have more leverage where the employer requires a more skilled workforce or where the job is large and requires many employees.
   \end{columns}
+\end{frame}
+
+\section{Hiring Hall}
+\begin{frame}{Hiring Hall}
+	\begin{columns}
+	\column{0.725\textwidth}
+	\includegraphics[width=\linewidth]{../images/hiring_hall}
+	\column{0.275\textwidth}
+	When employers require more workers for their projects, they contact the hiring hall to request workers to be dispatched to the job site.
+	\end{columns}
 \end{frame}
 
 \section{Conclusion}
