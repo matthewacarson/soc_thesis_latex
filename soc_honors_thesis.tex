@@ -1,27 +1,35 @@
 \documentclass[12pt]{article}
 
 % Packages
+\usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-%\usepackage[hyphens]{url}
-\usepackage{{url}}
+\usepackage{url}
 \usepackage{hyperref}
 \usepackage[citestyle=authoryear, bibstyle=authoryear, sorting=nyt]{biblatex}
-%\usepackage{breakurl}
-\usepackage{caption} % for customizing captions
-%\usepackage{dot2texi}
-\usepackage{etoolbox} % for adjusting environment parameters
-\usepackage{fancyhdr} % for custom headers and footers
-%\usepackage{fontspec} % for setting fonts
-\usepackage[margin=1in]{geometry} % for setting margins
-\usepackage{graphicx} % for including graphics
-\usepackage{parskip} % for controlling paragraph spacing
-%\usepackage{pxfonts}
-\usepackage{setspace} % for adjusting line spacing
-%\usepackage{tikz}
-\usepackage{titlesec} % for customizing section headings
+\usepackage{caption}
+\usepackage{etoolbox}
+\usepackage{fancyhdr}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage{titlesec}
 \usepackage[autostyle, english = american]{csquotes}
 \MakeOuterQuote{"}
-\addbibresource{1_SOC_Honors.bib} % Replace with your .bib file
+\addbibresource{1_SOC_Honors.bib}
+\usepackage[acronym, nomain, nopostdot]{glossaries}
+\makeglossaries
+
+\newacronym{afl}{AFL}{American Federation of Labor}
+\newacronym{cio}{CIO}{Congress of Industrial Organizations}
+\newacronym{iam}{IAM}{International Association of Machinists and Aerospace Workers}
+\newacronym{jatc}{JATC}{Joint Apprenticeship Training Committee}
+\newacronym{lmrda}{LMRDA}{Labor-Management Reporting and Disclosure Act}
+\newacronym{nlra}{NLRA}{National Labor Relations Act}
+\newacronym{nlrb}{NLRB}{National Labor Relations Board}
+\newacronym{ocaw}{OCAW}{Oil, Chemical and Atomic Workers Union}
+\newacronym{ua}{UA}{United Association of Journeymen and Apprentices of the Plumbing and Pipe Fitting Industry}
+\newacronym{usw}{USW}{United Steel, Paper and Forestry, Rubber, Manufacturing, Energy, Allied Industrial and Service Workers International Union}
 
 % Head height
 \setlength{\headheight}{15pt}
@@ -56,7 +64,7 @@
 % \setmainfont{Times New Roman}
 
 % Define a variable for the title
-\newcommand{\myTitle}{CONSTRUCTION UNIONS HISTORICAL-COMPARATIVE}
+\newcommand{\myTitle}{CONSTRUCTION UNION\dots{HISTORICAL-COMPARATIVE}}
 
 \newcommand{\imageWidth}{0.8\textwidth}
 
@@ -142,12 +150,12 @@ US Building Trade unions organize their workers differently. Most labor unions c
 %\section{INTRODUCTION} \
 \addcontentsline{toc}{section}{Introduction}
 
-Construction is one of the largest unionized sectors in the United States. Yet, labor research has largely failed to focus on construction unions (or what are often referred to as the Building Trades). In some sense, this is understandable. One of the most significant periods of union growth in the US was in the 1930s, when multiple violent strikes occurred, sometimes lasting for a month or longer. These events contributed to the rise of the Congress of Industrial Unionism (CIO), a federation of trade unions committed to \emph{industrial unionism} rather than \emph{craft unionism}. Congress and President Franklin D. Roosevelt responded to these violent battles by enacting the Wager Act, which guaranteed workers the right to organize and provided a framework for workers to petition for union representation in the workplace (\cite{grossMakingNationalLabor1974}). This framework was adapted mainly to how industrial unions were organized at the time. Most unionization efforts, especially large-scale and prominent ones, have used the industrial union organizing model.
+Construction is one of the largest unionized sectors in the United States. Yet, labor research has largely failed to focus on construction unions (or what are often referred to as the Building Trades). In some sense, this is understandable. One of the most significant periods of union growth in the US was in the 1930s, when multiple violent strikes occurred, sometimes lasting for a month or longer. These events contributed to the rise of the \acrfull{cio}, a federation of trade unions committed to \emph{industrial unionism} rather than \emph{craft unionism}. Congress and President Franklin D. Roosevelt responded to these violent battles by enacting the Wager Act, which guaranteed workers the right to organize and provided a framework for workers to petition for union representation in the workplace (\cite{grossMakingNationalLabor1974}). This framework was adapted mainly to how industrial unions were organized at the time. Most unionization efforts, especially large-scale and prominent ones, have used the industrial union organizing model.
 
 % Add a citation for month-long strikes and how they led to the Wagner Act.
 % Gross, James A. 1974. The Making of the National Labor Relations Board: A Study in Economics, Politics, and the Law. Albany: State University of New York Press.
 
-US construction unions have a distinct approach to organizing their workers vis-à-vis other labor unions. While most labor unions typically compel employers to negotiate through secret ballot elections or work stoppages, the Building Trades take a different route by engaging in voluntary negotiations. Their strategy hinges more on the skill levels of their workers than the leverage of strikes or official National Labor Relations Board elections, which use the state to compel the employer to negotiate. This unique approach often leads them to deviate politically from the broader US labor movement. Notably, they frequently oppose progressive environmental policies and tend to align more closely with the petrochemical industry on environmental issues. Additionally, they are not supportive of single-payer healthcare.
+US construction unions have a distinct approach to organizing their workers vis-à-vis other labor unions. While most labor unions typically compel employers to negotiate through secret ballot elections or work stoppages, the Building Trades take a different route by engaging in voluntary negotiations. Their strategy hinges more on the skill levels of their workers than the leverage of strikes or official \acrfull{nlrb} elections, which use the state to compel the employer to negotiate. This unique approach often leads them to deviate politically from the broader US labor movement. Notably, they frequently oppose progressive environmental policies and tend to align more closely with the petrochemical industry on environmental issues. Additionally, they are not supportive of single-payer healthcare.
 
 One potential explanation is that unions with many workers in the petrochemical industry will align with the employer on environmental policy if they feel that environmental policies might be "job killers." That is, the Building Trades' opposition to environmental policy meant to attenuate global warming might simply be a function of the union's interest in keeping their members working. They have many members working on projects in the petrochemical industry, and this is what one would expect from workers and their unions in that industry. After all, why would they support something that might cause unemployment?
 
@@ -368,9 +376,16 @@ However, the merger was short-lived. In 2005, PACE was absorbed by the USW. Thou
 
 This persists even in 2023. To wit, the Carson, California USW Local 675 has been supportive of several environmental initiatives and efforts. The Local, which it is important to note is an oil local, commissioned the Pollin Report released in 2021 (\cite{pollinProgramEconomicRecovery2021}). The report charts a path away from dirty fuel sources to clean energy. More recently, in 2023, Norman Rogers, vice president of USW Local 675, was quoted in the Los Angeles Times as a supporter of a transition from fossil fuel to clean energy jobs (\cite{rothCanClimateActivists2023}). Several local unions in the area have launched a political coalition to lobby Sacramento to protect workers while the transition occurs. From that perspective, perhaps the most enduring feature that has survived from the OCAW days is the Just Transition framework.
 
-%\subsection{The International Association of Machinists (IAM)} \
+\subsection{The International Association of Machinists (IAM)} \
 
-% The International Association of Machinists (IAM) and Building Trades are both unions in the craft union mold. Both were American Federation of Labor unions (before the 1955 merger), which was a labor federation largely rooted in craft unionism. Although perhaps not anchored as steadfastly to the expansion of social-wage policy and decommodified public goods as unions such as the National Nurses United and National Health Care Workers or even The Brotherhood of Maintenance of Way Employees, they have nonetheless given their official support toward the effort to establish single-payer healthcare in the United States, a policy that would eliminate private insurers and establish government-funded healthcare insurance that would cover all regardless of one's income or finances. This arguably is along the more "radical" edge of the US trade union movement, such as it is.
+The International Association of Machinists (IAM) and Building Trades are both unions in the craft union mold. Both were American Federation of Labor unions (before the 1955 merger), which was a labor federation largely rooted in craft unionism. Although perhaps not anchored as steadfastly to the expansion of social-wage policy and decommodified public goods as unions such as the National Nurses United and National Health Care Workers or even The Brotherhood of Maintenance of Way Employees, they have nonetheless given their official support toward the effort to establish single-payer healthcare in the United States, a policy that would eliminate private insurers and establish government-funded healthcare insurance that would cover all regardless of one's income or finances. This arguably is along the more "radical" edge of the US trade union movement, such as it is.
+
+What could explaint this different outcome? Both the IAM and the building trades unions were early American Federation of Labor craft unions. They both have a history of racist, exclusionary policies. A key difference, however, is that the IAM is not a construction unions and thus cannot enter into voluntary "prehire" agreements; they cannot "organize the boss."
+
+\subsubsection{District Lodge 751}
+Boeing workers in Washington's Puget Sound area formed IAM District Lodge 751 in 1935. This places the formation of the union directly in the context of the years in which the fledgling CIO was organizing workers in the rapidly expanding industries of the time. The CIO's organizing tactics were influenced by the Industrial Workers of the World (IWW), a radical union that pushed for the replacement of wage labor and the private ownership of industry with industrial democracy, where workers would collectively own the means of production and collectively make decisions about how the workplace should be run (\cite{industrialworkersoftheworldIWW}). Though the IWW remained politically marginal, their tactics and philosophy undoubtedly had an impact on the CIO in the 20s and 30s (\cite[2-6]{mccannBloodWaterHistory1989}). The AFL, committed to craft unionism, was unable to organize the new industrial workers because of disputes that would arise regarding which craft union the newly organized industrial workers should join; moreover, many of the newly organized industrial workers were not attracted to the craft union idea, as evidenced by their continuing attendance at the "Federal" (i.e., industrial) union that they were initially organized into, and their failure to attend the union meeting for their particular craft (\cite[8]{mccannBloodWaterHistory1989}). 
+
+In the 1930s, when the Boeing shop first unionized, the CIO was primarily focused on the auto industry. The workers experienced terrible conditions at work, and there had been talk about forming a union. Boeing had considered forming a company union, a union that is controlled by the employer and is not a true independent labor organization, which was a popular tactic for many companies at the time. But with the passage of the NLRA, comapny unions became illegal, and Boeing recognized that, despite the pending legal challenges against the NLRA, the prospect of successfully forming a company union seemed unlikely; indeed, shortly after the company announced its intent to create a company union, the District Lodge filed a NLRB complaint, and Boeing retracted its plan (\cite[23-24]{mccannBloodWaterHistory1989}). Furthermore, the CIO was on the rise and mounting militant challenges to employers in the auto industry, and Boeing thought that it would only be a matter of time before the growing labor federation turned its sights on Boeing. District Lodge 751, by contrast, was rather small with only 35 members, and was not anchored in a radical unionism \`{a} la the IWW or CIO. (\cite[24]{mccannBloodWaterHistory1989}). Within this context, it made quite a lot of sense for Boeing to choose what it saw as a lesser evil.
 
 % What might cause a union that comes out of the craft union mold typically associated with very conservative politics and historically with racist, exclusionary policies and practices to support progressive social-wage policy that would cover not only its members but the entire US population regardless of race, gender, ethnicity, or immigration status? One possible response is that it is ideological, that the Machinists have always been guided by a strong commitment to what Joe Burns has termed "class struggle unionism." The issue with this explanation is that it does not do much more than repeat the question by way of answer. That is to say, why are there these ideological differences? The other problem, which deserves further investigation, to be sure, is that that contention likely has little to no empirical support.
 
@@ -384,15 +399,14 @@ This persists even in 2023. To wit, the Carson, California USW Local 675 has bee
 
 While the Building Trades largely "organizes the bosses"\footnote{A wonderfully apt description that I owe to Mark Dudzic, former OCAW official and long-time Labor for Single Payer Organizer.} rather than the workers already employed, there is still some variation in how they organize. A search of the National Labor Relations representation case petition database revealed that approximately 98 building trades unions have filed for a representation election in 2023. The results were obtained by removing company names that did not contain the words "construction," "constructors," "electrical," "plumbing," "mechanical," "builder," or "builders." If the certified representative matched the names of any of the Building Trades’ constituent unions, they were also added to the list. While this method did not filter out all non-Building Trades unions, it probably erroneously excluded some from the filtered list because it is nearly impossible to include every possible search term.
 
-
-
-% This provides an interesting opportunity because building trades local unions that petition for a representation election are not following the usual organizing path. They are organizing the workers instead of the bosses. Interviewing the union organizers to understand what drove this choice of organizing over the usual building trades approach could produce interesting findings. Perhaps the union had to become creative in a difficult construction economy that threatened to reduce its membership. Possibly, workers in those shops reached out to the union because of workplace issues or low wages, and they sought unionization to improve their working conditions and pay. 
-
 \newpage
 
 \titleformat{\section}{\fontsize{12}{14}\bfseries\centering}{\thesection}{0.5em}{}
 % Line spacing
 \setstretch{1.25}
 \printbibliography[heading=bibintoc]
+
+
+\printglossary[type=\acronymtype]
 
 \end{document}

@@ -15,14 +15,14 @@ GetFolderSize() {
 folderSize := GetFolderSize()
 ;~ MsgBox, The size of the folder is %folderSize% bytes.
 
-gosub SyncSlides
+gosub Sync
 
 timeInterval := 15 * 60 * 1000
 
-SetTimer, SyncSlides, %timeInterval%
+SetTimer, Sync, %timeInterval%
 return
 
-SyncSlides:
+Sync:
 fileSizeLatest := GetFolderSize()
 if(fileSizeLatest != folderSize) {
 	folderSize := fileSizeLatest
@@ -41,7 +41,7 @@ if(fileSizeLatest != folderSize) {
 return
 
 SendCommands:
-RunWait, git add ../urweek_socoiology/presentation_slides.tex ../urweek_socoiology/presentation_slides.pdf,, Hide
+RunWait, git add ../soc_honors_thesis.tex ../soc_honors_thesis.pdf,, Hide
 RunWait, git commit -m "Auto commit",, Hide
 ;~ ; RunWait, git push,, Hide
 return

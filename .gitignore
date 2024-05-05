@@ -28,7 +28,7 @@
 *.tar.gz
 *.run.xml
 *.bcf
-*.toc.bak
+*.bak
 
 1) SOC-Honors.bib
 My Library.bib
@@ -334,3 +334,8 @@ TSWLatexianTemp*
 # option is specified. Footnotes are the stored in a file with suffix Notes.bib.
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
+/soc_thesis_latex_old
+
+# Specifically Include
+!presentation_slides.pdf
+!soc_honors_thesis.pdf
