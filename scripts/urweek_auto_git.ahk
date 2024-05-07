@@ -11,13 +11,12 @@ GetFolderSize() {
     return totalSize
 }
 
-; Example usage
 folderSize := GetFolderSize()
 ;~ MsgBox, The size of the folder is %folderSize% bytes.
 
-gosub SyncSlides
+gosub SendCommands
 
-timeInterval := 15 * 60 * 1000
+timeInterval := 20 * 60 * 1000
 
 SetTimer, SyncSlides, %timeInterval%
 return
