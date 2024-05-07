@@ -5,7 +5,12 @@
 \usepackage{lmodern} % Load Latin Modern fonts
 \usepackage{subcaption}
 \usepackage{multirow}
- \usepackage{booktabs}
+\usepackage{booktabs}
+\usepackage{graphicx} % for including graphics
+\usepackage{multicol}
+\usepackage[citestyle=authoryear, bibstyle=authoryear, sorting=nyt]{biblatex}
+\addbibresource{../1_SOC_Honors.bib}
+ 
 \usetheme{Madrid}
 
 % Color settings
@@ -37,15 +42,11 @@
 
 \setbeamerfont{footnote}{size=\tiny}
 
-\usepackage{graphicx} % for including graphics
-\usepackage{multicol}
-\usepackage[citestyle=authoryear, bibstyle=authoryear, sorting=nyt]{biblatex}
-\addbibresource{../1_SOC_Honors.bib}
-
 % Redefine bibliography colors to black
 \setbeamercolor{bibliography entry author}{fg=black}
 \setbeamercolor{bibliography entry title}{fg=black} % Set book titles to black
 \setbeamercolor{bibliography entry note}{fg=black}
+\setbeamercolor{caption name}{fg=black}
 
 \title[Construction Union\ldots{Historical-Comparative}]{Construction Union Agreements: Union Organizing in Historical-Comparative Perspective}
 \author{Matthew Carson}
@@ -160,21 +161,27 @@ Most labor unions compel employers to negotiate, but the Building Trades engage 
 
 
 \begin{frame}{Case Selection Table}
-\begin{table}[]
-\centering
-\fontsize{16}{14}\selectfont
-\begin{tabular}{@{}llll@{}}
-\toprule
-\textbf{Union}                                                                                     & \textbf{Similarity}                                                                                           & \textbf{Difference}                                                                            & \textbf{Outcome}                                                                                                                                                                                                                                                                       \\ \midrule
-Machinists (IAM)                                                                                   & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Both\\ craft\\ unions\end{tabular}}                                & \begin{tabular}[c]{@{}l@{}}Industrial mode of organizing\\ Involuntary agreements\end{tabular} & Support progressive social-wage policy (e.g., single-payer healthcare).                                                                                                                                                                                                                \\ \cmidrule(r){1-1} \cmidrule(l){3-4} 
-Plumbers/Pipefitters (UA)                                                                          &                                                                                                               & Voluntary agreements                                                                           & No/limited support for social-wage policy.                                                                                                                                                                                                                                             \\ \midrule
-\begin{tabular}[c]{@{}l@{}}Oil Chemical \& Atomic\\ Workers/Steelworkers\\ (OCAW/USW)\end{tabular} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Both \\ have \\ substantial \\ petrochemical \\ work\end{tabular}} & \begin{tabular}[c]{@{}l@{}}Industrial mode of organizing\\ Involuntary agreements\end{tabular} & \begin{tabular}[c]{@{}l@{}}Support progressive social-wage policy.\\ Antagonist relationship with employer.\\ OCAW never reached the role of “junior partner” to capital.\\ Support the Pollan Report---creation of clean-energy jobs and a transition from fossil fuels.\end{tabular} \\ \cmidrule(r){1-1} \cmidrule(l){3-4} 
-Plumbers/Pipefitters (UA)                                                                          &                                                                                                               & Voluntary Agreements                                                                           & \begin{tabular}[c]{@{}l@{}}No/limited support for social-wage policy.\\ Collaborationist relationship with employer.Has defended the construction of new oil pipelines\\ Opposed reforms and regulatory policies that might hamper new refinery projects\end{tabular}                  \\ \bottomrule
-\end{tabular}
-\caption{The most similar cases that had different outcomes were selected.}
-\label{tab:my-table}
-\end{table}
+    \begin{table}[]
+        \centering
+        \fontsize{18}{14}\selectfont
+        \begin{tabular}{@{}llll@{}}
+            \toprule
+            \textbf{Union} & \textbf{Similarity} & \textbf{Difference} & \textbf{Outcome} \\ 
+            \midrule[0.25pt] \midrule[0.25pt]
+            Machinists (IAM) & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Both\\ craft\\ unions\end{tabular}} & \begin{tabular}[c]{@{}l@{}}•Industrial mode of organizing\\ •Involuntary agreements\end{tabular} & •Support progressive social-wage policy (e.g., single-payer healthcare). \\ 
+            \cmidrule(r){1-1} \cmidrule(l){3-4} 
+            Plumbers/Pipefitters (UA) & & •Voluntary agreements & •No/limited support for social-wage policy. \\ 
+            \midrule[0.25pt] \midrule[0.25pt]
+            \begin{tabular}[c]{@{}l@{}}Oil Chemical \& Atomic\\ Workers/Steelworkers\\ (OCAW/USW)\end{tabular} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Both \\ have \\ substantial \\ petrochemical \\ work\end{tabular}} & \begin{tabular}[c]{@{}l@{}}•Industrial mode of organizing\\ •Involuntary agreements\end{tabular} & \begin{tabular}[c]{@{}l@{}}•Supports progressive social-wage policy.\\•Supports the Pollan Report---creation of clean-energy jobs\\and a transition from fossil fuels.\end{tabular} \\ 
+            \cmidrule(r){1-1} \cmidrule(l){3-4} 
+            Plumbers/Pipefitters (UA) & & •Voluntary Agreements & \begin{tabular}[c]{@{}l@{}}•No/limited support for social-wage policy.\\•Has defended the construction of new oil pipelines.\\•Opposed reforms and regulatory policies that might\\hamper new refinery projects\end{tabular} \\ 
+            \bottomrule
+        \end{tabular}
+        \caption{The most similar cases that had different outcomes were selected.}
+        \label{tab:my-table}
+    \end{table}
 \end{frame}
+
 
 \section*{Union Organizing Paths}
 %\subsection*{NLRB Election}
