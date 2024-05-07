@@ -3,6 +3,7 @@
 \geometry{paperwidth=15.11in,paperheight=8.5in} % paperwidth=11.333in,paperheight=8.5in
 %\usepackage{helvet}
 \usepackage{lmodern} % Load Latin Modern fonts
+\usepackage{subcaption}
 \usetheme{Madrid}
 
 % Color settings
@@ -26,15 +27,23 @@
 \setbeamercolor{date in head/foot}{bg=cyan!7,fg=black} 
 \setbeamercolor{page number in head/foot}{bg=cyan!7,fg=black}
 
+
 % Redefine section in toc to include section numbers
 \setbeamertemplate{section in toc}{\inserttocsectionnumber.~\inserttocsection}
 \setbeamertemplate{navigation symbols}{}
 %\setbeamertemplate{frametitle}[default][center]
 
+\setbeamerfont{footnote}{size=\tiny}
+
 \usepackage{graphicx} % for including graphics
 \usepackage{multicol}
-%\usepackage[citestyle=authoryear, bibstyle=authoryear, sorting=nyt]{biblatex}
-%\addbibresource{../1_SOC_Honors.bib}
+\usepackage[citestyle=authoryear, bibstyle=authoryear, sorting=nyt]{biblatex}
+\addbibresource{../1_SOC_Honors.bib}
+
+% Redefine bibliography colors to black
+\setbeamercolor{bibliography entry author}{fg=black}
+\setbeamercolor{bibliography entry title}{fg=black} % Set book titles to black
+\setbeamercolor{bibliography entry note}{fg=black}
 
 \title[Construction Union\ldots{Historical-Comparative}]{Construction Union Agreements: Union Organizing in Historical-Comparative Perspective}
 \author{Matthew Carson}
@@ -63,7 +72,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Introduction}
+\section*{Introduction}
 \begin{frame}{Introduction}
 \textbf{Do the ways that unions organize affect their political stances?}\newline\newline % and how solidaristic they are with progressive movements?}\newline\newline
 %US Building Trade unions organize their workers differently. 
@@ -81,33 +90,31 @@ Most labor unions compel employers to negotiate, but the Building Trades engage 
 	%This approach correlates with their frequent political deviations from the broader US labor movement, particularly in opposing progressive environmental policies aligning more closely with the petrochemical industry on environmental issues and not supporting single-payer healthcare.
 \end{frame}
 
-\section{Methods}
+\section*{Methods: Historical}
 
 \begin{frame}{Methods: Historical}
-\subsection{Historical}
+
 \setlength{\arrayrulewidth}{0.0pt} % Set the thickness of the rules to 0
-\begin{tabular}{|p{0.3\textwidth}|p{0.6\textwidth}|}
+\begin{tabular}{|p{0.35\textwidth}|p{0.4\textwidth}|}
 \hline
-\begin{minipage}[t][0.2\textheight][t]{\linewidth}
-\textbf{Historical\\
-Within-Case\\
-Analyses}
-\end{minipage}
+%\begin{minipage}[t][0.2\textheight][t]{\linewidth}
+\textbf{Historical:}\newline
+\textbf{Within-Case Analysis}\footfullcite{langeComparativeHistoricalMethods2013}
+%\end{minipage}
 &
 \begin{itemize}
     \item Historical trajectory of the union.
     \item Durability: institutional arrangements.
     \item Structural features \& constraints.
     \item Institutional changes (mergers, etc.).
-    \item Evolutionary or generative approach. %\footnote{Reed 1997}
+    \item Evolutionary or generative approach.\footfullcite{reedBoisAmericanPolitical1997}
 \end{itemize}
 \\
 \hline
-\begin{minipage}[c][0.2\textheight][b]{\linewidth}
-\textbf{Comparative\\
-Between-Case\\
-Analyses}
-\end{minipage}
+%\begin{minipage}[c][0.2\textheight][b]{\linewidth}
+\textbf{Comparative:}\newline
+\textbf{Between-Case Analysis}\footcite{langeComparativeHistoricalMethods2013}
+%\end{minipage}
 &
 \begin{itemize}
     \item Differences in institutional features.
@@ -118,18 +125,35 @@ Analyses}
 \end{tabular}
 \end{frame}
 
-\section{Cases}
+
 \begin{frame}{Case Selection}
+\begin{figure}
+%\centering
+\begin{subfigure}[t]{0.3\linewidth}
+  \centering
+  \includegraphics[height=125pt]{UA_189}
+\end{subfigure}%
+\begin{subfigure}[t]{0.3\linewidth}
+  \centering
+  \includegraphics[height=125pt]{OCAW}
+\end{subfigure}%
+\begin{subfigure}[t]{0.3\linewidth}
+  \centering
+  \includegraphics[height=125pt]{IAM_751}
+\end{subfigure}
+\end{figure}
+
+\vfill
+
 	\begin{itemize}
-			\item \textbf{UA}\footnote{Schneirov, Richard. 1993. \textit{Pride and Solidarity: A History of the Plumbers and Pipefitters of Columbus, Ohio, 1889-1989}. Ithaca, N.Y: ILR Press.}: United Association of Plumbers and Pipefitters Local 189
-			\item \textbf{OCAW/USW}\footnote{Leopold, Les. 2007. \textit{The Man Who Hated Work and Loved Labor}. White River Junction, Vt: Chelsea Green Pub. Company.
-}: Oil Chemical and Atomic Workers Union (now part of the United Steelworkers)
-			\item \textbf{IAM}\footnote{McCann, John. 1989. \textit{Blood in the Water: A History of District Lodge 751, International Association of Machinists and Aerospace Workers}. Olympia, Washington: District Lodge 751, IAM\&AW.}: International Association of Machinists
+			\item \textbf{UA}\footfullcite{schneirovPrideSolidarityHistory1993}: United Association of Plumbers and Pipefitters Local 189
+			\item \textbf{OCAW/USW}\footfullcite{leopoldManWhoHated2007}: Oil Chemical and Atomic Workers Union (now part of the United Steelworkers)
+			\item \textbf{IAM}\footfullcite{mccannBloodWaterHistory1989}: International Association of Machinists
 	\end{itemize}
 \end{frame}
 
-\section{Union Organizing Paths}
-%\subsection{NLRB Election}
+\section*{Union Organizing Paths}
+%\subsection*{NLRB Election}
 %\begin{frame}{Union Organizing Paths: NLRB Election}
 %  \begin{columns}
 %    \column{0.725\textwidth}
@@ -149,7 +173,7 @@ Analyses}
 %    \end{columns}
 %\end{frame}
 
-\subsection{Comparison}
+\subsection*{Comparison}
 
 \begin{frame}{Union Organizing Paths: Comparison}
   \begin{columns}
@@ -271,46 +295,46 @@ Analyses}
 %	\end{columns}
 %\end{frame}
 
-\section{OCAW/USW vs. UA}
+\section*{OCAW/USW vs. UA}
 \begin{frame}{OCAW/USW vs. UA}
 \textbf{Do unions with petrochemical work align politically with the petrochemical industry?}\newline
 
 \emph{Not necessarily.}
 	\begin{itemize}
-		\item The UA and OCAW/USW have taken very different political stances regarding clean energy transition.
+		\item The UA and OCAW/USW have taken very different political stances regarding clean energy transition.\footfullcite{leopoldManWhoHated2007}
 		\item OCAW/USW has embraced a ``Just Transition" from dirty to clean energy.
 	\begin{itemize}
 		\item ``Just Transition": workers affected by the closure of plants, refineries, etc. are offered a safety net while transitioning to another career.
 	\end{itemize}
-	\item The United Association (UA) of Plumbers and Pipefitters (Building Trades) supports petrochemical industry-friendly policies.
+	\item The United Association (UA) of Plumbers and Pipefitters (Building Trades) supports petrochemical industry-friendly policies.\footfullcite{natgasnowNextInfrastructureChallenge2015}
 	\end{itemize}
 The UA \textit{\textbf{does}} use pre-hire agreements, while the OCAW/USW \textbf{\textit{does not}}.
 \end{frame}
 
-\subsection{Institutional consolidation}
+\subsection*{Institutional consolidation}
 \begin{frame}{OCAW/USW vs. UA}
 \textbf{What explains why these unions organize using different methods?}\newline\newline
 \underline{\textbf{Institutional}}
 	\begin{itemize}
-		\item United Association (UA).		
+		\item United Association (UA)
 			\begin{itemize}
 				\item Apprenticeship and training as a ``bargaining chip."
 				\item Prehire agreements are the norm.
-				\item Institutional/structural features shaped the mode of organizing that the BT adopted.
+				\item Institutional/structural features shaped the mode of organizing that the BT adopted.\footfullcite{schneirovPrideSolidarityHistory1993}
 				\begin{itemize}
 					\item They could have chosen a different mode.
 					\item They became a junior partner to capital because of how they chose to organize.
 				\end{itemize}
 	\end{itemize}
-		\item OCAW/USW.
+		\item OCAW/USW
 		\begin{itemize}
-			\item Never became a junior partner to capital — relationship antagonistic.
+			\item Never became a junior partner to capital — relationship antagonistic.\footfullcite{leopoldManWhoHated2007}
 		\end{itemize}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{OCAW/USW vs. UA}
-\subsection{Occupational context}
+\subsection*{Occupational context}
 \underline{\textbf{Occupational context}}
 	\begin{itemize}
 		\item United Association (UA)
@@ -323,30 +347,30 @@ The UA \textit{\textbf{does}} use pre-hire agreements, while the OCAW/USW \textb
 				\item Same plant entire career.
 			\end{itemize}
 	\end{itemize}
-\subsection{Political context}
+\subsection*{Political context}
 \underline{\textbf{Political context}}
 	\begin{itemize}
 		\item United Association (UA)
 		\begin{itemize}
-			\item Never had Communist Party or socialist connections.
+			\item Did not have Communist Party or socialist connections.
 		\end{itemize}
 		\item OCAW/USW
 			\begin{itemize}
-				\item Historically had Communist Party members.
+				\item Historically had Communist Party members.\footfullcite[81-85]{leopoldManWhoHated2007}
 			\end{itemize}
 	\end{itemize}
 \end{frame}
 
-\subsection{The Line Between Worker \& Owner}
+\subsection*{The Line Between Worker \& Owner}
 \begin{frame}{OCAW/USW vs. UA}
 \underline{\textbf{The Line Between Worker and Owner}}
 	\begin{itemize}
-		\item United Association (UA)
+		\item United Association (UA)\footfullcite{schneirovPrideSolidarityHistory1993}
 		\begin{itemize}
 			\item Construction firms are small.
-			\item Union members as worker-owners — infrequent, but it happens.
+			\item Union members as worker-owners — infrequent, but it happens.\footfullcite{brownplumbingExecutiveSummary}
 		\end{itemize}
-		\item OCAW/USW
+		\item OCAW/USW\footfullcite{leopoldManWhoHated2007}
 			\begin{itemize}
 				\item Members are always wage workers.
 				\item Employers are usually large multinationals.
@@ -356,7 +380,7 @@ The UA \textit{\textbf{does}} use pre-hire agreements, while the OCAW/USW \textb
 
 
 \section{Machinists (IAM) vs. Building Trades}
-\begin{frame}{Machinists (IAM) vs. Building Trades}
+\begin{frame}{Machinists (IAM) vs. Building Trades\footfullcite{mccannBloodWaterHistory1989}}
 \textbf{Do craft unions that organize the way that industrial unions do support more progressive policies?}\newline
 	\begin{itemize}
 		\item The Machinists (IAM), while in the AFL, faced challenges similar to those faced by the industrial unions.
@@ -371,7 +395,7 @@ The UA \textit{\textbf{does}} use pre-hire agreements, while the OCAW/USW \textb
 
 
 
-\subsection{Inter-union conflicts}
+\subsection*{Inter-union conflicts}
 \begin{frame}{Machinists (IAM) and Longshore Workers (ILWU)}
 \underline{\textbf{Craft Union Poaching by the IAM}}\newline
 
@@ -379,14 +403,14 @@ The Machinists international union has maintained a craft union orientation like
 	\begin{itemize}
 		\item Inter-union conflict with the Longshore Workers Union (ILWU).
 		\begin{itemize}
-			\item ``Union Turf Wars Expected to Heat Up"\footnote{\tiny Mongelluzzo, Bill. 2014. “Union Turf Wars Expected to Heat Up.” \textit{Journal of Commerce}, March 6.}
+			\item ``Union Turf Wars Expected to Heat Up"\footfullcite{mongelluzzoUnionTurfWars2014} % \footnote{\tiny Mongelluzzo, Bill. 2014. “Union Turf Wars Expected to Heat Up.” \textit{Journal of Commerce}, March 6.}
 			\item Jurisdictional disputes between Longshore Union (ILWU) and Machinists (IAM) at ports along the West Coast.
 			\item This is characteristic of craft unionism; sometimes called ``poaching."
 			\item Anti-solidaristic (insofar as they are committed to inter-union competition).
 		\end{itemize}
 	\item \textbf{Despite this, the international union supports progressive policies.}
 		\begin{itemize}
-			\item Listed as a supporter at Labor for Single-Payer Healthcare.
+			\item Listed as a supporter at Labor for Single-Payer Healthcare.\footfullcite{LaborCampaignAffiliates}
 			\item No Building Trades union is listed as a supporter.
 		\end{itemize}
 	\end{itemize}
@@ -446,5 +470,12 @@ The Machinists international union has maintained a craft union orientation like
 \end{itemize}
 \end{frame}
 
+%\begin{frame}
+%\frametitle{Bibliography}
+%\begin{minipage}{\linewidth}
+%\setlength{\parindent}{2em} % Adjust the indentation here
+%\printbibliography
+%\end{minipage}
+%\end{frame}
 
 \end{document}
