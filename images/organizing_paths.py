@@ -64,11 +64,11 @@ graph.edge('BT3', 'BT4')
 graph.edge('BT4', 'BT5')
 
 # Render as SVG
-graph.render('organizing-paths', format='svg') #, view=True)
+graph.render('organizing_paths', format='svg') #, view=True)
 # Render as PNG
-graph.render('organizing-paths', format='png')
-# Render as PDF
-graph.render('organizing-paths', format='pdf')
+graph.render('organizing_paths', format='png')
+# Render as PD
+graph.render('organizing_paths', format='pdf')
 
 
 # Testing

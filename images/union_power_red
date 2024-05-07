@@ -13,5 +13,5 @@ needed?" pos="-0,-1.5!" shape=oval]
 	skilled_q -> large_workforce_q [label=No]
 	large_workforce_q -> non_union [label=No]
 	fontsize=12 label="
-*Red \"Yes\" responses indicate points of leverage favorable to the union" labelloc=b
+*Red “Yes” responses indicate points of leverage favorable to the union." labelloc=b
 }

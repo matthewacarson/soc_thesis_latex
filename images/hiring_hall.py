@@ -35,11 +35,11 @@ graph.edge('employer_layoff', 'worker')
 graph.edge('worker', 'worker_register')
 #%%
 # Render as SVG
-graph.render('hiring-hall-dispatch', format='svg')
+graph.render('hiring_hall', format='svg')
 # Render as PNG
-graph.render('hiring-hall-dispatch', format='png')
+graph.render('hiring_hall', format='png')
 # Render as PDF
-graph.render('hiring-hall-dispatch', format='pdf', view=True)
+graph.render('hiring_hall', format='pdf', view=True)
 #%%
 # check working directory
 os.getcwd()
