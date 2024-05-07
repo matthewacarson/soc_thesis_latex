@@ -5,6 +5,7 @@
 \usepackage{lmodern} % Load Latin Modern fonts
 \usepackage{subcaption}
 \usepackage{multirow}
+ \usepackage{booktabs}
 \usetheme{Madrid}
 
 % Color settings
@@ -159,25 +160,17 @@ Most labor unions compel employers to negotiate, but the Building Trades engage 
 
 
 \begin{frame}
-	\begin{tabular}{|c|c|c|c|}
-	    \hline
-	    Union & Similarity & Difference & Outcome \\
-	    \hline
-	    IAM & blah & blah & blah \\
-    	\hline
-    	blah & blah & blah & blah \\
-	\end{tabular}
-
-%	\begin{tabular}{|c|c|c|c|}
-%    \hline
-%    \multirow{2}{*}{Merged Cells} & Cell 2 & Cell 3 \\
-%    \cline{2-3}
-%    & Cell 5 & Cell 6 \\
-%    \hline
-%    Cell 7 & Cell 8 & Cell 9 \\
-%    \hline
-%\end{tabular}
-
+\begin{table}[]
+\centering
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Union}            & \textbf{Similarity}                                                            & \textbf{Difference}                                                                            & \textbf{Outcome}                                                        \\ \midrule
+Machinists (IAM)          & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Both\\ craft\\ unions\end{tabular}} & \begin{tabular}[c]{@{}l@{}}Industrial mode of organizing\\ Involuntary agreements\end{tabular} & Support progressive social-wage policy (e.g., single-payer healthcare). \\
+Plumbers/Pipefitters (UA) &                                                                                & Voluntary agreements                                                                           & No/limited support for social-wage policy.                             
+\end{tabular}
+\caption{The most similar cases that had different outcomes were selected.}
+\label{tab:my-table}
+\end{table}
 \end{frame}
 
 \section*{Union Organizing Paths}
