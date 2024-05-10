@@ -41,7 +41,7 @@ if(fileSizeLatest != folderSize) {
 return
 
 SendCommands:
-RunWait, git add ../soc_honors_thesis.tex ../soc_honors_thesis.pdf,, Hide
+RunWait, git add soc_honors_thesis.tex soc_honors_thesis.pdf,, Hide
 RunWait, git commit -m "Auto commit",, Hide
 ;~ ; RunWait, git push,, Hide
 return

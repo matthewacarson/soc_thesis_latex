@@ -1,6 +1,7 @@
 import os
 import graphviz
 #%%
+os.chdir('C:/Users/madou/OneDrive - UCLA IT Services/3)_SOC-Honors/graphs/organizing paths graph/final-draft')
 os.getcwd()
 os.environ["PATH"] += os.pathsep + 'C:/Program Files/Graphviz/bin/'
 graph = graphviz.Digraph(

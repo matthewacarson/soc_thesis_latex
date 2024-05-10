@@ -16,7 +16,7 @@ folderSize := GetFolderSize()
 
 gosub SendCommands
 
-timeInterval := 20 * 60 * 1000
+timeInterval := 5 * 60 * 1000
 
 SetTimer, SyncSlides, %timeInterval%
 return
@@ -40,7 +40,7 @@ if(fileSizeLatest != folderSize) {
 return
 
 SendCommands:
-RunWait, git add ../urweek_socoiology/presentation_slides.tex ../urweek_socoiology/presentation_slides.pdf,, Hide
+RunWait, git add presentation_slides.tex presentation_slides.pdf,, Hide
 RunWait, git commit -m "Auto commit",, Hide
-;~ ; RunWait, git push,, Hide
+RunWait, git push,, Hide
 return
