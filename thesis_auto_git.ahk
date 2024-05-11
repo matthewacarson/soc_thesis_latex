@@ -15,12 +15,8 @@ folderSize := GetFolderSize()
 gosub SendCommands
 
 timeInterval := 3 * 60 * 1000
-gitInterval := 10 * 60 * 1000
 
 SetTimer, CommitFiles, %timeInterval%
-return
-
-SetTimer, PushGit, %gitInterval%
 return
 
 CommitFiles:
@@ -46,6 +42,3 @@ RunWait, git add soc_honors_thesis.tex soc_honors_thesis.pdf soc_honors_thesis.i
 RunWait, git commit -m "Auto commit",, Hide
 return
 
-PushGit:
-	RunWait, git push,, Hide
-return
