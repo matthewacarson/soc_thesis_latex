@@ -3,26 +3,27 @@
 
 GetFolderSize() {
     totalSize := 0
-    Loop, Files, ..\*, FDR
+    Loop, Files, *, FDR
     {
-        ;~ MsgBox %A_LoopFileSize%
 		totalSize += A_LoopFileSize
     }
     return totalSize
 }
 
-; Example usage
 folderSize := GetFolderSize()
-;~ MsgBox, The size of the folder is %folderSize% bytes.
 
-gosub Sync
+gosub SendCommands
 
-timeInterval := 15 * 60 * 1000
+timeInterval := 3 * 60 * 1000
+gitInterval := 10 * 60 * 1000
 
-SetTimer, Sync, %timeInterval%
+SetTimer, CommitFiles, %timeInterval%
 return
 
-Sync:
+SetTimer, PushGit, %gitInterval%
+return
+
+CommitFiles:
 fileSizeLatest := GetFolderSize()
 if(fileSizeLatest != folderSize) {
 	folderSize := fileSizeLatest
@@ -41,7 +42,10 @@ if(fileSizeLatest != folderSize) {
 return
 
 SendCommands:
-RunWait, git add soc_honors_thesis.tex soc_honors_thesis.pdf,, Hide
+RunWait, git add soc_honors_thesis.tex soc_honors_thesis.pdf soc_honors_thesis.ist 1_SOC_Honors.bib thesis_auto_git.ahk .gitignore, , Hide
 RunWait, git commit -m "Auto commit",, Hide
-;~ ; RunWait, git push,, Hide
+return
+
+PushGit:
+	RunWait, git push,, Hide
 return
