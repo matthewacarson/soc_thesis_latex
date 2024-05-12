@@ -29,7 +29,7 @@ if(fileSizeLatest != folderSize) {
 	gosub, SendCommands
 } else {
 	Loop {
-		Sleep, 60000
+		Sleep, 30000
 		fileSizeLatest := GetFolderSize()
 		if(fileSizeLatest != folderSize) {
 			folderSize := fileSizeLatest
@@ -41,7 +41,7 @@ if(fileSizeLatest != folderSize) {
 return
 
 SendCommands:
-RunWait, git add soc_honors_thesis.tex soc_honors_thesis.pdf soc_honors_thesis.ist 1_SOC_Honors.bib auto_git.ahk auto_git_push.ahk .gitignore, , Hide
+RunWait, git add soc_honors_thesis.tex soc_honors_thesis.pdf soc_honors_thesis.ist 1_SOC_Honors.bib .gitignore, , Hide
 RunWait, git commit -m "Auto commit",, Hide
 return
 
