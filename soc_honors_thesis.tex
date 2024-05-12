@@ -112,7 +112,7 @@
 %  \wordcount
 \end{titlepage}
 
-% Blank page
+% Blank page so that the TOC does not begin on the back of the cover page.
 \thispagestyle{empty} % Remove header and footer
 
 \vspace*{\fill}
@@ -183,7 +183,7 @@ The intra-building trades data were collected from interviews with local union o
 
 \section{CRAFT UNIONISM VS. INDUSTRIAL UNIONISM} \
 
-Craft unionism is when workers are organized into a union by craft (occupation) rather than industry (or employer). The earliest efforts in the US to organize workers collectively to assert their interests and preferences were generally organized around craft lines. Plumbers formed their union; machinists started one; so did the carpenters, and so on. Many of these early craft unions were successful. Eventually, The American Federation of Labor (AFL) formed in 1886, bringing many of these labor unions into a nationwide federation. Immediately, many constituent unions battled over craft jurisdiction. For example, who should operate the mobile concrete mixers on the job site? Both the Teamsters and Operating Engineers claimed the work to be theirs at one point, leading to a jurisdictional dispute. As a result, one of the most important functions of the newly formed federation was to quell these jurisdictional fights (\cite{jaffe1940}).
+Craft unionism is when workers are organized into a union by craft (occupation) rather than industry (or employer). The earliest efforts in the US to organize workers collectively to assert their interests and preferences were generally organized around craft lines. Plumbers formed their union; machinists started one; so did the carpenters, and so on. Many of these early craft unions were successful. Eventually, The American Federation of Labor \gls{afl} formed in 1886, bringing many of these labor unions into a nationwide federation. Immediately, many constituent unions battled over craft jurisdiction. For example, who should operate the mobile concrete mixers on the job site? Both the Teamsters and Operating Engineers claimed the work to be theirs at one point, leading to a jurisdictional dispute. As a result, one of the most important functions of the newly formed federation was to quell these jurisdictional fights (\cite{jaffe1940}).
 
 % Jaffe, Louis L. 1940. “Inter-Union Disputes in Search of a Forum.” The Yale Law Journal 49(3):424–60. doi: 10.2307/792665.
 
@@ -441,7 +441,7 @@ At the same time, the local union seems to largely not be any different from the
 \setstretch{1.25}
 \printbibliography[heading=bibintoc]
 
-
-\printglossary[type=\acronymtype]
+\newpage
+\printglossary[type=\acronymtype,title=Acronyms]
 
 \end{document}

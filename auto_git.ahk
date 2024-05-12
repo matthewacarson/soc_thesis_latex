@@ -29,7 +29,7 @@ if(fileSizeLatest != folderSize) {
 	gosub, SendCommands
 } else {
 	Loop {
-		Sleep, 30000
+		Sleep, 30000 ; restart the loop every 30 seconds
 		fileSizeLatest := GetFolderSize()
 		if(fileSizeLatest != folderSize) {
 			folderSize := fileSizeLatest
