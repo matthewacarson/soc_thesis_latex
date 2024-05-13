@@ -23,6 +23,8 @@
 \usepackage[acronym, nomain, nopostdot]{glossaries}
 \makeglossaries
 
+\titleformat{\section}{\bfseries\centering}{\thesection}{0.5em}{}
+
 % List of Acronyms and abbreviations
 
 \newacronym{afl}{AFL}{American Federation of Labor}
@@ -160,12 +162,25 @@ US Building Trade unions organize their workers differently. Most labor unions c
 
 \clearpage
 
-% Add table of contentsart
+% Add table of contents
 \tableofcontents
 \clearpage
 
+% List of figures
+\titleformat{\section}{\fontsize{12}{14}\bfseries\centering}{\thesection}{0.5em}{}
 \listoffigures
 \clearpage
+
+% List of tables
+\listoftables
+\clearpage
+
+% List of acronyms
+\setstretch{1.25}
+%\addcontentsline{toc}{section}{Acronyms}
+\printglossary[type=\acronymtype,title=Acronyms]
+\clearpage
+\setstretch{2}
 
 % Define custom section headings
 \titleformat{\section}[block]{\normalfont\fontsize{12}{14}\selectfont\bfseries}{\thesection.}{0.5em}{}
@@ -374,7 +389,7 @@ Unionized Workforce & 14.3 million	& 3 million				& 21 \%     \\
 Labor Actions       		& 413				& 3							& 0.73 \%    
 \end{tabular}
 \captionsetup{justification=centering, singlelinecheck=false, margin=2cm} 
-\caption{Construction unions represent over seven percent of unionized workers but were involved in less than one percent of labor actions in 2023 (\cite{ilrschoolILRLaborAction}).}
+\caption[Labor Actions]{Construction unions represent over seven percent of unionized workers but were involved in less than one percent of labor actions in 2023 (\cite{ilrschoolILRLaborAction}).}
 \label{tab:strikes}
 \end{table}
 
@@ -541,12 +556,6 @@ At the same time, the local union seems to largely not be any different from the
 % Line spacing
 \setstretch{1.25}
 \printbibliography[heading=bibintoc]
-\clearpage
-
-\addcontentsline{toc}{section}{Acronyms}
-\printglossary[type=\acronymtype,title=Acronyms]
-
-
 
 \clearpage
 
@@ -577,7 +586,7 @@ At the same time, the local union seems to largely not be any different from the
         Plumbers/Pipefitters (UA) & & • Voluntary Agreements & \begin{tabular}[c]{@{}l@{}}• No/limited support for social-wage policy.\\• Has defended the construction of\\ \hspace{7pt}new oil pipelines.\\• Opposed reforms and regulatory policies\\ \hspace{7pt} that might hamper new refinery projects\end{tabular} \\ 
         \bottomrule
     \end{tabular}
-    \caption{The most similar cases that had different outcomes were selected.}
+    \caption[Case Selection]{The most similar cases that had different outcomes were selected.}
     \label{tab:cases}
 \end{table}
 \endgroup
