@@ -14,6 +14,8 @@
 \usepackage{parskip}
 \usepackage{setspace}
 \usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{multirow}
 \usepackage[autostyle, english = american]{csquotes}
 \MakeOuterQuote{"}
 \AtEveryBibitem{\ifentrytype{book}{\clearfield{isbn}}{}}
@@ -28,6 +30,7 @@
 \newacronym{btc}{BTC}{Building Trades Council}
 \newacronym{cio}{CIO}{Congress of Industrial Organizations}
 \newacronym{csb}{CSB}{U.S. Chemical Safety and Hazard Investigation Board}
+\newacronym{dapl}{DAPL}{Dakota Access Pipeline}
 \newacronym{iam}{IAM}{International Association of Machinists and Aerospace Workers}
 \newacronym{ibew}{IBEW}{International Brotherhood of Electrical Workers}
 \newacronym{ilgwu}{ILGWU}{International Ladies Garment Workers Union}
@@ -35,6 +38,7 @@
 \newacronym{jatc}{JATC}{Joint Apprenticeship Training Committee}
 \newacronym{lmrda}{LMRDA}{Landrum-Griffin Labor-Management Reporting and Disclosure Act}
 \newacronym{nabtu}{NABTU}{North America's Building Trades Unions}
+\newacronym{nepa}{NEPA}{National Environmental Policy Act}
 \newacronym{nlra}{NLRA}{National Labor Relations Act}
 \newacronym{nlrb}{NLRB}{National Labor Relations Board}
 \newacronym{ocaw}{OCAW}{Oil, Chemical and Atomic Workers Union}
@@ -43,7 +47,7 @@
 \newacronym{pace}{PACE}{Paper, Allied-Industrial, Chemical and Energy Workers International Union}
 \newacronym{rwdsu}{RWDSU}{Retail, Wholesale, and Department Store Union}
 \newacronym{ua}{UA}{United Association of Journeymen and Apprentices of the Plumbing and Pipe Fitting Industry}
-\newacronym{ugccwa}{ugccwa}{United Gas Coke and Chemical Workers of America}
+\newacronym{ugccwa}{UGCCWA}{United Gas Coke and Chemical Workers of America}
 \newacronym{umwa}{UMWA}{United Mine Workers of America}
 \newacronym{upiu}{UPIU}{United Paperworkers' International Union}
 \newacronym{usw}{USW}{United Steel, Paper and Forestry, Rubber, Manufacturing, Energy, Allied Industrial and Service Workers International Union}
@@ -91,7 +95,7 @@
 \fancyhf{} % clear all header and footer fields
 \fancyhead[R]{\thepage} % page number on the right side
 \fancyhead[L]{\small \myTitle}
-\renewcommand{\headrulewidth}{0pt} % remove header rule
+\renewcommand{\headrulewidth}{1pt} % header rule
 
 % Customize abstract page
 \renewenvironment{abstract}
@@ -115,6 +119,7 @@
   \thispagestyle{fancy}
   \pagenumbering{gobble}
   \fancyhead[L]{Running head: \myTitle}
+  \renewcommand{\headrulewidth}{0pt} % header rule
   \centering
   \vspace*{1.95in}
   {\LARGE Construction Union Agreements: Union Organizing in Historical-Comparative Perspective\par}
@@ -158,10 +163,6 @@ US Building Trade unions organize their workers differently. Most labor unions c
 \listoffigures
 \clearpage
 
-
-\printglossary[type=\acronymtype,title=Acronyms]
-\clearpage
-
 % Define custom section headings
 \titleformat{\section}[block]{\normalfont\fontsize{12}{14}\selectfont\bfseries}{\thesection.}{0.5em}{}
 \titleformat{\subsection}[block]{\itshape\bfseries}{\thesubsection.}{0.5em}{}
@@ -192,6 +193,27 @@ Some argue that the conservative stance of the Building Trades originates from t
 However, these views are mistaken. For instance, other unions with many members working in the petrochemical industry, such as the United Steelworkers, have backed progressive policies, including environmental policies, and other craft-based unions, such as the International Association of Machinists, have endorsed single-payer healthcare despite organizing along craft lines instead of industry. The key distinction between these unions and their disparate political stances lies in the Building Trades' use of voluntary agreements, which minimizes conflicts with employers and constrains their ability to challenge management.
 
 % Foner, Phillip S. History of the Labor Movement in the United States: Volume 2: From the Founding of the AFL to the Emergence of American Imperialism. New York: International Publishers, 1955; pp. 132–133.
+
+\section{An Outlier in the Labor Movement}
+\subsection{Dakota Access Pipeline and Standing Rock}\
+
+The controversy surrounding the \acrfull{dapl} brought to the fore the political differences vis-\`a-vis the Building Trades' unions on the one hand, and the rest of the labor movement on the other. The plan to build a 1,168-mile, crude oil pipeline, called the \acrshort{dapl}, stretching from the Bakken and Three Forks production region of North Dakota to Patoka, Illinois was announced in 2014 by Dakota Access, LLC (\cite{oconnellDakotaAccessPipeline2018, sahaFiveThingsKnow2016, usarmycorpsofengineersDakotaAccessPipeline}). For the first roughly two years after the announcement of the project it by and large did not draw public attention or awareness. However, in the fall of 2016, it became a flashpoint in the national political scene with environmental groups and Native American tribes on one side and petrochemical companies on the other. 
+
+The opposition to the pipeline culminated in protests in Sioux County, North Dakota in 2016. The pipeline was slated to run through the Standing Rock Sioux Tribe reservation, which opponents of the project contended would “endanger[] sacred sites and drinking water” (\cite{sahaFiveThingsKnow2016}). Members of the Standing Rock tribe claimed that the project violated the principles of tribal sovereignty and threatened the continued existence of the tribe (\cite{massieUnderstandDakotaAccess2016}). Moreover, they claimed that the US government had not adequately consulted with the tribal government, which violated US treaties and the United Nations Declaration on the Rights of Indigenous Peoples (\cite{sahaFiveThingsKnow2016}). In addition to bringing thousands of Native American activists in opposition to the pipeline from across the country to Standing Rock, environmentalists and climate activists were equally concerned not only with the environmental impact of expanding fossil fuel infrastructure but also the potential hazards of oil spills  and other accidents endemic to the petrochemical industry (\cite{sahaFiveThingsKnow2016}). 
+
+The Standing Rock Sioux Tribe filed a lawsuit against the US Army Corps of Engineers in an attempt to halt the project. On September 9, 2016, a federal judge denied the tribe’s request to halt construction. However, within hours of the court’s ruling, the Obama Administration ordered the Army Corps of Engineers to put the project on hold and “determine whether it will need to reconsider any of its previous decisions regarding the Lake Oahe site under the \acrfull{nepa} or other federal laws” (\cite{officeofpublicaffairsJointStatementDepartment2016}). 
+
+\subsection{Organized Labor's Response}\
+
+Many labor organizations supported the Native tribe and the environmentalists. For example, the 
+
+\subsection{The Building Trades' Response}\
+
+\acrfull{nabtu}, a trade department of the \acrshort{aflcio} representing 14 constituent building trades unions, issued a statement within days condemning the actions of the Obama Administration. On September 14, 2016, they expressed their “disappointment” with the Obama Administration in the latter’s willingness to “halt the lawful construction” of the \acrshort{dapl}, emphasized the advanced training of their skilled craftworkers, and contended that many safety redundancies would be in place while the project was underway (\cite{nabtuStatementObamaAdministration2016}). Further, they chided the Executive Branch for its “disregard” of “the facts,” the “exhaustive permitting and review process, stakeholder engagement,” and “the ruling of a Federal Court Judge,” and they lamented the loss of construction jobs with “family sustaining wages and benefits” (\cite{nabtuStatementObamaAdministration2016}).
+
+Early the following month, \acrshort{nabtu} with signatures from the presidents of five different construction unions, wrote a letter directly to the White House reiterating their concerns. In the letter, they underscored that many of their 8,000 members who were working on the project were already struggling and facing hardship because of unemployment caused by the Executive Branch’s intervention. Additionally, they emphasized that this intervention sets a “chilling” precedent that would undermine “future investment in necessary U.S. infrastructure–from highways and bridges to ports and factories,” and that “If companies like Energy Transfer Partners cannot trust that the regulatory process outlined in federal law will be upheld, who will continue to invest in America?” (\cite{callahanLetterObama2016}).
+
+
 
 \section{METHODS} \
 
@@ -332,8 +354,6 @@ At the same time, this elite status and craft pride also come with a much higher
 
 This has blurred line can give workers a sense, much more so than in other industries, that both employer and employee are on the same "team." Unlike an industry such as manufacturing, where large amounts of capital are necessary to start a business, starting a plumbing business is not unrealizable. One survey even found that half of a large plumbers local "had thought of entering business on their own at one time or another, though most had not done so" (\cite[5]{schneirovPrideSolidarityHistory1993}). Put straightforwardly, this means that half of the local union’s workers, that is, sellers of labor power, also imagine a future as buyers of that same labor power. Schneirov contends that this blurring of the lines and class collaborative dynamic creates a "craft community," where employers and workers share a common background that "breed[s] an ethic of cooperation among individuals based on mutual respect for craft knowledge, skill, and ingenuity" (\cite[6]{schneirovPrideSolidarityHistory1993}). And "Even those union members who have never considered contracting have often bid independently on small jobs and are familiar with the psychology of being an entrepreneur" (\cite[5--6]{schneirovPrideSolidarityHistory1993}). 
 
-% Add a section here about the DAPL and how the building trades have responded.
-
 \subsection{The Oil Chemical and Atomic Workers \& United Steelworkers} \
 
 The United Steel Workers (\acrshort{usw}) and the Building Trades both have substantial work in the petrochemical industry. The \acrfull{ocaw} represented workers in the petrochemical industry for much of the 20th Century, but by the 1980s, membership numbers began to decline significantly. They merged with several other unions to form the \acrfull{pace} in 1999. However, that merger only lasted six years, and they merged with the \acrshort{usw} in 2005.
@@ -392,7 +412,7 @@ The merger also threatened the Just Transition framework that the \acrshort{ocaw
 Those guys didn't like it [Just Transition]. You know, we had this big fight about chlorine, which is a key ingredient in the paper-making process, but there [are] other technological ways to make paper without using chlorine. And we, the Oil, Chemical Atomic Workers \acrshort{ocaw}, had called for a ban on chlorine. And the Paper Workers sided with the industry and opposed that ban; that was one of the first fights we had after the merger, and we lost, and that was sort of the defeat of the worker-centered, just transition model as opposed to an industry-supportive, "keep pumping the poisons out as long as you can" model. (\citeyear{dudzicInterview2024})
 \end{quote}
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \centering
   \includegraphics[width=\imageWidth]{images/ocaw}
   \captionsetup{justification=centering, singlelinecheck=false, margin=2cm} 
@@ -460,5 +480,52 @@ At the same time, the local union seems to largely not be any different from the
 % Line spacing
 \setstretch{1.25}
 \printbibliography[heading=bibintoc]
+\clearpage
+
+\addcontentsline{toc}{section}{Acronyms}
+\printglossary[type=\acronymtype,title=Acronyms]
+
+
+
+\clearpage
+
+\paperwidth=\pdfpageheight
+\paperheight=\pdfpagewidth
+\pdfpageheight=\paperheight
+\pdfpagewidth=\paperwidth
+\headwidth=\textheight
+\begingroup 
+\vsize=\textwidth
+\hsize=\textheight
+
+\begin{table}[!ht]
+    \centering
+    \fontsize{12}{20}\selectfont
+    \begin{tabular}{@{}llll@{}}
+        \toprule[0.25pt]
+        \textbf{Union} & \textbf{Similarity} & \textbf{Difference} & \textbf{Outcome} \\ 
+        \midrule[0.25pt] \midrule[0.25pt]
+        Machinists (IAM) & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Both\\ craft\\ unions\end{tabular}} & \begin{tabular}[c]{@{}l@{}}• Industrial mode\\ \hspace{7pt} of organizing\\ • Involuntary agreements\end{tabular} & \begin{tabular}[c]{@{}l@{}}• Supports progressive social-wage policy\\ \hspace{7pt}(e.g., single-payer healthcare).\end{tabular} \\ 
+        \cmidrule(r){1-1} \cmidrule(l){3-4} 
+        Plumbers/Pipefitters (UA) & & • Voluntary agreements & • No/limited support for social-wage policy. \\ 
+        \midrule[0.25pt] \midrule[0.25pt]
+        \textbf{Union} & \textbf{Similarity} & \textbf{Difference} & \textbf{Outcome} \\ 
+        \midrule[0.25pt] \midrule[0.25pt]
+        \begin{tabular}[c]{@{}l@{}}Oil Chemical \& Atomic\\ Workers/Steelworkers\\ (OCAW/USW)\end{tabular} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Both \\ have \\ substantial \\ petrochemical \\ work\end{tabular}} & \begin{tabular}[c]{@{}l@{}}• Industrial mode\\ \hspace{7pt} of organizing\\ • Involuntary agreements\end{tabular} & \begin{tabular}[c]{@{}l@{}}• Supports progressive social-wage policy.\\• Supports the Pollan Report (creation of clean\\ \hspace{7pt}-energy jobs) and a transition from fossil fuels.\end{tabular} \\ 
+        \cmidrule(r){1-1} \cmidrule(l){3-4} 
+        Plumbers/Pipefitters (UA) & & • Voluntary Agreements & \begin{tabular}[c]{@{}l@{}}• No/limited support for social-wage policy.\\• Has defended the construction of\\ \hspace{7pt}new oil pipelines.\\• Opposed reforms and regulatory policies\\ \hspace{7pt} that might hamper new refinery projects\end{tabular} \\ 
+        \bottomrule
+    \end{tabular}
+    \caption{The most similar cases that had different outcomes were selected.}
+    \label{tab:cases}
+\end{table}
+\endgroup
+
+%\newpage
+%\paperwidth=\pdfpageheight
+%\paperheight=\pdfpagewidth
+%\pdfpageheight=\paperheight
+%\pdfpagewidth=\paperwidth
+%\headwidth=\textwidth
 
 \end{document}
