@@ -1,6 +1,6 @@
 \documentclass[12pt]{article}
 
-% Load Packages
+%%%% Load Packages %%%%
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{url}
@@ -25,7 +25,7 @@
 
 \titleformat{\section}{\fontsize{12}{14}\bfseries\centering}{\thesection}{0.5em}{}
 
-% List of Acronyms and abbreviations
+%%%% List of Acronyms and abbreviations %%%%
 
 \newacronym{afl}{AFL}{American Federation of Labor}
 \newacronym{aflcio}{AFL-CIO}{American Federation of Labor-Congress of Industrial Organizations}
@@ -33,6 +33,9 @@
 \newacronym{btc}{BTC}{Building Trades Council}
 \newacronym{cio}{CIO}{Congress of Industrial Organizations}
 \newacronym{csb}{CSB}{U.S. Chemical Safety and Hazard Investigation Board}
+\newacronym[
+    description={Community Workforce Agreement (also called Project Labor Agreement [PLA])}
+]{cwa}{CWA}{Community Workforce Agreement}
 \newacronym{dapl}{DAPL}{Dakota Access Pipeline}
 \newacronym{iam}{IAM}{International Association of Machinists and Aerospace Workers}
 \newacronym{ibew}{IBEW}{International Brotherhood of Electrical Workers}
@@ -49,6 +52,11 @@
 \newacronym{opcima}{OPCIMA}{Operative Plasterers' and Cement Masons' International Association}
 \newacronym{owiu}{OWIU}{Oil Workers International Union}
 \newacronym{pace}{PACE}{Paper, Allied-Industrial, Chemical and Energy Workers International Union}
+%\newacronym{pla}{PLA}{Project Labor Agreement}
+\newacronym[
+    description={Project Labor Agreement (also called Community Workforce Agreement [CWA])}
+]{pla}{PLA}{Project Labor Agreement}
+\newacronym{pro}{PRO Act}{Protecting the Right to Organize Act}
 \newacronym{rwdsu}{RWDSU}{Retail, Wholesale, and Department Store Union}
 \newacronym{seiu}{SEIU}{Service Employees International Union}
 \newacronym{ua}{UA}{United Association of Journeymen and Apprentices of the Plumbing and Pipe Fitting Industry}
@@ -59,47 +67,39 @@
 \newacronym{usw}{USW}{United Steel, Paper and Forestry, Rubber, Manufacturing, Energy, Allied Industrial and Service Workers International Union}
 
 
-% Head height
+%%%% Head height %%%%
 \setlength{\headheight}{15pt}
-
-% Line spacing
+%%%% Line spacing %%%%
 \setstretch{2}
-
-% Paragraph spacing
+%%%% Paragraph spacing %%%%
 \setlength{\parskip}{0pt}
-
-% Define indentation length
+%%%% Define indentation length %%%%
 \newlength{\myindent}
-\setlength{\myindent}{3em}
-
-% Set the hanging indent
+\setlength{\myindent}{2em}
+%%%% Set the hanging indent %%%%
 \setlength{\bibhang}{\myindent}
-
-% Redefine the citation command to use colon instead of comma and pp.
+%%%% Redefine the citation command to use colon instead of comma and pp. %%%%
 \DeclareFieldFormat{postnote}{#1}
 \DeclareFieldFormat{multipostnote}{#1}
-
-% Use colon (ASA Style) in-text citations (author year:page)
+%%%% Use colon (ASA Style) in-text citations (author year:page) %%%%
 \renewcommand*{\postnotedelim}{\addcolon}
-
-% Set global text alignment to ragged-right
-\raggedright
-
-% Paragraph indentation
+%%%% Set global text alignment to ragged-right %%%%
+%\raggedright
+%%%% Paragraph indentation %%%%
 \setlength{\parindent}{\myindent}
 
-% Font
+%%%% Font %%%%
 % \setmainfont{Times New Roman}
 
-% Define a variable for the title
+%%%% Define a variable for the title %%%%
 \newcommand{\myTitle}{CONSTRUCTION UNION\dots{HISTORICAL-COMPARATIVE}}
-
 \newcommand{\imageWidth}{0.8\textwidth}
 
-% Page style
+%%%% Page style %%%%
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
-\fancyhead[R]{\thepage} % page number on the right side
+%\fancyhead[R]{\thepage} % page number on the right side
+\fancyhead[R]{\hyperlink{toc}{\thepage}} % page number on the right side, linked to the TOC
 \fancyhead[L]{\small \myTitle}
 \renewcommand{\headrulewidth}{1pt} % header rule
 
@@ -121,7 +121,6 @@
 \AtEndEnvironment{quote}{\vspace{0.5\baselineskip}}
 
 \begin{document}
-
 \begin{titlepage}
   \thispagestyle{fancy}
   \pagenumbering{gobble}
@@ -140,7 +139,7 @@
 %  \wordcount
 \end{titlepage}
 
-% Blank page so that the TOC does not begin on the back of the cover page.
+% Blank page so that the abstract does not begin on the back of the cover page.
 \thispagestyle{empty} % Remove header and footer
 
 \vspace*{\fill}
@@ -164,6 +163,7 @@ US Building Trade unions organize their workers differently. Most labor unions c
 \clearpage
 \setstretch{1.25}
 % Add table of contents
+\hypertarget{toc}{}
 \tableofcontents
 \clearpage
 
@@ -185,7 +185,7 @@ US Building Trade unions organize their workers differently. Most labor unions c
 % Define custom section headings
 \titleformat{\section}[block]{\normalfont\fontsize{12}{14}\selectfont\bfseries}{\thesection.}{0.25em}{}
 \titleformat{\subsection}[block]{\itshape\bfseries}{\thesubsection.}{0.25em}{}
-\titleformat{\subsubsection}[runin]{\normalfont\itshape\bfseries}{\hspace{\myindent}\thesubsubsection.}{0.25em}{}%{\hspace{0em}}%[\hspace{2pt}]
+\titleformat{\subsubsection}[runin]{\normalfont\itshape\bfseries}{\hspace{\myindent}\thesubsubsection.}{0em}{}%{\hspace{0em}}%[\hspace{2pt}]
 
 % Adjust spacing before and after sectioning commands
 \titlespacing*{\section}{0pt}{0pt}{0pt} % \baselineskip
@@ -203,7 +203,7 @@ US Building Trade unions organize their workers differently. Most labor unions c
 % Add a citation for month-long strikes and how they led to the Wagner Act.
 % Gross, James A. 1974. The Making of the National Labor Relations Board: A Study in Economics, Politics, and the Law. Albany: State University of New York Press.
 
-Do the ways that unions organize aﬀect their political stances? US construction unions have a distinct approach to organizing their workers vis-à-vis other labor unions. While most labor unions typically compel employers to negotiate through secret ballot elections or work stoppages, the Building Trades take a different route by engaging in voluntary negotiations.\footnote{See Sections \ref{sub:ind_bargain} and \ref{sub:bt_bargaining} for a discussion of the history of secret ballot elections and how the building trades negotiates.} Their strategy hinges more on the skill levels of their workers than the leverage of strikes or official \acrfull{nlrb} elections, which use the state to compel the employer to negotiate. At the same time, the Building Trades are often outliers in the US labor movement. They frequently oppose progressive environmental policies and thus align more closely with their employers in the petrochemical industry than with other labor or environmental organizations on environmental issues. Additionally, they are not supportive of single-payer healthcare or other social wage policies.\footnote{To be sure, not all non-Building Trades unions endorse or support single-payer healthcare, but \emph{no} Building Trades unions do.} Why have the Building Trades taken these positions?
+Do the ways that unions organize aﬀect their political stances? US construction unions have a distinct approach to organizing their workers vis-à-vis other labor unions. While most labor unions typically compel employers to negotiate through secret ballot elections or work stoppages, the Building Trades take a different route by engaging in voluntary negotiations.\footnote{See Sections \ref{sub:ind_bargain} and \ref{sub:bt_bargaining} for a discussion of the history of secret ballot elections and how the Building Trades negotiates.} Their strategy hinges more on the skill levels of their workers than the leverage of strikes or official \acrfull{nlrb} elections, which use the state to compel the employer to negotiate. At the same time, the Building Trades are often outliers in the US labor movement. They frequently oppose progressive environmental policies and thus align more closely with their employers in the petrochemical industry than with other labor or environmental organizations on environmental issues. Additionally, they are not supportive of single-payer healthcare or other social wage policies.\footnote{To be sure, not all non-Building Trades unions endorse or support single-payer healthcare, but \emph{no} Building Trades unions do.} Why have the Building Trades taken these positions?
 
 One potential explanation is that unions with many workers in the petrochemical industry will align with the employer on environmental policy if they believe environmental policies might be "job killers." That is, the Building Trades' opposition to environmental policy meant to attenuate global warming might simply be a function of the union's interest in keeping their members working. They have many members working on projects in the petrochemical industry, and this is what one would expect from workers and their unions in that industry. After all, why would they support something that might cause unemployment?
 
@@ -238,7 +238,7 @@ The earliest efforts in the US to organize workers collectively to assert their 
 
 Industrial unionism did not emerge until sometime later. Industrial unionism organizes workers by employer or industry, irrespective of their craft, occupation, or skill level. Many early craft unionists in the \acrshort{afl} were skeptical of industrial unionism; they did not think that it would be successful because many workers in mass-production factories were immigrants with no specific craft or formal training (\cite{fonerHistoryLaborMovement1981a}). \acrshort{afl} craft union leaders doubted the feasibility of organizing them, as these workers lacked the leverage typically associated with having a craft (\cite{fonerHistoryLaborMovement1994}). Their jobs were often repetitive and required little skill. For instance, performing tasks like standing in one place and fastening bolts on a Model T all day did not constitute a craft, unlike the specialized skills of a machinist operating a lathe or a pile driver constructing a bridge.
 
-Industrial unionism largely was a response to these percieved limitations of craft unionism. Exponents of industrial unionism believed that these limitations could be overcome by adopting the industrial unionist approach---organzing an entire industry regardless of occupational or craft classification. Sometimes this is called "wall-to-wall" unionism (\cite{meyersWhatAreMy2023}). While craft unionism is largely associated with parochialism and thus a more conservative outlook, industrial unionism is often associated with a more progressive or even radical unionism.\footnote{Labor historians have debated the extent to which the \acrshort{afl}'s unionism was "declensionist"---conservative, "disengaged," "voluntarist," lacking class consciousness and an "agenda...of change for the nation as a whole" (\cite[61–62]{cobblePureSimpleRadicalism2013}). I emphatically do \emph{not} intend to take a position on this debate. Instead, I have tried to present as best as I can the basic outline of the \textit{declensionist} view.}
+Industrial unionism largely was a response to these percieved limitations of craft unionism. Exponents of industrial unionism believed that these limitations could be overcome by adopting the industrial unionist approach---organzing an entire industry regardless of occupational or craft classification. Sometimes this is called "wall-to-wall" unionism (\cite{meyersWhatAreMy2023}). While craft unionism is largely associated with parochialism and thus a more conservative outlook, industrial unionism is often associated with a more progressive or even radical unionism.\footnote{Labor historians have debated the extent to which the \acrshort{afl}'s unionism was "declensionist"---conservative, "disengaged," "voluntarist," lacking class consciousness and an "agenda\ldots of change for the nation as a whole" (\cite[61–62]{cobblePureSimpleRadicalism2013}). I emphatically do \emph{not} intend to take a position on this debate. Instead, I have tried to present, as best I can, the basic outline of the perspective that depicts the \acrshort{afl} unions as conservative without adopting this view as "correct."}
 
 \subsection{Industrial Bargaining}\label{sub:ind_bargain}\
 
@@ -379,13 +379,13 @@ The \acrfull{nabtu} has clearly taken a very different position than the rest of
 A 2015 interview with Sean McGarvey, President of the \acrshort{nabtu}, provides some answers. McGarvey met with Martin Durbin, President and CEO of \acrfull{anga} for an interview released on YouTube. At one point, Durbin talked about his time on the American Petroleum Institute’s labor-management board in Pennsylvania. Durbin explained that when the industry moved into Pennsylvania, labor and management did not have an existing relationship, but eventually they found that their interests overlapped and that both sides mutually benefitted from the relationship:
 
 \begin{quote}
-Pennsylvania I thought was a really interesting example where we saw an industry move in and where the [labor-management] relationship didn't really exist but over time everyone kind of realized that, hey, wait a minute, you know…this is working for all of us. (\cite{natgasnowNextInfrastructureChallenge2015})
+Pennsylvania I thought was a really interesting example where we saw an industry move in and where the [labor-management] relationship didn't really exist but over time everyone kind of realized that, hey, wait a minute, you know\ldots this is working for all of us. (\cite{natgasnowNextInfrastructureChallenge2015})
 \end{quote}
 
 \noindent When Durbin asked McGarvey how he thought these relationships with management had been progressing, McGarvey responded:
 
 \begin{quote}
-It’s really been interesting to work on building these relationships. We have so much in common as opposed to the things we disagree with, and we've gotten together and said, “Let's really examine these things we have in common”; and then once we examine them we said, “Well, how do we partner to move the issues along that we really agree with that are in the best interest of our country and our economy?” And [we’ve had] the opportunity to work with really smart people in really iconic great companies that have been around for a hundred years or have been around for 20 years…. I serve a membership; my job is to create economic opportunity for my membership…. That's what I'm supposed to do and when you run a company, you have a board of directors, and you have shareholders to answer to if you're if you're publicly traded. Both of those things are true, but then there's this meeting in the middle: how do we create value for shareholders? How do I create value for my members and do it in a responsible way working with partners who want to work with us responsibly to create value for their shareholders?…[W]hen you have the opportunity to have those conversations you say, “gosh there [are] so many things that we can do together and do better together,” and I [have] got to tell you…it's always kind of been the way [of] the building trades. If you go back to a great quote from George Meany, back when he was a plumber in New York City and a local leader, they never went on strike; they never had a strike, even during that tumultuous time down there. It's because [the union’s] contractors needed to be successful for his plumbers to work. (\cite{natgasnowNextInfrastructureChallenge2015})
+It’s really been interesting to work on building these relationships. We have so much in common as opposed to the things we disagree with, and we've gotten together and said, “Let's really examine these things we have in common”; and then once we examine them we said, “Well, how do we partner to move the issues along that we really agree with that are in the best interest of our country and our economy?” And [we’ve had] the opportunity to work with really smart people in really iconic great companies that have been around for a hundred years or have been around for 20 years\ldots I serve a membership; my job is to create economic opportunity for my membership\ldots That's what I'm supposed to do and when you run a company, you have a board of directors, and you have shareholders to answer to if you're if you're publicly traded. Both of those things are true, but then there's this meeting in the middle: how do we create value for shareholders? How do I create value for my members and do it in a responsible way working with partners who want to work with us responsibly to create value for their shareholders?\ldots [W]hen you have the opportunity to have those conversations you say, “gosh there [are] so many things that we can do together and do better together,” and I [have] got to tell you\ldots it's always kind of been the way [of] the building trades. If you go back to a great quote from George Meany, back when he was a plumber in New York City and a local leader, they never went on strike; they never had a strike, even during that tumultuous time down there. It's because [the union’s] contractors needed to be successful for his plumbers to work. (\cite{natgasnowNextInfrastructureChallenge2015})
 \end{quote}
 
 McGarvey’s answers exemplify the class collaborationist approach taken by the \acrshort{nabtu}. Contra the other unions, the \acrshort{nabtu} has prioritized its relationship with industry over solidarities with the Native American tribes and environmental groups. McGarvey made very clear that he thinks the building trades should prioritize their relationships with management by finding the things that they have in common over policies that might benefit workers or the community more broadly. The analogy of Building Trades leader to essentially a CEO is equally telling. From this perspective, the union members become not much more than “shareholders,” who pay dues and other fees in exchange for a “return” in the form of employment covered by a collective bargaining agreement. Rather than these agreements being forged as a result of workplace organizing, where work stoppages or other such actions are the crux of such struggles, they are forged in labor-management board meetings, where the parties find ways to collectively create “value” for their shareholders or members. Indeed, as the George Meany reference makes clear, strikes are rare to nonexistent by design.
@@ -492,7 +492,7 @@ Our wage bill is \textdollar 10 million a year. Our environmental compliance is 
 In 1999, to "stop the bleeding," the \acrshort{ocaw} merged with the \acrlong{pace} (\acrshort{pace}; Figure \ref{fig:ocaw}). Dudzic described this merger as disastrous:
 
 \begin{quote}
-The [Paper Workers (\acrshort{upiu}) had] the opposite tradition in terms of internal governance. It was very top down, very closed; officers basically ran the show. They had these district directors who manipulated politics in the various districts, so it was very opposite of the \acrshort{ocaw}. Some people in our Union felt that we could shake things up; they promised to allow for some more democratic structures in the new Union, but they quickly closed the doors on that after the merger. The hope was that the paper workers were … the structures of the industries were very similar, these large manufacturing facilities dominated by multinational corporations; the Paper Workers, like the Oil and Chemical workers \acrshort{ocaw}, had a lot of people in the South and rural areas. There was some sense that there could be some synergy there, but the leadership was backward, incompetent, and intent from the very beginning on purging any kind of militancy and progressive politics from the Union. (\citeyear{dudzicInterview2024})
+The [Paper Workers (\acrshort{upiu}) had] the opposite tradition in terms of internal governance. It was very top down, very closed; officers basically ran the show. They had these district directors who manipulated politics in the various districts, so it was very opposite of the \acrshort{ocaw}. Some people in our Union felt that we could shake things up; they promised to allow for some more democratic structures in the new Union, but they quickly closed the doors on that after the merger. The hope was that the paper workers were\ldots the structures of the industries were very similar, these large manufacturing facilities dominated by multinational corporations; the Paper Workers, like the Oil and Chemical workers \acrshort{ocaw}, had a lot of people in the South and rural areas. There was some sense that there could be some synergy there, but the leadership was backward, incompetent, and intent from the very beginning on purging any kind of militancy and progressive politics from the Union. (\citeyear{dudzicInterview2024})
 \end{quote}
 
 \noindent The merger also threatened the Just Transition framework that the \acrshort{ocaw} had pioneered:
@@ -509,7 +509,7 @@ Those guys didn't like it [Just Transition]. You know, we had this big fight abo
   \label{fig:ocaw}
 \end{figure}
 
-However, the merger was short-lived. In 2005, \acrshort{pace} was absorbed by the \acrshort{usw}. Though the merger with the \acrshort{usw} was also conducted in a top-down fashion (\cite{dudzicInterview2024}), it had the effect of stabilizing the union, which had still been in a precarious position. The merger has effectively wiped out many of the earlier \acrshort{ocaw} democratic rank-and-file decision-making processes and replaced them with more bureaucratic methods. For example, much of the negotiating activity is now carried out by "technicians," who closely study the economic trends in lieu of talking directly with the workers and "work[ing] from the bottom-up on…bargaining" (\cite{dudzicInterview2024}). At the same time, the \acrshort{ocaw} culture around health and safety has survived. According to Dudzic, the \acrshort{usw} had "always [been] a partner with the \acrshort{ocaw}, from the days going back to the passage of the OSH Act in 1970" (\cite{dudzicInterview2024}). The \acrshort{usw}’s Health and Safety Department is also named after Tony Mazzocchi. It is called the Tony Mazzocchi Center for Labor and Environmental Health.
+However, the merger was short-lived. In 2005, \acrshort{pace} was absorbed by the \acrshort{usw}. Though the merger with the \acrshort{usw} was also conducted in a top-down fashion (\cite{dudzicInterview2024}), it had the effect of stabilizing the union, which had still been in a precarious position. The merger has effectively wiped out many of the earlier \acrshort{ocaw} democratic rank-and-file decision-making processes and replaced them with more bureaucratic methods. For example, much of the negotiating activity is now carried out by "technicians," who closely study the economic trends in lieu of talking directly with the workers and "work[ing] from the bottom-up on\ldots bargaining" (\cite{dudzicInterview2024}). At the same time, the \acrshort{ocaw} culture around health and safety has survived. According to Dudzic, the \acrshort{usw} had "always [been] a partner with the \acrshort{ocaw}, from the days going back to the passage of the OSH Act in 1970" (\cite{dudzicInterview2024}). The \acrshort{usw}’s Health and Safety Department is also named after Tony Mazzocchi. It is called the Tony Mazzocchi Center for Labor and Environmental Health.
 
 This persists even in 2023. To wit, the Carson, California \acrshort{usw} Local 675 has been supportive of several environmental initiatives and efforts. The Local, which it is important to note is an oil local, commissioned the Pollin Report released in 2021 (\cite{pollinProgramEconomicRecovery2021}). The report charts a path away from dirty fuel sources to clean energy. More recently, in 2023, Norman Rogers, vice president of \acrshort{usw} Local 675, was quoted in the Los Angeles Times as a supporter of a transition from fossil fuel to clean energy jobs (\cite{rothCanClimateActivists2023}). Several local unions in the area have launched a political coalition to lobby Sacramento to protect workers while the transition occurs. From that perspective, perhaps the most enduring feature that has survived from the \acrshort{ocaw} days is the Just Transition framework.
 
@@ -541,25 +541,47 @@ In the 1930s, when the Boeing shop first unionized, the \acrshort{cio} was prima
 
 \subsection{Intra-Building Trades Cases} \
 
-While the Building Trades largely "organizes the bosses"\footnote{A wonderfully apt description that I owe to Mark Dudzic, former \acrshort{ocaw} official and long-time Labor for Single Payer Organizer.} rather than the workers already employed, there is still some variation in how they organize. Some construction unions file representation cases. Representation cases are filed when a group of workers or the union believes that a majority of the workers want the union to be officially recognized at their workplace. If successful, the employer has a legal obligation to negotiate with the union. These cases represent a depature from the usual approach that most building trades unions take. It was expected that construction unions that use the more typical organizing technique associated with the industrial unions in the 1930s\footnote{Many of the unions that use this method are not "industrial" in the way that the term was initially used in the 1920s and 1930s to denote manufacturing plant employment, such as automobile production lines, but the important point is that the "organize the workers" method that the \acrshort{nlrb} elections were established to accommodate is being used.} -- i.e, they organize workers in the workplace from the "bottom up" -- would also take more progressive stances on other issues, be more likely to work with other unions on shared issues or concerns, and in general be less parochial and take a more expansive view of being pro-worker (e.g., endorse social wage policy such as single-payer healthcare that would benefit more than just their members.) The logic behind this expectation is that those construction unions who are using the "industrial" organizing technique are using inherently more confrontational or coercive tactics and thus could be more likely to see other progressive or left-wing organizations and unions as allies.
+While the Building Trades largely "organizes the bosses"\footnote{A wonderfully apt description that I owe to Mark Dudzic, former \acrshort{ocaw} official and long-time Labor for Single Payer Organizer.} rather than the workers already employed, there is still some variation in how they organize. Some construction unions file representation cases---meaning they follow the "industrial" organizing path rather than the construction path (Figure \ref{fig:organizing_paths}). Representation cases are filed when a group of workers or the union believes that a majority of the workers want the union to be officially recognized at their workplace. If successful, the employer has a legal obligation to negotiate with the union. These cases represent a depature from the usual approach that most building trades unions take. It was expected that construction unions that use the more typical organizing technique associated with the industrial unions in the 1930s\footnote{Many of the unions that use this method are not "industrial" in the way that the term was initially used in the 1920s and 1930s to denote manufacturing plant employment, such as automobile production lines, but the important point is that the "organize the workers" method that the \acrshort{nlrb} elections were established to accommodate is being used.} -- i.e, they organize workers in the workplace from the "bottom up" -- would also take more progressive stances on other issues, be more likely to work with other unions on shared issues or concerns, and in general be less parochial and take a more expansive view of being pro-worker (e.g., endorse social wage policy such as single-payer healthcare that would benefit more than just their members.) The logic behind this expectation is that those construction unions who are using the "industrial" organizing technique are using inherently more confrontational or coercive tactics and thus could be more likely to see other progressive or left-wing organizations and unions as allies.
 
 A search of the National Labor Relations representation case petition database revealed that approximately 98 building trades unions have filed for a representation election in 2023. Cases were identified by removing company names that did not contain the words "construction," "constructors," "electrical," "plumbing," "mechanical," "builder," or "builders." Additionally, if the certified representative matched the names of any of the Building Trades’ constituent unions, they were also added to the list. Each union was contacted to request an interview with the organizers involved in the campaign. Three interviews were conducted: one with a Millwrights union organizer, another with the Operative Plasterers' \& Cement Masons' Union (\acrshort{opcima}), and one with an organizer from the \acrfull{ibew}. In each interview, the organizer interviewed was asked general questions about the local union and the particular organizing campaign, including how it was initiated, what specific strategies were used, and the outcome. Then organizers were asked questions about what political activity the union is involved in, including whether they are involved with any labor federations or coalitions with other labor organizations. They were also asked about any alliances that they have with community groups. The interviews revealed that those construction unions who filed representation cases largely did \emph{not} embrace more progressive or left-wing politics. They usually used the technique for pragmatic reasons. For example, some of the workplaces were comprised of a more permanent staff that were not construction workers and thus the "industrial" technique was more appropriate anyway.
 
 \subsubsection{Millwrights}
 
-A Millwrights local union in the Midwest organized workers at a agricultural plant after the workers reached out because they were not being treated with respect, were often asked to work outside of their classification without additional pay, and promises from management were continually broken. Since the workers were working permanently at a plant doing maintenance, they were technically not construction workers and the union organized them the "industrial" way using an \acrshort{nlrb} election. The Millwrights union was successful (they won the election). They organized alongside the International Brothhood of Electrical Workers, who also successfully conducted an \acrshort{nlrb} election, and now both unions are trying to negotiate a contract with the employer.
+A Millwrights local union in the Midwest organized workers at an agricultural plant after the workers reached out because they were not being treated with respect, were often asked to work outside of their classification without additional pay, and promises from management were continually broken. Since the workers were working permanently at a plant doing maintenance, they were technically not construction workers and the union organized them the "industrial" way using an \acrshort{nlrb} election. The Millwrights union was successful (they won the election). They organized alongside the International Brothhood of Electrical Workers, who also successfully conducted an \acrshort{nlrb} election, and now both unions are trying to negotiate a contract with the employer.
 
 The local union appeared to have limited involvement with other labor, community, or political organizations or campaigns. The organizer said that local union did not have involvement in the local or county labor council,\footnote{It may be that the local union \emph{is} involved in the county labor council, but the organizer was unaware of the involvement. Most local unions at least have some affiliation with their regional or county-level labor council. Nevertheless, it seems safe to say that involvement in the county labor council is limited, at best.} but they were involved in the local building trades council, which is similar to the county labor federation, but strictly for the building trades unions. In short, their inter-union collaboration seemed not to extend much beyond the building trades. Similarly, the local union largely took an apolitical perspective in terms of endorsements. The local union does not endorse any political candidates. However, this also was the first organizing drive like this that the union had undertaken, but the organizer was quite excited about the possibility of more organizing drives like this one. So it remains to be seen what might happen to the unions political culture if they continue to take on organizing drives like these that respond directly to worker grievances.\footnote{It also could be that there is no relationship between these sorts organizing drives and the union's politial culture, but the main point is that the local unions has not taken on enough of these efforts to be properly considered a meaningful departure from the rest of the Trades.}
 
 \subsubsection{Electricians (IBEW).}
 
-The \acrshort{ibew} local union experienced a similar situation when a group of workers upset at their workplace reached out to the union for help. Workers at a telecommunications company were upset with the changes after the company was purchased and restructured. The workers were upset about the way that the company was treating them. The local also represented a number of utility and municipal workers in the city and, according to the organizer, had developed a reputation as a strong union. Moreover, the city is a small city with less than 3 thousand residents, so that reputation spread fast. Indeed, some workers in the telecommunications company were already known to the organizing staff. The union successfully won the \acrshort{nlrb} election, but, in a tragic turn of events, the company decided to layoff all of their installers and replace them with subcontractors. Still this seems to have been an important effort and given that the community is so small, it is encouraging to see that the union has established itself as an organization that workers can contact to help them organize and defend themselves.
+The \acrshort{ibew} local union experienced a similar situation when a group of workers upset at their workplace reached out to the union for help. Workers at a telecommunications company were upset with the changes after the company was purchased and restructured. The workers were upset about the way that the company was treating them. The local also represented a number of utility and municipal workers in the city and, according to the organizer, had developed a reputation as a strong union. Moreover, the city is a small city with less than 3 thousand residents, so that reputation spread fast. Indeed, some workers in the telecommunications company were already known to the organizing staff. The union successfully won the \acrshort{nlrb} election, but, in a tragic turn of events, the company decided to layoff all of their installers and replace them with subcontractors. Still this seems to have been an important effort, and, given that the community is so small, it is encouraging to see that the union has established itself as an organization that workers can contact to help them organize and defend themselves.
 
-At the same time, the local union seems to largely not be any different from the building trades unions in general in terms of their political culture. They still tended to take a rather careful approach of trying to win employers over versus more militant strategies (e.g., organizing for a strike). They did indicate that they were involved in the county labor council and the building trades council (multi-union federations). The former suggests that there is at least nominal collaboration with other unions. Perhaps more 
+At the same time, the local union seems to largely not be any different from the building trades unions in general in terms of their political culture. They still tended to take a rather careful approach of trying to win employers over versus more militant strategies (e.g., organizing for a strike). They did indicate that they were involved in the county labor council and the building trades council (multi-union federations), which suggests that there is at least nominally some inter-union solidarity.
+
+% Add more about what project labor agreements are....
+
+One area in which the union was quite politically active in the community is in urging local government to adopt Project Labor Agreements (\acrshort{pla}s). They also support the iniatives that national labor federation (\acrshort{aflcio}) supports, including the \acrshort{pro}:
+
+\begin{quote}
+[We] have had success [spreading awareness of] the benefits of community workforce agreements (\acrshort{cwa}s), which are similar to project labor agreements (\acrshort{pla}s) at the local level. At the national level there had been a pretty large effort to pass what's known as the \acrshort{pro} or the Protecting the Right to Organize Act, and that was at the national level. It hasn't been passed yet, but that that was one in recent history.\ldots Of course, if there's ever an initiative to expand right to work legislation, we would certainly be opposed to that. I don't know that there has been a push either locally or nationally for that recently, but it’s always on our radar as well.
+\end{quote}
 
 \subsubsection{Cement Masons and Plasterers (OPCIMA).}
 
-In Alaska, an \acrfull{opcima} local union organized excavation workers who had been working for a company that was not signed to a full agreement; the company was signed to a seasonal agreement. The workers were already union members, and they wanted the employer signed to a full agreement. However, the excavation company objected; they were mostly opposed to the union. Becase of this, the union pursued an \acrshort{nlrb} election to force the employer to accept the union fait accompli.
+In Alaska, an \acrfull{opcima} local union organized excavation workers who had been working for a company that was not signed to a full agreement; the company was signed to a seasonal agreement. The main issue was because the union only had a seasonal agreement, the workers were unsure if they would still have a job in the spring.The workers were already union members, and they wanted the employer signed to a full agreement. However, the excavation company objected; they were mostly opposed to the union. Becase of this, the union pursued an \acrshort{nlrb} election to force the employer to accept the union fait accompli. The organizer I spoke with explained that because most of these workers were already union members, this was an "easy case." The union mostly just had to maintain lines of communication to win the election. However, the union has still not reached a first contract; negotiations are ongoing. The union organizer suggested that, according to their lawyer, the company may already be bound to the union agreement because they have continued to employ the workers and pay into the Taft-Hartley trust fund.\footnote{Rather than the employer providing benefits, construction unions operate a trust fund to administer health and welfare benefits for their members.}
+
+The organizer had been involved with many of similar organizing efforts that followed the "industrial" path. Many of them had been more contentious than this one. Yet, the union was still very cautious with how they handle workplace issues. The organizer explained that filing grievances was "bad business":
+
+\begin{quote}
+Every grievance or job site issue is handled completely differently. I mean contextually. It really depends on the grievance or the issue right. We as a local don't like grievances, and we don't like job site issues, and we don't like to file grievances ever. That's not our Forte. It's kind of bad business, right? But at the same time, if push comes to shove and you have to file a grievance, usually we do everything in our power to communicate. So, we're going to give the contractor the benefit of the doubt and do as much communication as we can.\ldots I'm currently in a grievance right now, but it's also [a situation where] the grievance itself isn't egregious. The grievance is just a placeholder to ensure that the member that's being aggrieved is protected, so that it gives us the opportunity to work with the contractor to hash out whatever issues or the grievance that's at hand. It gives us just legal teeth to\ldots hold them in compliance to protect our membership.
+\end{quote}
+
+The political activity of the union was largely limited to community service related work, though the organizer did indicate that they union also participates in local job fairs to recruit people into the trade:
+
+\begin{quote}
+[W]e're constantly doing outreach. We work with School districts and cities, and we work with the jail, the Department of Corrections. We work hand in hand with pretty much all the big players in the industry. We go to new job fairs and crap, or we'll do Habitat for Humanity and donate free labor. Or we collaborate collectively on a macro level whether it be organizing campaigns or communities in need; we'll do what we can to help out with financial needs or materials or labor. We [also participate in] Toys for Tots.\ldots
+\end{quote}
+
+Like the IBEW local, the more overtly political activity centered around advocating for local government to enact Project Labor Agreements (\acrshort{pla}s)
 
 \clearpage
 
