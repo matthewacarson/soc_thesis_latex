@@ -339,3 +339,6 @@ TSWLatexianTemp*
 # Specifically Include
 !presentation_slides.pdf
 !soc_honors_thesis.pdf
+
+# Specifically exclude
+output.txt
