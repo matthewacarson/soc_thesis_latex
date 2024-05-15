@@ -342,3 +342,4 @@ TSWLatexianTemp*
 
 # Specifically exclude
 output.txt
+removed_paragraphs.txt
