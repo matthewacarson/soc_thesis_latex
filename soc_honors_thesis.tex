@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[12pt, draft]{article}
 
 %%%% Load Packages %%%%
 \usepackage[utf8]{inputenc}
@@ -123,18 +123,21 @@
 \AtEndEnvironment{quote}{\vspace{0.5\baselineskip}}
 
 \begin{document}
+\setstretch{1.25}
 \begin{titlepage}
   \thispagestyle{fancy}
   \pagenumbering{gobble}
   \fancyhead[L]{Running head: \myTitle}
   \renewcommand{\headrulewidth}{0pt} % header rule
   \centering
-  \vspace*{1.95in}
-  {\LARGE Construction Union Agreements: Union Organizing in Historical-Comparative Perspective\par}
+  \vspace*{2in}
+  Construction Union Agreements:\par
+  Union Organizing in Historical-Comparative Perspective\par
   \vspace{1.2in}
   {Matthew A. Carson\par}
-  \vspace{0in}
-  {University of California, Los Angeles\par}
+  \vspace{12pt}
+  Department of Sociology\par
+  University of California, Los Angeles\par
   \vspace{0.5in}
   {\today\par}
 %  \vfill
@@ -156,6 +159,7 @@
 
 % Set page numbering to Roman for preliminary pages
 \pagenumbering{roman}
+\setstretch{2}
 %\titlespacing*{\abstract}{0pt}{0pt}{0pt}
 % Add abstract page
 \begin{abstract}
@@ -183,13 +187,13 @@ US Building Trade unions organize their workers differently. Most labor unions c
 \setstretch{2}
 
 % Define custom section headings
-\titleformat{\part}[display]{\normalfont\Large\bfseries}{\partname\ \thepart}{20pt}{\Large}
+\titleformat{\part}[block]{\normalfont\Large\bfseries}{\partname\ \thepart:}{6pt}{\Large\MakeUppercase}
 \titleformat{\section}[block]{\normalfont\fontsize{12}{14}\selectfont\bfseries}{\thesection.}{0.25em}{}
 \titleformat{\subsection}[block]{\itshape\bfseries}{\thesubsection.}{0.25em}{}
 \titleformat{\subsubsection}[runin]{\normalfont\itshape\bfseries}{\hspace{\myindent}\thesubsubsection.}{0.25em}{}[.]%{\hspace{0em}}%[\hspace{2pt}]
 
 % Adjust spacing before and after sectioning commands
-\titlespacing*{\part}{0pt}{0pt}{20pt}
+\titlespacing*{\part}{0pt}{0pt}{10pt}
 \titlespacing*{\section}{0pt}{0pt}{0pt} % \baselineskip
 \titlespacing*{\subsection}{0pt}{0pt}{0pt}
 \titlespacing*{\subsubsection}{0pt}{0pt}{0.35em}
@@ -216,6 +220,10 @@ However, these views are mistaken. For instance, other unions with many members 
 
 % Foner, Phillip S. History of the Labor Movement in the United States: Volume 2: From the Founding of the AFL to the Emergence of American Imperialism. New York: International Publishers, 1955; pp. 132–133.
 
+\part{LITERATURE REVIEW}\
+
+{\color{red}[Placeholder for literature review]}
+
 \part{METHODS} \
 
 I primarily use comparative-historical methods to analyze the inter-union (Building Trades vs. non-building Trades) cases. Following Lange (\citeyear{langeComparativeHistoricalMethods2013}), I employ both within-case and between-case (comparative) methods. This paper's within-case analyses are of the individual unions and their historical trajectories; this is the ideographic or historical element of the analysis. I trace each union's history and how institutions formed within the unions (e.g., the apprenticeship and hiring hall). This method offers a thick account of how the unions have evolved, challenged management at points, fought for or against policies, and made compromises at times. It also pays close attention to each moment's context to prevent a linear, teleological account of history that suggests that the present state was inevitable because of something that happened in the past. I draw primarily from secondary sources for these historical accounts. Additionally, I interviewed a former Oil Chemical and Atomic Workers union \acrshort{ocaw} member and official to supplement the historical account and gather more recent data about the current state of affairs of the union.\footnote{Now part of the United Steelworkers}
@@ -224,7 +232,7 @@ The comparison or between-case analysis focuses both on the differences in featu
 
 The intra-building trades data were collected from interviews with local union officials. These local unions were located via the \acrfull{nlrb} case search tool. Each of these locals was involved in an organizing campaign that used the method that non-construction unions typically use (and construction unions typically do \textit{not} use). These cases where the construction union departed from the norm were compared against the more general trends in the building trades unions.
 
-\part{CRAFT UNIONISM VS. INDUSTRIAL UNIONISM}\label{sec:craft_vs_industrial} \
+\part{TWO UNIONISMS}\label{sec:craft_vs_industrial} \
 
 Craft unionism is when workers are organized into a union by craft (occupation) rather than by industry or employer (\cite[97]{suffernCraftVsIndustrial1936}).\footnote{For a discussion on the differences between industrial and craft unions from a union activist perspective, see Parker (\citeyear{parkerAreIndustrialUnions2008}).} \citeauthor{ohCraftIndustrialUnions1989} has defined craft unions and industrial unions concisely:
 
@@ -255,9 +263,9 @@ The \acrfull{nlra} was originally designed to be consistent with how industrial 
   \label{fig:DOL}
 \end{figure}
 
-If the employer refuses to negotiate, the union can file an "unfair labor practice." They can also strike or conduct other work stoppages until the recalcitrant employer meets their demands or agrees to negotiate. These are \textit{coercive} strategies that are meant to compel the employer to act or not act in a particular way or to exact concessions. These strategies are also \textit{more conflictual} relative to the Building Trades' approach.
+If the employer refuses to negotiate, the union can file an "unfair labor practice." They can also strike or conduct other work stoppages until the recalcitrant employer meets their demands or agrees to negotiate. These are \textit{coercive} strategies that are meant to compel the employer to act or not act in a particular way or to exact concessions. These strategies are also \textit{relatively more conflictual} vis-\`a-vis the Building Trades' approach.
 
-\section{The Building Trades Approach}\label{sub:bt_bargaining}\
+\section{The Building Trades Bargaining}\label{sub:bt_bargaining}\
 
 In contrast to this approach, building and construction trade unions do not usually organize the workers at the workplace. They typically establish voluntary agreements with employers, which can be established before the employer hires any employees. Since these agreements can be established before any workers are hired, they are called prehire agreements. Prehire agreements have a long history that predates their legitimation by Congress in 1959 when the \acrfull{lmrda} was passed. In fact, before the \acrshort{lmrda}, the \acrshort{nlrb} had refused to take jurisdiction over the building and construction trades because their approach to union organizing was so different and, in fact, would be an unfair labor practice, a violation of the \acrshort{nlra} if they were to take jurisdiction over the matter. So, whereas labor law is often discussed in terms of how it constrains union organizing efforts (i.e., how laws have been "imposed from above"), this is not the case with respect to prehire agreements used by the building and construction trades; they were already organizing this way before the passage of the \acrshort{lmrda}. Put differently, this is not a tragic story of how construction unions were forced to organize conservatively.
 
@@ -607,6 +615,10 @@ The political activity of the union was largely limited to community service-rel
 \end{quote}
 
 Like the IBEW local, the more overtly political activity centered around advocating for local government to enact Project Labor Agreements (\acrshort{pla}s)
+
+\part{CONCLUSION}\
+
+{\color{red}[Conclusion goes here]}
 
 \clearpage
 
