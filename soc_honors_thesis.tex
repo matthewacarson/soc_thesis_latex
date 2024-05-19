@@ -77,7 +77,7 @@
 \setlength{\parskip}{0pt}
 %%%% Define indentation length %%%%
 \newlength{\myindent}
-\setlength{\myindent}{2em}
+\setlength{\myindent}{0.5in}
 %%%% Set the hanging indent %%%%
 \setlength{\bibhang}{\myindent}
 %%%% Redefine the citation command to use a colon instead of a comma and pp. %%%%
@@ -187,7 +187,7 @@ US Building Trade unions organize their workers differently. Most labor unions c
 \setstretch{2}
 
 % Define custom section headings
-\titleformat{\part}[block]{\normalfont\Large\bfseries}{\partname\ \thepart:}{6pt}{\Large\MakeUppercase}
+\titleformat{\part}[block]{\normalfont\Large\bfseries}{\thepart.}{6pt}{\Large\MakeUppercase}
 \titleformat{\section}[block]{\normalfont\fontsize{12}{14}\selectfont\bfseries}{\thesection.}{0.25em}{}
 \titleformat{\subsection}[block]{\itshape\bfseries}{\thesubsection.}{0.25em}{}
 \titleformat{\subsubsection}[runin]{\normalfont\itshape\bfseries}{\hspace{\myindent}\thesubsubsection.}{0.25em}{}[.]%{\hspace{0em}}%[\hspace{2pt}]
@@ -625,6 +625,7 @@ Like the IBEW local, the more overtly political activity centered around advocat
 \titleformat{\section}{\fontsize{12}{14}\bfseries\centering}{\thesection}{0.5em}{}
 % Line spacing
 \setstretch{1.25}
+\sloppy
 \printbibliography[heading=bibintoc]
 
 \clearpage
