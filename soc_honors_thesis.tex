@@ -116,7 +116,10 @@
 % \setmainfont{Times New Roman}
 
 %%%% Define a variable for the title %%%%
-\newcommand{\myTitle}{CONSTRUCTION UNION AGREEMENTS}
+% Full title
+\newcommand{\fullTitle}{Construction Union Agreements:\par{}Union Organizing in Historical-Comparative Perspective}
+% Short title
+\newcommand{\shortTitle}{CONSTRUCTION UNION AGREEMENTS}
 \newcommand{\imageWidth}{0.8\textwidth}
 
 %%%% Page style %%%%
@@ -124,12 +127,12 @@
 \fancyhf{} % clear all header and footer fields
 %\fancyhead[R]{\thepage} % page number on the right side
 \fancyhead[R]{\hyperlink{toc}{\thepage}} % page number on the right side, linked to the TOC
-\fancyhead[L]{\small \myTitle}
+\fancyhead[L]{\small \shortTitle}
 \renewcommand{\headrulewidth}{1pt} % header rule
 
 % Customize abstract page
 \renewenvironment{abstract}
-  {\par\noindent\centering\textbf{Abstract}\par}
+  {\par\noindent\centering\textbf{\fullTitle}\par}
   {\noindent\raggedright}
 %  {\par}
 
@@ -158,12 +161,11 @@
 \begin{titlepage}
   \thispagestyle{fancy}
   \pagenumbering{gobble}
-  \fancyhead[L]{Running Head = \myTitle}
+  \fancyhead[L]{Running Head = \shortTitle}
   \renewcommand{\headrulewidth}{0pt} % header rule
   \centering
   \vspace*{2in}
-  Construction Union Agreements:\par
-  Union Organizing in Historical-Comparative Perspective\par
+  \fullTitle\par
   \vspace{1.2in}
   {Matthew A. Carson\par}
   \vspace{12pt}
@@ -250,13 +252,10 @@ US Building Trade unions organize their workers differently. Most labor unions c
 % Set page numbering to Arabic for main content
 \pagenumbering{arabic}
 
-%\part{INTRODUCTION} \
-\addcontentsline{toc}{part}{INTRODUCTION}\label{introduction}
-
-%Construction is one of the largest unionized sectors in the United States.\footnote{Twenty-one percent of unionized workers are in the construction industry. Thus, construction workers have a large presence in the \acrshort{aflcio} and have considerable influence on its direction.} Yet, labor research has largely failed to focus on construction unions (or what are often referred to as the Building Trades). In some sense, this is understandable. One of the most significant periods of union growth in the US was in the 1930s, when multiple violent strikes occurred, sometimes lasting for a month or longer. These events contributed to the rise of the \acrfull{cio}, a federation of trade unions committed to \emph{industrial unionism} rather than \emph{craft unionism} of the \acrfull{afl}.\footnote{Craft unions were principally concerned with organizing workers specifically by their craft and usually emphasized skill level. Industrial unions broke with the craft unionism of the era and focused on organizing all workers in an industry, regardless of their occupation or whether they possessed a craft skillset \cite{ohCraftIndustrialUnions1989}. See Section \ref{craft_vs_industrial} for further discussion of these differences.} Congress and President Franklin D. Roosevelt responded to these violent battles by enacting the Wager Act, which guaranteed workers the right to organize and provided a framework for workers to petition for union representation in the workplace (\cite{grossMakingNationalLabor1974}). This framework was adapted mainly to how industrial unions were organized at the time. Most unionization efforts, especially large-scale and prominent ones, have used the industrial union organizing model.
-
-% Add a citation for month-long strikes and how they led to the Wagner Act.
-% Gross, James A. 1974. The Making of the National Labor Relations Board: A Study in Economics, Politics, and the Law. Albany: State University of New York Press.
+\clearpage % Ensure a clear page before the introduction
+\phantomsection
+\addcontentsline{toc}{part}{INTRODUCTION}
+%\part{INTRODUCTION}\label{introduction}
 
 Do the ways that unions organize affect their political stances? US construction unions have a distinct approach to organizing their workers vis-à-vis other labor unions. While most labor unions typically compel employers to negotiate through secret ballot elections or work stoppages, the Building Trades take a different route by engaging in voluntary negotiations.\footnote{See Sections \ref{ind_bargain} and \ref{bt_bargaining} for a discussion of the history of secret ballot elections and how the Building Trades negotiates.} Their strategy hinges more on the skill levels of their workers than the leverage of strikes or official \acrfull{nlrb} elections, which use the state to compel the employer to negotiate. At the same time, the Building Trades are often outliers in the US labor movement. They frequently oppose progressive environmental policies and thus align more closely with their employers in the petrochemical industry than with other labor or environmental organizations on environmental issues. Additionally, they are not supportive of single-payer healthcare or other social wage policies.\footnote{To be sure, not all non-Building Trades unions endorse or support single-payer healthcare, but \emph{no} Building Trades unions do.} Why have the Building Trades taken these positions?
 
@@ -299,7 +298,7 @@ The earliest efforts in the US to organize workers collectively to assert their 
 % Add more citations to the paragraph below.
 % Add  a citation about "craft union leaders doubted the feasibility of organizing them, as these workers lacked the leverage typically associated with having a craft."
 
-Industrial unionism did not emerge until sometime later. Industrial unions organize workers by employer or industry, irrespective of their craft, occupation, or skill level. Many early craft unionists in the \acrshort{afl} were skeptical of industrial unionism; they did not think that it would be successful because many workers in mass-production factories were immigrants with no specific craft or formal training and thus lacked the leverage typically associated with having a craft (\cite{fonerHistoryLaborMovement1994, fonerHistoryLaborMovement1981a}). In contrast to a craft like a machinist or a carpenter, which requires the worker to know all parts of the production process from beginning to end, industrial work was usually repetitive and required little skill or knowledge of the entire production process. Because of this, craft unionism left industrial workers out of organized labor. Because of this, industrial unionists saw craft unionism as sclerotic.
+Industrial unionism did not emerge until sometime later. Industrial unions organize workers by employer or industry, irrespective of their craft, occupation, or skill level. Many early craft unionists in the \acrshort{afl} were skeptical of industrial unionism; they did not think that it would be successful because many workers in mass-production factories were immigrants with no specific craft or formal training and thus lacked the leverage typically associated with having a craft (\cite{fonerHistoryLaborMovement1994, fonerHistoryLaborMovement1981a}). In contrast to a craft like a machinist or a carpenter, which requires the worker to know all parts of the production process from beginning to end, industrial work was usually repetitive and required little skill or knowledge of the entire production process. Because of this, craft unionism left industrial workers out of organized labor, and industrial unionists saw craft unionism as sclerotic.
 
 Industrial unionism was largely a response to these perceived limitations of craft unionism. Exponents of industrial unionism believed that these limitations could be overcome by adopting the industrial unionist approach---organizing an entire industry regardless of occupational or craft classification. Sometimes this is called "wall-to-wall" unionism (\cite{meyersWhatAreMy2023}). While craft unionism is largely associated with parochialism and thus a more conservative outlook, industrial unionism is often associated with a more progressive or even radical unionism.\footnote{Labor historians have debated the extent to which the \acrshort{afl}'s unionism was "declensionist"---conservative, "disengaged," "voluntarist," lacking class consciousness and an "agenda\ldots{}of change for the nation as a whole" (\cite[61–62]{cobblePureSimpleRadicalism2013}). I emphatically do \emph{not} intend to take a position on this debate. Instead, I have tried to present, as best I can, the basic outline of the perspective that depicts the \acrshort{afl} unions as conservative without adopting this view as "correct."}
 
@@ -647,35 +646,35 @@ By contrast, \acrshort{ua} Local 393's standard \acrshort{cba} is much less oner
 The parties hereto agree that while this Agreement is in effect, and while the other party hereto complies herewith, there shall be no strike, lockout or other work stoppage, except that it is understood that a stoppage of work because of any lawful primary picket line or one sanctioned by the Santa Clara-San Benito County Building Trades Council, shall not be a violation of this Agreement; and no employees shall be discharged, disciplined, suspended or laid off for honoring or refusing to work behind such picket line. (\cite[50]{ualocalunion393MasterLaborAgreement2018})
 \end{quote}
 
-From that perspective, \acrshort{pla}s have both positive and negative consequences. They are positive in that they move the construction union away from the standard construction method of "organizing the bosses" to more coercive tactics. \acrshort{pla}s are inherently coercive in one sense because they force the employer to hire union regardless of whether the latter wants to. But they can often be conservative\footnote{Although they are not \emph{inherently} conservative in that the union and the government could agree to a project labor agreement that does not contain a no strike clause.} because of how closely the project labor agreement as an idea is tied to the notion of "labor peace."
+From that perspective, \acrshort{pla}s have both class antagonist and class collaborationist elements. They are class antagonist in that they move the construction union away from the standard construction method of "organizing the bosses" to more coercive tactics. \acrshort{pla}s are inherently coercive in one sense because they force the employer to hire union regardless of whether the latter wants to. But they can often be class collaborationist\footnote{Although they are not \emph{inherently} class collaborationist in that the union and the government could agree to a project labor agreement that does not contain a no strike clause.} because of how closely the project labor agreement is tied to "labor peace."
 
 In sum, the IBEW local's emphasis of \acrshort{pla}s does not represent much of a departure from what most building trades unions are doing. Pushing for \acrshort{pla}s is a common strategy that construction unions use in many parts of the United States. In that sense, it can \textit{not} be said that this local is more radical or class struggle oriented because of their emphasis of \acrshort{pla}s.
 
 On the national level, the local supports some important legislative efforts and is vigilant when it comes to fighting right-to-work legislation. They also support the initiatives that the national labor federation (\acrshort{aflcio}) supports, including the \acrshort{pro}:
 
 \begin{quote}
-At the national level, there had been a pretty large effort to pass what's known as the \acrshort{pro} or the Protecting the Right to Organize Act, and that was at the national level. It hasn't been passed yet, but that was one in recent history.\ldots{}Of course, if there's ever an initiative to expand right-to-work legislation, we would certainly be opposed to that. I don't know that there has been a push either locally or nationally for that recently, but it’s always on our radar as well.
+At the national level, there had been a pretty large effort to pass what's known as the \acrshort{pro} or the Protecting the Right to Organize Act, and that was at the national level. It hasn't been passed yet, but that was one in recent history.\ldots{}Of course, if there's ever an initiative to expand right-to-work legislation, we would certainly be opposed to that. I don't know that there has been a push either locally or nationally for that recently, but it’s always on our radar as well. (Interview with \acrshort{ibew} union organizer)
 \end{quote}
 
-\noindent{}However, this also does not represent much of a difference from what other building trades unions support. That notwithstanding, the IBEW local \emph{does} seem to be more politically active than the Millwrights local.
+\noindent{}However, this also does not represent much of a difference from what other building trades unions support. That notwithstanding, the \acrshort{ibew} local \emph{does} seem to be more politically active than the Millwrights local.
 
 \section{Cement Masons and Plasterers (OPCIMA)}
 
-In Alaska, an \acrfull{opcima} local union organized excavation workers who had been working for a company that was not signed to a full agreement; the company was signed to a seasonal agreement. The main issue was because the union only had a seasonal agreement, the workers were unsure if they would still have a job in the spring. The workers were already union members, and they wanted the employer to sign a full agreement. However, the excavation company objected; they were mostly opposed to the union. Because of this, the union pursued an \acrshort{nlrb} election to force the employer to accept the union, \textit{fait accompli}. The organizer I spoke with explained that because most of these workers were already union members, this was an "easy case." The union mostly just had to maintain lines of communication to win the election. However, the union has still not reached a first contract; negotiations are ongoing. The union organizer suggested that, according to their lawyer, the company may already be bound to the union agreement because they have continued to employ the workers and pay into the Taft-Hartley trust fund.\footnote{Rather than the employer providing benefits, construction unions operate a trust fund to administer health and welfare benefits for their members.}
+An \acrfull{opcima} local union organized excavation workers who had been working for a company that was not signed to a full agreement; the company was signed to a seasonal agreement. Because the agreement was seasonal, the workers were unsure if they would still have a job each spring. The workers were already union members, and they wanted the employer to sign a full agreement. However, the excavation company opposed the effort. Because of this, the union pursued an \acrshort{nlrb} election to force the employer to accept the union, \textit{fait accompli}. The union prevailed. The organizer explained that because most of these workers were already union members, this was an "easy case." The union mostly just had to maintain lines of communication to win the election. However, the union has still not reached a first contract; negotiations are ongoing. The union organizer suggested that, according to the union's lawyer, the company may already be bound to the union agreement because they have continued to employ the workers and pay into the union's Taft-Hartley trust fund.\footnote{Rather than the employer providing benefits, construction unions operate a trust fund to administer health and welfare benefits for their members.} Still, the case is ongoing and it remains to be seen what will happen.
 
-The organizer had been involved with many similar organizing efforts that followed the "industrial" path. Many of them had been more contentious than this one. Yet, the union is still very cautious with how it handles workplace issues. The organizer explained that filing grievances was "bad business":
+The organizer has been involved with many similar organizing efforts that followed the "industrial" path. Many of them had been more contentious than this one. Yet, the union is still very cautious with how it handles workplace issues. For example, the way that the union handles workplace disputes is particularly cautious; the organizer explained that filing grievances was "bad business":
 
 \begin{quote}
-Every grievance or job site issue is handled completely differently [based on the context]. It really depends on the grievance or the issue. We, as a local, don't like grievances, and we don't like job site issues, and we don't like to file grievances ever. That's not our Forte. It's kind of bad business. But at the same time, if push comes to shove and you have to file a grievance, usually, we do everything in our power to communicate. So, we're going to give the contractor the benefit of the doubt and do as much communication as we can.\ldots{}I'm currently in a grievance right now, but it's also [a situation where] the grievance itself isn't egregious. The grievance is just a placeholder to ensure that the member who's being aggrieved is protected. [It] gives us the opportunity to work with the contractor to hash out whatever issues or grievances are at hand. It gives us just legal teeth to\ldots{}hold them in compliance to protect our membership.
+Every grievance or job site issue is handled completely differently [based on the context]. It really depends on the grievance or the issue. We, as a local, don't like grievances, and we don't like job site issues, and we don't like to file grievances ever. That's not our forte. It's kind of bad business. But at the same time, if push comes to shove and you have to file a grievance, usually, we do everything in our power to communicate. So, we're going to give the contractor the benefit of the doubt and do as much communication as we can.\ldots{}I'm currently in a grievance right now, but it's also [a situation where] the grievance itself isn't egregious. The grievance is just a placeholder to ensure that the member who's being aggrieved is protected. [It] gives us the opportunity to work with the contractor to hash out whatever issues or grievances are at hand. It gives us just legal teeth to\ldots{}hold them in compliance to protect our membership. (Interview with \acrshort{opcima} organizer)
 \end{quote}
 
 The political activity of the union was largely limited to community service-related work, though the organizer did indicate that the union also participates in local job fairs to recruit people into the trade:
 
 \begin{quote}
-[W]e're constantly doing outreach. We work with school districts and cities, and we work with the jail, the Department of Corrections. We work hand in hand with pretty much all the big players in the industry. We go to new job fairs and crap, or we'll do Habitat for Humanity and donate free labor. Or we collaborate on a macro level, whether it be organizing campaigns or communities in need; we'll do what we can to help out with financial needs, materials, or labor. We [also participate in] Toys for Tots.\ldots
+[W]e're constantly doing outreach. We work with school districts and cities, and we work with the jail, the Department of Corrections. We work hand in hand with pretty much all the big players in the industry. We go to new job fairs and crap, or we'll do Habitat for Humanity and donate free labor. Or we collaborate on a macro level, whether it be organizing campaigns or communities in need; we'll do what we can to help out with financial needs, materials, or labor. We [also participate in] Toys for Tots.\ldots (Interview with \acrshort{opcima} organizer)
 \end{quote}
 
-Like the IBEW local, the more overtly political activity centered around advocating for local government to enact Project Labor Agreements (\acrshort{pla}s)
+Like the IBEW local, the more overtly political activity centered around advocating for local government to enact Project Labor Agreements (\acrshort{pla}s).
 
 \part{CONCLUSION}
 
