@@ -49,22 +49,30 @@
 
 %%%% Head height %%%%
 \setlength{\headheight}{15pt}
+
 %%%% Line spacing %%%%
 \setstretch{2}
+
 %%%% Paragraph spacing %%%%
 \setlength{\parskip}{0pt}
+
 %%%% Define indentation length %%%%
 \newlength{\myindent}
 \setlength{\myindent}{0.5in}
+
 %%%% Set the hanging indent %%%%
 \setlength{\bibhang}{\myindent}
+
 %%%% Redefine the citation command to use a colon instead of a comma and pp. %%%%
 \DeclareFieldFormat{postnote}{#1}
 \DeclareFieldFormat{multipostnote}{#1}
+
 %%%% Use colon (ASA Style) in-text citations (author year: page) %%%%
 \renewcommand*{\postnotedelim}{\addcolon}
+
 %%%% Set global text alignment to ragged-right %%%%
 %\raggedright
+
 %%%% Paragraph indentation %%%%
 \setlength{\parindent}{\myindent}
 
@@ -76,6 +84,7 @@
 \newcommand{\fullTitle}{Construction Union Agreements:\par{}Union Organizing in Historical-Comparative Perspective}
 % Short title
 \newcommand{\shortTitle}{CONSTRUCTION UNION AGREEMENTS}
+
 % Standardize image width
 \newcommand{\imageWidth}{0.8\textwidth}
 
@@ -113,13 +122,16 @@
 \AtBeginEnvironment{quote}{\singlespacing\setlength{\topsep}{0pt}\setlength{\partopsep}{0pt}}
 \AtEndEnvironment{quote}{\vspace{0.5\baselineskip}}
 
-%%%% Title Page %%%%
+%	%%%%%%%%%%%%%%%
+%			Document Begins         %
+%	%%%%%%%%%%%%%%%
 
+%%%% Title Page %%%%
 \begin{document}
-\setstretch{1.25}
+\setstretch{1.25} % Set line spacing
 \begin{titlepage}
   \thispagestyle{fancy}
-  \pagenumbering{gobble}
+  \pagenumbering{gobble} % Turn off page numbering for the title page
   \fancyhead[L]{Running Head = \shortTitle}
   \renewcommand{\headrulewidth}{0pt} % header rule
   \centering
@@ -137,22 +149,13 @@
 \end{titlepage}
 
 % Blank page so that the abstract does not begin on the back of the cover page.
-\thispagestyle{empty} % Remove header and footer
-
-\vspace*{\fill}
-\hspace*{\fill}
-\begin{center}
-    \noindent{}\textit{This page intentionally left blank}
-\end{center}
-\hspace*{\fill}
-\vspace*{\fill}
-
-\clearpage
+\input{blank_page.tex}
 
 % Set page numbering to Roman for preliminary pages
 \pagenumbering{roman}
 \setstretch{2}
 %\titlespacing*{\abstract}{0pt}{0pt}{0pt}
+
 % Add abstract page
 \begin{abstract}
 US Building Trade unions organize their workers differently. Most labor unions compel employers to negotiate, but the Building Trades engage in voluntary negotiations, relying on workers' skill levels rather than strike leverage. This approach correlates with their frequent political deviations from the broader US labor movement, particularly in opposing progressive environmental policies, aligning more closely with the petrochemical industry on environmental issues, and not supporting single-payer healthcare. One view is that unions pursue their members’ interests narrowly, sacrificing broader working-class interests if they feel it is necessary to secure work for their members, and some suggest that the conservative stance of the Building Trades stems from their craft union tradition, in which workers are organized by craft and skill instead of by industry. However, using historical-comparative methods, I show that these arguments do not hold. Petrochemical unions have supported progressive policies, and other craft-based unions have endorsed single-payer healthcare. However, unlike the Building Trades, those unions have never used voluntary agreements. Consequently, they have experienced more conflicts with employers. These findings challenge traditional views and suggest that the Building Trades' conservative negotiation strategies significantly shape their political and policy positions, reinforcing an employer-union dynamic that limits challenging management.
@@ -190,7 +193,7 @@ US Building Trade unions organize their workers differently. Most labor unions c
 \titleformat{\section}[block]{\normalfont\fontsize{12}{14}\selectfont\bfseries}{\thesection.}{0.25em}{}
 \titleformat{\subsection}[block]{\itshape\bfseries}{\thesubsection.}{0.25em}{}
 \titleformat{\subsubsection}[runin]{\normalfont\itshape\bfseries}{\hspace{\myindent}\thesubsubsection.}{0.25em}{}[.]%{\hspace{0em}}%[\hspace{2pt}]
-
+\titleformat{\paragraph}[runin]{\normalfont\itshape\bfseries}{\hspace{\myindent}\theparagraph.}{0.25em}{}[.]
 % Adjust spacing before and after sectioning commands
 \titlespacing*{\part}{0pt}{0pt}{10pt}
 \titlespacing*{\section}{0pt}{0pt}{0pt} % \baselineskip
@@ -213,8 +216,6 @@ One potential explanation is that unions with many workers in the petrochemical 
 Still, others argue that the conservative stance of the Building Trades originates from their tradition of craft unionism, where workers are organized based on craft and skill rather than industry (\cite{roginComment1974, perlmanHistoryTradeUnionism1922, issermanGodBlessOur1976, fonerHistoryLaborMovement1996}). Craft unions were some of the earliest labor organizations in the US. Their focus on organizing narrowly based on craft distinctions (e.g., plumber) rather than by industry (e.g., construction worker) often corresponded with nativist and racist policies and more conservative positions (e.g., anti-communism and redbaiting), while industrial unions more often opposed racism and were more militant (\cite{fonerHistoryLaborMovement1994}). In short, craft unions have tended to look out for "their own" more than workers more broadly.\footnote{There are dissenting views concerning how politically conservative the \acrshort{afl} craft unions were. See \citeauthor{cobblePureSimpleRadicalism2013} (\citeyear{cobblePureSimpleRadicalism2013}) for a dissenting scholarly article, and \citeauthor{parkerAreIndustrialUnions2008} (\citeyear{parkerAreIndustrialUnions2008}) for a union activist's perspective on the nature of craft and industrial unionism.} The Building Trades unions continue to operate as craft unions today.\footnote{One can find a union for almost every construction craft---electricians, plumbers, bricklayers, and so on---but good luck finding a union called the "Construction Workers Union."} From this perspective, the Building Trades' conservativism stems from their narrow craft-based unionism.
 
 However, these views offer an incomplete picture. For instance, some unions with many members working in the petrochemical industry, such as the United Steelworkers (\acrshort{usw}), have backed progressive policies, including environmental policies, and other craft-based unions, such as the \acrfull{iam}, have endorsed single-payer healthcare despite organizing along craft lines instead of industry. The key distinction between these unions and their disparate political stances lies in the Building Trades' use of voluntary agreements, which minimizes conflicts with employers and constrains their ability to challenge management.
-
-% Foner, Phillip S. History of the Labor Movement in the United States: Volume 2: From the Founding of the AFL to the Emergence of American Imperialism. New York: International Publishers, 1955; pp. 132–133.
 
 \section{LITERATURE REVIEW}
 
@@ -303,7 +304,7 @@ This threat inclines building trades unions to be employer-friendly. For example
   \label{fig:union_power_red}
 \end{figure}
 
-\subsubsection{The Hiring Hall}\
+\subsubsection{The Hiring Hall}
 
 The hiring hall is an integral component of the prehire contract arrangement. Without the hiring hall, the prehire scheme would not be tenable. A skilled "pool of labor" ready to be dispatched is necessary to attract employers and convince them to \emph{voluntarily} sign a prehire agreement. This scheme is well-suited for construction because of the contingent nature of construction work:
 
@@ -357,7 +358,7 @@ The opposition to the pipeline culminated in protests in Sioux County, North Dak
 
 The Standing Rock Sioux Tribe filed a lawsuit against the US Army Corps of Engineers in an attempt to halt the project. On September 9, 2016, a federal judge denied the tribe’s request to halt construction. However, within hours of the court’s ruling, the Obama Administration ordered the Army Corps of Engineers to put the project on hold and “determine whether it will need to reconsider any of its previous decisions regarding the Lake Oahe site under the \acrfull{nepa} or other federal laws” (\cite{officeofpublicaffairsJointStatementDepartment2016}). 
 
-\subsubsection{Organized Labor's Response}\
+\subsubsection{Organized Labor's Response}
 
 Many labor organizations supported the Native tribe and the environmentalists. For example, the \acrfull{seiu} emphasized that more than jobs were at stake; the pipeline would threaten the health and safety of “low income communities and communities of color, including those where many \acrshort{seiu} members live and work” (\cite{nlfUnionsWeighDakota2016}). Other unions, including the National Nurses United and the Communication Workers of America, also expressed these solidarities with environmental and other movements (\cite{nlfUnionsWeighDakota2016}). Additionally, an entire coalition of trade unions and labor groups, the \acrfull{lcca}, collectively issued a statement opposing the pipeline. This coalition includes the A. Phillip Randolph Institute, the Asian Pacific American Labor Alliance, the Coalition of Black Trade Unionists, the Coalition of Labor Union Women, the Labor Council for Latin American Advancement, and Pride at Work (\cite{apalaAFLCIOConstituencyGroups2016}).
 
@@ -383,13 +384,13 @@ Lastly, we applaud the many labor unions working to create a new economy with go
 
 Though the \acrshort{seiu} is by no means a union with "skin in the game," insofar as \acrshort{seiu} workers will likely not be impacted (i.e., lose their jobs) when petrochemical plants or other environmentally hazardous facilities close, other unions whose members \emph{do} work in those directly affected industries (e.g., the \acrshort{usw}) \emph{have} taken positions similar to the \acrshort{seiu}'s.\footnote{See \fullref{ocaw} for an at length discussion of the \acrshort{ocaw}/\acrshort{usw}'s \textit{Just Transition} idea.} Most importantly, the Building Trades were an outlier with respect to the \acrshort{dapl}; No unions outside of the Building Trades are on record supporting the pipeline.
 
-\subsubsection{The Building Trades' Response}\
+\subsubsection{The Building Trades' Response}
 
 \acrfull{nabtu}, a trade department of the \acrshort{aflcio} representing 14 constituent building trades unions, issued a statement within days condemning the actions of the Obama Administration. On September 14, 2016, they expressed their “disappointment” with the Obama Administration in the latter’s willingness to “halt the lawful construction” of the \acrshort{dapl}, emphasized the advanced training of their skilled craftworkers, and contended that many safety redundancies would be in place while the project was underway  (\cite{nabtuStatementObamaAdministration2016}). Further, they chided the Executive Branch for its “disregard” of “the facts,” the “exhaustive permitting and review process, stakeholder engagement,” and “the ruling of a Federal Court Judge,” and they lamented the loss of construction jobs with “family sustaining wages and benefits” (\cite{nabtuStatementObamaAdministration2016}).
 
 Early the following month, the \acrshort{nabtu}, with signatures from the presidents of five construction unions, wrote a letter directly to the White House reiterating their concerns. In the letter, they underscored that many of their 8,000 members who were working on the project were already struggling and facing hardship because of unemployment caused by the Executive Branch’s intervention. Additionally, they emphasized that this intervention sets a “chilling” precedent that would undermine “future investment in necessary U.S. infrastructure---from highways and bridges to ports and factories,” and that “If companies like Energy Transfer Partners cannot trust that the regulatory process outlined in federal law will be upheld, who will continue to invest in America?” (\cite{callahanLetterObama2016}).
 
-\subsubsection{Union Members as Shareholders}\
+\subsubsection{Union Members as Shareholders}
 
 The \acrfull{nabtu} has clearly taken a very different position than the rest of organized labor. But why are the building trades taking such a different stance? One might think that they also would be guided by a broader notion of unionism; after all, their members also live and work in the communities that are being harmed by global warming. That is, the ranks of these unions are also, often enough, comprised of the same people that the \acrshort{lcca} and unions like the \acrshort{seiu} are defending from being harmed by the pipeline. What principles guide this sort of unionism?
 
@@ -454,7 +455,7 @@ Ironically, the abandonment of these exclusive agreements did not trigger union 
 
 With increased dues, unions were able to finance these benefits and, consequently, keep construction workers in the union much longer than they had previously (\cite[59]{schneirovPrideSolidarityHistory1993}). The Columbus Plumbers and Pipe Fitters Union could also afford to hire professional staff and leadership for the first time. The union hired full-time business agents, who served as "walking delegates," policing the job sites for contract violations and craft jurisdictional violations by the employers (\citeyear[60]{schneirovPrideSolidarityHistory1993}). The business agent was also an organizer, enrolling new members and "pulling a job" if he could not resolve a workplace dispute through negotiation (\citeyear[60]{schneirovPrideSolidarityHistory1993}). And though most employers did not utilize it, in November 1907, the union established a hiring hall as an institution that would later become a staple of construction unionism; the hiring hall required laid-off members to provide the business agent their names so that he could register them on the list of unemployed members and dispatch them, beginning with the first member laid off to the member most recently laid off, at the employers request (\citeyear[60–61]{schneirovPrideSolidarityHistory1993}). And finally, this era ushered in intra-craft solidarity: plumbers and fitters, for the first time, began to see themselves not as individuals trying to "better themselves in the marketplace," hoping not to ultimately become independent masters, but as workers with shared interests with other plumbers and fitters (\citeyear[61]{schneirovPrideSolidarityHistory1993}). These developments made the union into a more durable institution.
 
-\subsubsection{A contemporary view}\
+\subsubsection{A contemporary view}
 
 Many elements of fin-de-si\`{e}cle pipe trades unionism are still present in many construction unions today. Schneirov (\citeyear{schneirovPrideSolidarityHistory1993}) contends that the plumbers and pipefitters have had to balance between two sometimes contradictory identities. One is that they are workers with a set of common class interests with other workers in a labor movement built around solidarity for "union brothers and sisters." But from another perspective, they are part of a craft community that values craftsmanship and that takes pride in its work, a value that they share with their employer (\cite[3--4]{schneirovPrideSolidarityHistory1993}). A construction journeyworker is distinct in this regard from other blue-collar workers, such as factory workers on an assembly line, who do a repetitive task that can be easily taught (\cite[5]{schneirovPrideSolidarityHistory1993}). Before one can become a journeyworker, one must complete an apprenticeship, which requires learning how to apply general plumbing and pipe fitting installation techniques, principles, and codes to specific circumstances. This requires a rigorous training program to prepare apprentices for their careers. As a consequence, these workers have gained prestige and a sort of elite status that many other blue-collar workers could only dream of.
 
@@ -470,7 +471,7 @@ The \acrshort{ocaw} was much more radical than other unions. As Mark Dudzic, a f
 
 Unlike the Building Trades, the \acrshort{usw} is currently a supporter of the Labor for Single Payer Health Care campaign, which is a broad social-wage political effort. From that perspective, the \acrshort{usw} is not just focusing singularly on its members’ interests but is instead committed to broader political struggles. Strikingly, the \acrshort{usw} even supports a transition from dirty-energy to clean-energy jobs. This is significant for a union that has many workers in the petrochemical industry. Such a transition would end their employment at oil refineries and require a new, more challenging struggle to establish a union foothold in new clean-energy sectors, sectors that have been highly resistant to unionization. Nevertheless, the \acrshort{usw} has adopted a broader, more long-term vision, one much more solidaristic with other environmental activist groups than the Building Trades have.
 
-\subsubsection{OCAW and Tony Mazzochi}\
+\subsubsection{OCAW and Tony Mazzochi}
 
 Les Leopold, in \textit{The Man Who Hated Work but Loved Labor}, recounts the story of Tony Mazzocchi, former long-time \acrfull{ocaw} official and organizer. In looking at the history of this union with Mazzocchi as the protagonist, Leopold highlights the social unionism that the former helped craft in the postwar period in New York (\cite[16]{leopoldManWhoHated2007}).
 
@@ -486,11 +487,11 @@ Mazzocchi started his employment at Helena Rubinstein Incorporated on May 1, 195
 
 These years preceded the formation of the Oil Chemical and Atomic Workers (\acrshort{ocaw}). It wouldn’t be until March 4, 1955, when the \acrfull{ugccwa} merged with the \acrfull{owiu} to form the \acrshort{ocaw} (\cite[48]{ocawFactBookOil1960}). This was also the year when the \acrshort{afl} and \acrshort{cio} also merged, forming the present-day \acrfull{aflcio}.
 
-\paragraph{The Oil Workers International Union}\
+\paragraph{The Oil Workers International Union}
 
 Oil workers’ first breakthrough in terms of organizing occurred during World War I in Texas and California. The \acrfull{cio} had not yet formed, so a charter in the \acrfull{afl} was granted to several local unions; once several of these locals were chartered, they successfully petitioned the \acrshort{afl} for a charter as the Oil Field, Gas Well and Refinery Workers of America in 1918 (\cite[48]{ocawFactBookOil1960}). After some initial success, the union’s membership began to decline to merely 350 by 1933 because of union busting aided by the federal government, but the passage of the \acrfull{nlra} in 1935 gave the union a new set of rights and tools to organize, which again gave the union a boost (\cite[49]{ocawFactBookOil1960}). That same year, the president of the union worked with other labor leaders to establish the Committee for Industrial Organizations, though they remained within the \acrshort{afl}; but this did not last long, and two years later the Committee broke with the \acrshort{afl} to form its own union federation (\cite[49]{ocawFactBookOil1960}). During the same period, the union’s internal democracy considerably improved with the creation of the rank-and-file International Executive Council, and the convention no longer elected officers; instead, they were elected by direct referendum (\cite[49--50]{ocawFactBookOil1960}).
 
-\paragraph{Gas, Coke, and Chemical Workers}\
+\paragraph{Gas, Coke, and Chemical Workers}
 
 The Gas, Coke, and Chemical Workers Union started in the \acrfull{umwa}. The \acrshort{umwa} wanted to unite workers in industries that processed or used petroleum coke in the production of artificial gas (\cite[50]{ocawFactBookOil1960}). The \acrshort{umwa} was in the \acrshort{afl} at the time, and the Federation was resistant to their organizing efforts. After the \acrshort{umwa} left the \acrshort{afl}, it formed District 50, which was focused on organizing the "gas, coke, and allied products" industries (\cite[50--51]{ocawFactBookOil1960}). However, soon John L. Lewis, who was president of the \acrshort{umwa} at the time, split with the \acrshort{cio}, pulling the Mine Workers out of the \acrshort{cio}. This did not sit well with the Gas-Coke Workers within District 50; they had developed loyalty to the \acrshort{cio}, and were now merely a division within the now independent District 50 (\cite[51]{ocawFactBookOil1960}). Because of this, the various local unions of Gas and Coke Workers sought their own national union, and in 1942, they were granted a charter from the \acrshort{cio} as the United Gas, Coke and Chemical Workers of America (\cite[51]{ocawFactBookOil1960}). No longer a part of the independent District 50, they were now back in the \acrshort{cio}. But by 1955, they decided to merge with the Oil Workers to form the \acrfull{ocaw}.
 
@@ -544,7 +545,7 @@ The \acrfull{iam} and \acrshort{ua} are both craft unions. Both were \acrfull{af
 
 What could explain this different outcome? Both the \acrshort{iam} and the building trades unions were early \acrshort{afl} craft unions. They both have a history of racist, exclusionary policies. A key difference, however, is that the \acrshort{iam} is not a construction union and thus cannot enter into voluntary "prehire" agreements; they cannot "organize the bosses."
 
-\subsubsection{District Lodge 751}\
+\subsubsection{District Lodge 751}
 
 Boeing workers in Washington's Puget Sound area formed \acrshort{iam} District Lodge 751 in 1935. This places the formation of the union directly in the context of the years in which the fledgling \acrshort{cio} was organizing workers in the rapidly expanding industries of the time. The \acrshort{cio}'s organizing tactics were influenced by the \acrfull{iww}, a radical union that pushed for the replacement of wage labor and the private ownership of industry with industrial democracy, where workers would collectively own the means of production and collectively make decisions about how the workplace should be run (\cite{industrialworkersoftheworldIWW}). Though the \acrshort{iww} remained politically marginal, their tactics and philosophy undoubtedly had an impact on the \acrshort{cio} in the 1920s and 1930s (\cite[2-6]{mccannBloodWaterHistory1989}). The \acrshort{afl}, committed to craft unionism, was unable to organize the new industrial workers because of disputes that would arise regarding which craft union the newly organized industrial workers should join. When the AFL did organize industrial workers, they would first organized them into a industrial-like union sttructure called "federal" unions. Eventually, these unions were supposed to dissolve with the workers reassigned to the apropriate craft union. However, many of the newly organized industrial workers were not attracted to the craft union idea, as evidenced by their continuing attendance at the "Federal" (i.e., industrial) union that they were initially organized into, and their failure to attend the union meeting for their particular craft (\cite[8]{mccannBloodWaterHistory1989}).
 
@@ -576,7 +577,7 @@ The \acrshort{ibew} local union experienced a similar situation when a group of 
 That so many in the local community already knew the union and its importance to workers---i.e., it had built a good reputation---suggests that the union could be somewhat broader in its orientation (i.e., not narrowly focused on its members to the exclusion of broader issues). However, this seems not to be the case. The local union seems to be no different from the building trades unions in general in terms of their political culture. They still tend to take a rather careful approach of trying to win employers over versus more militant strategies (e.g., organizing for a strike), although they did indicate that they were involved in the county labor council and the building trades council (multi-union federations), which suggests that there is at least nominally some inter-union solidarity.
 %It is encouraging to see that the union has established itself as an organization that workers can contact to help them organize and defend themselves. This is also important in terms of understanding how the union engages with the broader community.
 
-\subsubsection{Project Labor Agreements}\
+\subsubsection{Project Labor Agreements}
 
 One area in which the \acrshort{ibew} local was quite politically active in the community is in urging local government to adopt project labor agreements. A \acrfull{pla} is a "\ldots{}pre-hire collective bargaining agreement with one or more labor organizations that establishes the terms and conditions of employment for a specific construction project\ldots{}" (\cite{obamaExecutiveOrder135022009}). The projects that a \acrshort{pla} covers are usually publically funded. Construction unions are attracted to \acrshort{pla}s because once they are enacted by the government (often at the local level), they are binding on all contractors who decide to bid on project for a particular institution (e.g., a school district) or a particular project (e.g., a new library; \cite{kotlerProjectLaborAgreements2009, johnston-doddsConstructingCaliforniaReview2001}). This forces employers who would otherwise not hire union workers to hire from the union's hiring hall and thus be bound by the union's contract for the duration of the project. With this technique, the union can capture part of the construction market that it otherwise would not be able to with the usual construction organizing method of "organizing the bosses."
 
