@@ -29,6 +29,12 @@
 %\usepackage{endnotes} % Use end notes instead of footnotes
 %\let\footnote=\endnote % Use end notes instead of footnotes
 
+% Adjust marginparwidth before loading todonotes/changes
+\setlength{\marginparwidth}{2cm}
+\usepackage{changes} % Use [final] to accept all changes; remove [final] to track changes
+% Define author for suggestions
+\definechangesauthor[name={Matt Carson}, color=red]{MC}
+
 \usepackage[autostyle, english = american]{csquotes}
 \MakeOuterQuote{"}
 \addbibresource{1_SOC_Honors.bib}
@@ -501,7 +507,7 @@ Many elements of fin-de-si\`{e}cle pipe trades unionism are still present in man
 
 At the same time, this elite status and craft pride also come with a much higher degree of collaboration and a much closer relationship with the boss. In fact, in Local 189, as is the case with many other plumber locals across the country, the line could be blurred between employer and union member. Some union collective bargaining agreements even allow for contractors, that is, the owners of the enterprises, to work on projects alongside union employees (\cite[5]{schneirovPrideSolidarityHistory1993}). This is also the case with \acrshort{ua} Local 342 in the San Francisco Bay Area. Local 342 allows employers no more than one owner of the company to "work with the tools," so long as "the Individual Employer has not more than two (2) journeymen and one (1) apprentice dispatched" (Local 342 MLA). Many of these employers who also work "work with the tools" are members of the union. For example, Brown 3 Plumbing in Oakland, California, is owned by William Brown, a Local 342 member who also works on many of his company’s projects (\cite{brownplumbingExecutiveSummary}). LJ Kruse Company in Berkeley, California, similarly has members of the Kruse family who also work on the job site. Will Kruse has completed both the 5-year apprenticeship and serves as the company’s Vice President and Service Manager (\cite{ljkruseUs}). He can be seen on the company’s website donning construction gear with a dirty high-visibility vest and jeans and on a job site with a pile of steel framing in the background. At Local 159 in Martinez, California, Brian Lescure, part of the Lescure family that owns Lescure Company, is both the Union’s Apprenticeship Coordinator and elected to the Union’s Examining Board (\cite{lescureLinkedIn}).
 
-This blurred line can give workers a sense, much more so than in other industries, that both employer and employee are on the same "team." Unlike an industry such as manufacturing, where large amounts of capital are necessary to start a business, starting a plumbing business is not unrealizable. One survey even found that half of a large plumbers local "had thought of entering business on their own at one time or another, though most had not done so" (\cite[5]{schneirovPrideSolidarityHistory1993}). Put straightforwardly, this means that half of the local union’s workers, that is, sellers of labor power, also imagine a future as buyers of that same labor power. Schneirov contends that this blurring of the lines and class collaborative dynamic creates a "craft community," where employers and workers share a common background that "breed[s] an ethic of cooperation among individuals based on mutual respect for craft knowledge, skill, and ingenuity" (\cite[6]{schneirovPrideSolidarityHistory1993}). And "Even those union members who have never considered contracting have often bid independently on small jobs and are familiar with the psychology of being an entrepreneur" (\cite[5--6]{schneirovPrideSolidarityHistory1993}). 
+This \replaced[id=MC, comment={dissonance?}]{overlap }{blurred line}can give workers a sense, much more so than in other industries, that both employer and employee are on the same "team." Unlike an industry such as manufacturing, where large amounts of capital are necessary to start a business, starting a plumbing business is not unrealizable. One survey even found that half of a large plumbers local "had thought of entering business on their own at one time or another, though most had not done so" (\cite[5]{schneirovPrideSolidarityHistory1993}). Put straightforwardly, this means that half of the local union’s workers, that is, sellers of labor power, also imagine a future as buyers of that same labor power. Schneirov contends that this blurring of the lines and class collaborative dynamic creates a "craft community," where employers and workers share a common background that "breed[s] an ethic of cooperation among individuals based on mutual respect for craft knowledge, skill, and ingenuity" (\cite[6]{schneirovPrideSolidarityHistory1993}). And "Even those union members who have never considered contracting have often bid independently on small jobs and are familiar with the psychology of being an entrepreneur" (\cite[5--6]{schneirovPrideSolidarityHistory1993}). 
 
 \subsection{The Oil Chemical and Atomic Workers \& United Steelworkers}\label{ocaw}\
 
@@ -705,30 +711,34 @@ As was the case with the \acrshort{ibew}, while the \acrshort{pla} process conta
 \begingroup 
 \vsize=\textwidth
 \hsize=\textheight
-
+\hfill
 \begin{table}[!ht]
     \centering
     \fontsize{12}{20}\selectfont
     \begin{tabular}{@{}llll@{}}
-        \toprule[0.25pt]
+        \toprule[0.25pt] \midrule[0.25pt]
         \textbf{Union} & \textbf{Similarity} & \textbf{Difference} & \textbf{Outcome} \\ 
         \midrule[0.25pt] \midrule[0.25pt]
         Machinists (IAM) & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Both\\ craft\\ unions\end{tabular}} & \begin{tabular}[c]{@{}l@{}}• Industrial mode\\ \hspace{7pt} of organizing\\ • Involuntary agreements\end{tabular} & \begin{tabular}[c]{@{}l@{}}• Supports progressive social-wage policy\\ \hspace{7pt}(e.g., single-payer healthcare).\end{tabular} \\ 
         \cmidrule(r){1-1} \cmidrule(l){3-4} 
-        Plumbers/Pipefitters (UA) & & • Voluntary agreements & • No/limited support for social-wage policy. \\ 
+        Plumbers/Pipefitters (UA) & & • Voluntary agreements & • No/limited support for social-wage policy. \\
+        \midrule[0.25pt] \midrule[0.25pt]
+        \text{} & \text{} & \text{} & \text{} \\
+        \text{} & \text{} & \text{} & \text{} \\ 
+        \text{} & \text{} & \text{} & \text{} \\ 
         \midrule[0.25pt] \midrule[0.25pt]
         \textbf{Union} & \textbf{Similarity} & \textbf{Difference} & \textbf{Outcome} \\ 
         \midrule[0.25pt] \midrule[0.25pt]
         \begin{tabular}[c]{@{}l@{}}Oil Chemical \& Atomic\\ Workers/Steelworkers\\ (OCAW/USW)\end{tabular} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Both \\ have \\ substantial \\ petrochemical \\ work\end{tabular}} & \begin{tabular}[c]{@{}l@{}}• Industrial mode\\ \hspace{7pt} of organizing\\ • Involuntary agreements\end{tabular} & \begin{tabular}[c]{@{}l@{}}• Supports progressive social-wage policy.\\• Supports the Pollan Report (creation of clean\\ \hspace{7pt}-energy jobs) and a transition from fossil fuels.\end{tabular} \\ 
         \cmidrule(r){1-1} \cmidrule(l){3-4} 
         Plumbers/Pipefitters (UA) & & • Voluntary Agreements & \begin{tabular}[c]{@{}l@{}}• No/limited support for social-wage policy.\\• Has defended the construction of\\ \hspace{7pt}new oil pipelines.\\• Opposed reforms and regulatory policies\\ \hspace{7pt} that might hamper new refinery projects\end{tabular} \\ 
-        \bottomrule
+        \midrule[0.25pt] \bottomrule
     \end{tabular}
     \caption[Case Selection]{The most similar cases that had different outcomes were selected.}
     \label{tab:cases}
 \end{table}
 \endgroup
-
+\hfill
 %\newpage
 %\paperwidth=\pdfpageheight
 %\paperheight=\pdfpagewidth
