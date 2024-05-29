@@ -1,0 +1,137 @@
+%%%% Load Packages %%%%
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{color}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage[citestyle=authoryear, bibstyle=authoryear, sorting=nyt]{biblatex}
+\usepackage{caption}
+\usepackage{etoolbox}
+\usepackage{fancyhdr}
+\usepackage{geometry} %[margin=1in]
+
+\geometry{
+	top=1in, % Top margin
+	bottom=1in, % Bottom margin
+	left=1in, % Left margin
+	right=1in, % Right margin
+%	showframe, % Uncomment to show how the type block is set on the page
+}
+
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{multirow}
+%\usepackage{endnotes} % Use end notes instead of footnotes
+%\let\footnote=\endnote % Use end notes instead of footnotes
+
+% Adjust marginparwidth before loading todonotes/changes
+\setlength{\marginparwidth}{2cm}
+\usepackage{changes} % Use [final] to accept all changes; remove [final] to track changes
+% Define author for suggestions
+\definechangesauthor[name={Matt Carson}, color=red]{MC}
+
+\usepackage[autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+\addbibresource{1_SOC_Honors.bib}
+\usepackage[acronym]{glossaries}
+\makeglossaries
+
+\titleformat{\section}{\fontsize{12}{14}\bfseries\centering}{\thesection}{0.5em}{}
+
+%%%% Include acronyms file %%%%
+\input{acronyms.tex}
+
+%%%% Head height %%%%
+\setlength{\headheight}{15pt}
+
+%%%% Line spacing %%%%
+\setstretch{2}
+
+%%%% Paragraph spacing %%%%
+\setlength{\parskip}{0pt}
+
+%%%% Define indentation length %%%%
+\newlength{\myindent}
+\setlength{\myindent}{0.5in}
+
+%%%% Set the hanging indent %%%%
+\setlength{\bibhang}{\myindent}
+
+\AtEveryBibitem{
+	\clearfield{issn}
+	\ifentrytype{book}{\clearfield{isbn}}{}
+    \clearfield{urlyear}
+    \clearfield{urlmonth}
+    \clearfield{urlday}
+}
+
+%%%% Redefine the citation command to use a colon instead of a comma and pp. %%%%
+\DeclareFieldFormat{postnote}{#1}
+\DeclareFieldFormat{multipostnote}{#1}
+
+% Redefine the URL format to not use \texttt style
+%\DeclareFieldFormat{url}{\href{#1}{#1}} % This will format the URL in the regular text font
+
+% Optionally, redefine the DOI and eprint formats similarly if you use them
+%\DeclareFieldFormat{doi}{\href{https://doi.org/#1}{#1}}
+%\DeclareFieldFormat{eprint}{\href{https://arxiv.org/abs/#1}{#1}}
+
+%%%% Use colon (ASA Style) in-text citations (author year: page) %%%%
+\renewcommand*{\postnotedelim}{\addcolon}
+
+%%%% Set global text alignment to ragged-right %%%%
+%\raggedright
+
+%%%% Paragraph indentation %%%%
+\setlength{\parindent}{\myindent}
+
+%%%% Font %%%%
+% \setmainfont{Times New Roman}
+
+%%%% Define a variable for the title %%%%
+% Full title
+\newcommand{\fullTitle}{Construction Union Agreements:\par{}Union Organizing in Historical-Comparative Perspective}
+% Short title
+\newcommand{\shortTitle}{CONSTRUCTION UNION AGREEMENTS}
+
+% Standardize image width
+\newcommand{\imageWidth}{0.8\textwidth}
+
+%%%% Page style %%%%
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+%\fancyhead[R]{\thepage} % page number on the right side
+\fancyhead[R]{\hyperlink{toc}{\thepage}} % page number on the right side, linked to the TOC
+\fancyhead[L]{\small \shortTitle}
+\renewcommand{\headrulewidth}{1pt} % header rule
+
+% Customize abstract page
+\renewenvironment{abstract}
+  {\par\noindent\centering\textbf{\fullTitle}\par}
+  {\noindent\raggedright}
+%  {\par}
+
+% Redefine the quote environment
+\renewenvironment{quote}
+  {\list{}{\leftmargin=\parindent\rightmargin=0pt}%
+   \item\relax}
+  {\endlist}
+
+% Custom command \acrparen to place acronyms in parentheses
+% \acrparen
+\newcommand{\acrparen}[1]{(\acrshort{#1})}
+
+% Custom command to reference section number and name
+% \fullref
+\addto\extrasenglish{\def\sectionautorefname{Section}}
+\addto\extrasenglish{\def\subsectionautorefname{Section}}
+\addto\extrasenglish{\def\subsubsectionautorefname{Section}}
+\newcommand{\fullref}[1]{\autoref{#1}: ``\nameref{#1}"}
+
+% Redefine the quote environment to make it single-spaced 
+% and remove vertical space before and add one at the end
+\AtBeginEnvironment{quote}{\singlespacing\setlength{\topsep}{0pt}\setlength{\partopsep}{0pt}}
+\AtEndEnvironment{quote}{\vspace{0.5\baselineskip}}

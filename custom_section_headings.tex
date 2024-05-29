@@ -1,0 +1,45 @@
+%%%% Parts %%%%
+\titleformat{\part}[block]
+	{\normalfont\Large\bfseries}
+	{\thepart.}
+	{6pt}
+	{\Large\MakeUppercase}
+
+%%%% Sections %%%%%
+\titleformat{\section}[block]
+	{\normalfont\fontsize{12}{14}\selectfont\bfseries}
+	{\thesection.}
+	{0.25em}
+	{}
+
+%%%% Subsections %%%%
+\titleformat{\subsection}[block]
+	{\itshape\bfseries}
+	{\thesubsection.}
+	{0.25em}
+	{}
+
+%%%% Subsubsections %%%%
+\titleformat{\subsubsection}[runin]
+	{\normalfont\itshape\bfseries}
+	{\hspace{\myindent}\thesubsubsection.}
+	{0.25em}
+	{}[.]%{\hspace{0em}}%[\hspace{2pt}]
+
+%%%% Paragraphs %%%%
+\titleformat{\paragraph}[runin]
+	{\normalfont\itshape\bfseries} % Normal font, italic, bold
+	{} % \hspace{\myindent}\theparagraph. % Label (you can add numbering here if needed)
+	{0.25em} % Separation between the label and the title
+	{} % Additional formatting
+	[.]
+
+% Adjust spacing before and after sectioning commands
+\titlespacing*{\part}{0pt}{0pt}{10pt}
+\titlespacing*{\section}{0pt}{0pt}{0pt} % \baselineskip
+\titlespacing*{\subsection}{0pt}{0pt}{0pt}
+\titlespacing*{\subsubsection}{0pt}{0pt}{0.5em}
+\titlespacing*{\paragraph}
+  {\myindent} % Left margin (you can set this to \parindent to align with paragraph indentation)
+  {0pt} % Space before the paragraph title
+  {0.5em} % Space after the paragraph title
