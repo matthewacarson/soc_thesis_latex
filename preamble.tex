@@ -23,6 +23,7 @@
 \usepackage{parskip}
 \usepackage{setspace}
 \usepackage{titlesec}
+\usepackage{titletoc}
 \usepackage{booktabs}
 \usepackage{multirow}
 %\usepackage{endnotes} % Use end notes instead of footnotes
@@ -92,7 +93,7 @@
 %%%% Font %%%%
 % \setmainfont{Times New Roman}
 
-%%%% Define a variable for the title %%%%
+%%%% Define variables for reused text or dimensions %%%%
 % Full title
 \newcommand{\fullTitle}{Construction Union Agreements:\par{}Union Organizing in Historical-Comparative Perspective}
 % Short title
@@ -120,6 +121,11 @@
   {\list{}{\leftmargin=\parindent\rightmargin=0pt}%
    \item\relax}
   {\endlist}
+  
+% Redefine the quote environment to make it single-spaced 
+% and remove vertical space before and add one at the end
+\AtBeginEnvironment{quote}{\singlespacing\setlength{\topsep}{0pt}\setlength{\partopsep}{0pt}}
+\AtEndEnvironment{quote}{\vspace{0.5\baselineskip}}
 
 % Custom command \acrparen to place acronyms in parentheses
 % \acrparen
@@ -132,7 +138,3 @@
 \addto\extrasenglish{\def\subsubsectionautorefname{Section}}
 \newcommand{\fullref}[1]{\autoref{#1}: ``\nameref{#1}"}
 
-% Redefine the quote environment to make it single-spaced 
-% and remove vertical space before and add one at the end
-\AtBeginEnvironment{quote}{\singlespacing\setlength{\topsep}{0pt}\setlength{\partopsep}{0pt}}
-\AtEndEnvironment{quote}{\vspace{0.5\baselineskip}}
