@@ -1,15 +1,16 @@
 %%%% Load Packages %%%%
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
+\usepackage{indentfirst}
 \usepackage{color}
-\usepackage{url}
+% \usepackage{url}
 \usepackage{hyperref}
 \usepackage[citestyle=authoryear, bibstyle=authoryear, sorting=nyt]{biblatex}
 \usepackage{caption}
-\usepackage{etoolbox}
+% \usepackage{etoolbox}
 \usepackage{fancyhdr}
 \usepackage{geometry} %[margin=1in]
-
+%\usepackage[absolute]{textpos}
 \geometry{
 	top=1in, % Top margin
 	bottom=1in, % Bottom margin
@@ -17,7 +18,7 @@
 	right=1in, % Right margin
 %	showframe, % Uncomment to show how the type block is set on the page
 }
-
+\usepackage{pdflscape}
 \usepackage{graphicx}
 \usepackage{parskip}
 \usepackage{setspace}
@@ -39,7 +40,7 @@
 \usepackage[acronym]{glossaries}
 \makeglossaries
 
-\titleformat{\section}{\fontsize{12}{14}\bfseries\centering}{\thesection}{0.5em}{}
+%\titleformat{\section}{\fontsize{12}{14}\bfseries\centering}{\thesection}{0.5em}{}
 
 %%%% Include acronyms file %%%%
 \input{acronyms.tex}

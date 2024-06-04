@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TexmakerSession quickmode="6">
-    <document line="44" file="C:/Users/madou/1_GitHub_Repositories/soc_thesis_latex/custom_section_headings.tex" bookmark3="0" hasfocus="false" bookmark1="0" master="false" bookmark2="0"/>
-    <document line="54" file="C:/Users/madou/1_GitHub_Repositories/soc_thesis_latex/contract_type_table.tex" bookmark3="0" hasfocus="false" bookmark1="0" master="false" bookmark2="0"/>
-    <document line="14" file="C:/Users/madou/1_GitHub_Repositories/soc_thesis_latex/most_similar_table.tex" bookmark3="0" hasfocus="false" bookmark1="0" master="false" bookmark2="0"/>
-    <document line="131" file="C:/Users/madou/1_GitHub_Repositories/soc_thesis_latex/preamble.tex" bookmark3="0" hasfocus="false" bookmark1="0" master="false" bookmark2="0"/>
-    <document line="22" file="C:/Users/madou/1_GitHub_Repositories/soc_thesis_latex/preliminary_pages.tex" bookmark3="0" hasfocus="false" bookmark1="0" master="false" bookmark2="0"/>
-    <document line="43" file="C:\Users\madou\1_GitHub_Repositories\soc_thesis_latex\soc_honors_thesis.tex" bookmark3="0" hasfocus="true" bookmark1="42" master="false" bookmark2="44"/>
+    <document file="C:/Users/madou/1_GitHub_Repositories/soc_thesis_latex/contract_type_table.tex" bookmark2="0" line="0" bookmark1="0" master="false" hasfocus="false" bookmark3="0"/>
+    <document file="C:/Users/madou/1_GitHub_Repositories/soc_thesis_latex/custom_section_headings.tex" bookmark2="0" line="0" bookmark1="0" master="false" hasfocus="false" bookmark3="0"/>
+    <document file="C:/Users/madou/1_GitHub_Repositories/soc_thesis_latex/most_similar_table.tex" bookmark2="0" line="0" bookmark1="0" master="false" hasfocus="false" bookmark3="0"/>
+    <document file="C:/Users/madou/1_GitHub_Repositories/soc_thesis_latex/preamble.tex" bookmark2="0" line="0" bookmark1="0" master="false" hasfocus="false" bookmark3="0"/>
+    <document file="C:\Users\madou\1_GitHub_Repositories\soc_thesis_latex\soc_honors_thesis.tex" bookmark2="44" line="39" bookmark1="42" master="false" hasfocus="true" bookmark3="30"/>
+    <document file="C:/Users/madou/1_GitHub_Repositories/soc_thesis_latex/preliminary_pages.tex" bookmark2="0" line="0" bookmark1="0" master="false" hasfocus="false" bookmark3="0"/>
 </TexmakerSession>
