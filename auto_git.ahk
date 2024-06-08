@@ -42,7 +42,7 @@ if(fileSizeLatest != folderSize) {
 return
 
 SendCommands:
-RunWait, git add soc_honors_thesis.tex soc_honors_thesis.pdf soc_honors_thesis.ist 1_SOC_Honors.bib .gitignore, , Hide
+RunWait, git add soc_honors_thesis.tex soc_honors_thesis.pdf soc_honors_thesis.ist 1_SOC_Honors.bib .gitignore acronyms.tex contract_type_table.tex custom_section_headings.tex most_similar_table.tex preamble.tex preliminary_pages.tex soc_thesis.tks, , Hide
 RunWait, git commit -m "Auto commit",, Hide
 if (!Mod(runTimes, 3)){
 	RunWait, git push,, Hide
