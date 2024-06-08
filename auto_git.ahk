@@ -14,15 +14,16 @@ folderSize := GetFolderSize()
 
 gosub SendCommands
 
-timeInterval := 3 * 60 * 1000
-gitInterval := 10 * 60 * 1000
+commitInterval := 4 * 60 * 1000
+;~ pushInterval := 10 * 60 * 1000
 
-Run, auto_git_push.ahk %gitInterval%
+;~ Run, auto_git_push.ahk %pushInterval%
 
-SetTimer, CommitFiles, %timeInterval%
+SetTimer, CommitFiles, %commitInterval%
 return
 
 CommitFiles:
+runTimes += 1
 fileSizeLatest := GetFolderSize()
 if(fileSizeLatest != folderSize) {
 	folderSize := fileSizeLatest
@@ -43,6 +44,9 @@ return
 SendCommands:
 RunWait, git add soc_honors_thesis.tex soc_honors_thesis.pdf soc_honors_thesis.ist 1_SOC_Honors.bib .gitignore, , Hide
 RunWait, git commit -m "Auto commit",, Hide
+if (!Mod(runTimes, 3)){
+	RunWait, git push,, Hide
+}
 return
 
 
