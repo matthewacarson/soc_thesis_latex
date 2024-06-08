@@ -1,6 +1,6 @@
 %%%% Parts %%%%
 \titleformat{\part}[block]
-	{\centering\normalfont\Large\bfseries}
+	{\normalfont\Large\bfseries}
 	{} % \thepart.
 	{6pt}
 	{\Large\MakeUppercase}
@@ -9,8 +9,8 @@
 \titleformat{\section}[block]
 	{\normalfont\fontsize{12}{14}\selectfont\bfseries}
 	{\thesection.}
-	{0.25em}
-	{}
+	{0.5em}
+	{\MakeUppercase}
 
 %%%% Subsections %%%%
 \titleformat{\subsection}[block]
@@ -44,10 +44,18 @@
   {0pt} % Space before the paragraph title
   {0.5em} % Space after the paragraph title
 
-% \titlecontents{subsubsection}
-  % [5em]                       % 1. Indentation
-  % {}                          % 2. Above code
-  % {}                          % 3. Numbered entry format
-  % {}                          % 4. Formatting of numbered entry
-  % {\hspace{0.25em}\titlerule*[0.75em]{.}\contentspage}       % 5. Page number format
+\titlecontents{section}
+  [0em]                         % 1. Indentation
+  {}                            % 2. Above code
+  {\MakeUppercase\bfseries}                     % 3. Numbered entry format
+  {\MakeUppercase\bfseries}                            % 4. Formatting of numbered entry
+  {\hspace{0.25em}\titlerule*[0.75em]{.}\contentspage}       % 5. Page number format
+  % []                          % 6. Below code
+
+\titlecontents{subsection}
+  [2em]                         % 1. Indentation
+  {}                            % 2. Above code
+  {}                            % 3. Numbered entry format
+  {}                            % 4. Formatting of numbered entry
+  {\hspace{0.25em}\titlerule*[0.75em]{.}\contentspage}       % 5. Page number format
   % []                          % 6. Below code
