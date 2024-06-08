@@ -499,12 +499,21 @@ As was the case with the \acrshort{ibew}, while the \acrshort{pla} process conta
 
 % Start on new page
 \clearpage
-\titleformat{\section}{\fontsize{12}{14}\bfseries\centering}{\thesection}{0.5em}{}
+%\titleformat{\section}{\fontsize{12}{14}\bfseries\centering}{\thesection}{0.5em}{}
 
 % Line spacing
 \setstretch{1.25}
 \sloppy
 \printbibliography[heading=bibintoc]% , title=REFERENCES]
+
+\clearpage
+
+% List of acronyms
+\addcontentsline{toc}{section}{Acronyms}
+%\setglossarystyle{listgroup}
+\setlength\glsdescwidth{0.8\linewidth}
+\printglossary[type=\acronymtype, title=Acronyms, style=long]
+\clearpage
 
 %\paperwidth=\pdfpagewidth
 %\paperheight=6.5in
