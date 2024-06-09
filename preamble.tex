@@ -6,7 +6,8 @@
 % \usepackage{url}
 \usepackage{hyperref}
 % \usepackage[citestyle=authoryear, bibstyle=authoryear, sorting=nyt]{biblatex}
-\usepackage[backend=biber, style=authoryear-asa]{biblatex}
+% \usepackage[backend=biber]{biblatex}
+\bibliographystyle{asr}
 \usepackage{caption}
 % \usepackage{etoolbox}
 \usepackage{fancyhdr}
@@ -60,19 +61,19 @@
 \setlength{\myindent}{0.5in}
 
 %%%% Set the hanging indent %%%%
-\setlength{\bibhang}{\myindent}
+% \setlength{\bibhang}{\myindent}
 
-\AtEveryBibitem{
-	\clearfield{issn}
-	\ifentrytype{book}{\clearfield{isbn}}{}
-    \clearfield{urlyear}
-    \clearfield{urlmonth}
-    \clearfield{urlday}
-}
+% \AtEveryBibitem{
+	% \clearfield{issn}
+	% \ifentrytype{book}{\clearfield{isbn}}{}
+    % \clearfield{urlyear}
+    % \clearfield{urlmonth}
+    % \clearfield{urlday}
+% }
 
 %%%% Redefine the citation command to use a colon instead of a comma and pp. %%%%
-\DeclareFieldFormat{postnote}{#1}
-\DeclareFieldFormat{multipostnote}{#1}
+% \DeclareFieldFormat{postnote}{#1}
+% \DeclareFieldFormat{multipostnote}{#1}
 
 % Redefine the URL format to not use \texttt style
 %\DeclareFieldFormat{url}{\href{#1}{#1}} % This will format the URL in the regular text font
